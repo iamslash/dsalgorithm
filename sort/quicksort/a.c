@@ -1,3 +1,8 @@
+
+/* Time Complexity */
+/* - Average : O(NlgN) */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
