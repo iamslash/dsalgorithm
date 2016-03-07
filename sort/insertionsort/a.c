@@ -22,10 +22,21 @@ void swap(int A[], int s, int d)
     A[s]  = A[d];
     A[d]  = t;
 }
-/* Bubble Sort */
+/* Insertion Sort */
 /* Time Complexity : O(N^2) */
 void insertion_sort(int A[], int len)
 {
+    for (int i=1; i<len; ++i)
+    {
+        int x = A[i];
+        int j = i - 1;
+        while (j>=0 && A[j]>x)
+        {
+            A[j+1] = A[j];
+            j--;
+        }
+        A[j+1] = x;
+    }
 }
 
 int main()
