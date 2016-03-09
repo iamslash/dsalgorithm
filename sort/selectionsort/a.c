@@ -28,11 +28,13 @@ void selection_sort(int A[], int len)
 {
     for (int i=0; i<len; ++i)
     {
+        int k=i;
         for (int j=i+1; j<len; ++j)
         {
-            
+            if (A[j] < A[k])
+                k=j;
         }
-        swap(A, 
+        swap(A, i, k);
     }
 }
 
