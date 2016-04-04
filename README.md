@@ -1,6 +1,20 @@
 # dsalgorithm
 data structures and algorithms and implementation
 
+# Data Structures
+
+* list
+
+* stack 
+
+* queue
+
+* priority queue
+
+* tree
+
+* graph
+
 # Algorithm Design
 
 * Brute Force
@@ -24,3 +38,4 @@ P means the existence of an algorithm for the task that runs in polynomial time.
 * NP Hard
 
 * NP Complete
+
