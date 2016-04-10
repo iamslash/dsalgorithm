@@ -1,43 +1,48 @@
-# dsalgorithm
-data structures and algorithms and implementation
+# Algorithm Analysis
 
-# Data Structures
-
-* list
-
-* stack 
-
-* queue
-
-* priority queue
-
-* tree
-
-* graph
-
-# Algorithm Design
-
-* Brute Force
-
-* Greedy
-
-* Divide and Conquor
-
-* Backtracking
-
-* Randomized
+* Big-O notation
 
 # P, NP, NP Hard, NP Complete
 
 * P
-
 P means the existence of an algorithm for the task that runs in polynomial time.
-
 * NP
-
 * NP Hard
-
 * NP Complete
+
+# Data Structures
+
+* list
+* stack 
+* queue
+* priority queue
+* tree
+* graph
+
+# Problems
+
+* Numerical Problems
+* Combinatorial Problems
+* Graph Problems: Polynomial-Time
+* Graph Problems: Hard Problems
+* Computational Geometry
+* Set and String Problems
+
+# Algorithm Design
+
+* Backtracking
+
+* Divide and Conquor
+
+* Dynamic programming
+
+* Greedy
+
+* Randomized
+
+* Genetics
+
+
 
 # References
 
