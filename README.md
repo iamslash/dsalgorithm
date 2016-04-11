@@ -1,5 +1,8 @@
 # Algorithm Proof
 
+- Counter Example
+- Mathmatical Induction
+
 # Algorithm Analysis
 
 - Big-O notation
