@@ -5,7 +5,8 @@
 
 # Algorithm Analysis
 
-- Big-O notation
+- The RAM Model of Computation
+- The asymptotic analysis of worst-case complexity
 
 # P, NP, NP Hard, NP Complete
 
