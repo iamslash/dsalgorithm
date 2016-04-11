@@ -24,8 +24,7 @@ P means the existence of an algorithm for the task that runs in polynomial time.
 # Problems
 
 * Numerical Problems
-
-** Solving Linear Equations
+..* Solving Linear Equations
 
 * Combinatorial Problems
 * Graph Problems: Polynomial-Time
