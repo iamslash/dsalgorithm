@@ -11,7 +11,7 @@
  - f(n) = O(g(n)) means c · g(n) is an upper bound on f (n). Thus there exists some constant c such that f (n) is always ≤ c · g(n), for large enough n (i.e. , n ≥ n0 for some constant n0).
  - f(n) = Ω(g(n)) means c · g(n) is a lower bound on f(n). Thus there exists some constant c such that f(n) is always ≥ c · g(n), for all n ≥ n0.
  - f(n) = Θ(g(n)) means c1 · g(n) is an upper bound on f(n) and c2 · g(n) is a lower bound on f(n), for all n ≥ n0. Thus there exist constants c1 and c2 such that f (n) ≤ c1 · g(n) and f (n) ≥ c2 · g(n). This means that g(n) provides a nice, tight bound on f(n).
- - ![notations](https://sites.google.com/site/iamslash/algorithm/Graphic%20examples%20of%20the%20%CE%98%2C%20O%2C%20and%20%E2%84%A6%20notations.JPG)
+ - ![notations](https://32d425da-a-62cb3a1a-s-sites.googlegroups.com/site/iamslash/algorithm/Graphic%20examples%20of%20the%20%CE%98%2C%20O%2C%20and%20%E2%84%A6%20notations.JPG?attachauth=ANoY7crtvPXc1NUksgkXWGEIebmZo_kAW4CpK_Setvl3zqP8smMGnxun4ZVRqDhec3uHVliBZLj0a9yLrY7QEecjQ6zHlaMNRun88b0B3Ynnysk5RiOFDI-Y56t8YyHIYTVOkE_nGG5m6HXbzEU6UxpzRQ1tKzmgClOhX3ABJZp1ziCAPLeIcij2qNHJCW6gU_qkR41BfnKpFux6OlvQNALoaw0QosKCJzK3fpECtGy3QvAfGpIyCmqf_HC_6Xefs1xGPztP86HSH2lDEf9ECYQOs8jVwPSzYLfhPtoSg40otsqzdT-n43Q%3D&attredirects=0)
 
 
 # P, NP, NP Hard, NP Complete
