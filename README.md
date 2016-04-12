@@ -2,6 +2,7 @@
 
 - Counter Example
 - Mathmatical Induction
+- Contradiction
 
 # Algorithm Analysis
 
@@ -18,7 +19,7 @@
 # P, NP, NP Hard, NP Complete
 
 - P
-P means the existence of an algorithm for the task that runs in polynomial time.
+ - P means the existence of an algorithm for the task that runs in polynomial time.
 - NP
 - NP Hard
 - NP Complete
