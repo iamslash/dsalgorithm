@@ -21,8 +21,14 @@
 - P
  - P means the existence of an algorithm for the task that runs in polynomial time.
 - NP
+ - set of decision problems for which any yes instance has some 'proof' that verifies the problem to be yes in polynomial step
 - NP Hard
+ - A decision problem H is NP-hard when for every problem L in NP,
+ there is a polynomial-time reduction from L to H
 - NP Complete
+ - A decision problem C is NP-complete if:
+  - C is in NP, and
+  - Every problem in NP is reducible to C in polynomial time.
 
 # Data Structures
 
