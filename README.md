@@ -32,20 +32,34 @@
 
 # Data Structures
 
+- bitmask
 - list
 - stack 
-- queue
+- queue, dequeue
 - priority queue
 - tree
 - graph
 
 # Algorithms
-
-- Numerical Problems
-  - Solving Linear Equations
-- Combinatorial Problems
-- Graph Problems: Polynomial-Time
-- Graph Problems: Hard Problems
+- Numerical Analysis
+  - bisection method
+  - [ROOTS](https://algospot.com/judge/problem/read/ROOTS)
+  - [LOAN](https://algospot.com/judge/problem/read/LOAN)
+  - [RATIO](https://algospot.com/judge/problem/read/RATIO)
+  - ternary search
+  - [FOSSIL](https://algospot.com/judge/problem/read/FOSSIL)
+  - simpson's method
+- Number Theory
+  - prime number, composite number
+  - prime factorization
+  - sieve of eratosthenes
+  - [PASS486](https://algospot.com/judge/problem/read/PASS486)
+  - Euclidean algorithm
+  - [POTION](https://algospot.com/judge/problem/read/POTION)
+  - modular arithmetic
+  - extended euclidean algorithm
+  - chinese remainder theorem
+  - lucas' theorem
 - Computational Geometry
   - how much closer
   - dot product
@@ -66,15 +80,17 @@
   - rotating calipers
 - Set and String Problems
 
-# Algorithm Design
+# Algorithm Designs
 
-- Brute Force
-- Backtracking
-- Divide and Conquor
-- Dynamic programming
-- Greedy
-- Randomized
-- Genetics
+ - Brute Force
+ - Backtracking
+ - Divide and Conquor
+ - Dynamic programming
+ - Greedy
+ - Combinatorial Search
+ - optimization problems to Decision problems
+ - Randomized
+ - Genetics
 
 # References
 
