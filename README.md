@@ -32,13 +32,15 @@
 
 # Data Structures
 
-- bitmask
-- list
-- stack 
-- queue, dequeue
-- priority queue
-- tree
-- graph
+- Bitmask
+  - [GRADUATION](https://algospot.com/judge/problem/read/GRADUATION)
+- Subtotal
+- List
+- Stack 
+- Queue, dequeue
+- Priority queue
+- Tree
+- Graph
 
 # Algorithms
 - Numerical Analysis
