@@ -68,11 +68,11 @@
   - segment intersection
   - segment intersects
   - point to line
-  - PINBALL
+  - [PINBALL](https://algospot.com/judge/problem/read/PINBALL)
   - polygon area
   - polygon inside
-  - TREASURE
-  - NERDS
+  - [TREASURE](https://algospot.com/judge/problem/read/TREASURE)
+  - [NERDS](https://algospot.com/judge/problem/read/NERDS)
   - convex hull
     - Gift wrapping algorithm
     - Graham Scan
@@ -88,7 +88,15 @@
  - Dynamic programming
  - Greedy
  - Combinatorial Search
+   - [Artificial Intelligence: A Modern Approach](https://www.amazon.com/Artificial-Intelligence-Modern-Approach-3rd/dp/0136042597)
+   - [sudoku](http://norvig.com/sudoku.html)
+   - [sudoku](http://links.algospot.com/sudoku)
+   - [Georgia Tech's TSP](http://www.tsp.gatech.edu/)
  - optimization problems to Decision problems
+   - [DARPA](https://algospot.com/judge/problem/read/DARPA)
+   - [ARCTIC](https://algospot.com/judge/problem/read/ARCTIC)
+   - [CANADATRIP](https://algospot.com/judge/problem/read/CANADATRIP)
+   - [WITHDRAWAL](https://algospot.com/judge/problem/read/WITHDRAWAL)
  - Randomized
  - Genetics
 
