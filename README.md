@@ -39,7 +39,7 @@
 - tree
 - graph
 
-# Problems
+# Algorithms
 
 - Numerical Problems
  - Solving Linear Equations
@@ -47,6 +47,23 @@
 - Graph Problems: Polynomial-Time
 - Graph Problems: Hard Problems
 - Computational Geometry
+ - how much closer
+ - dot product
+ - cross product
+ - line intersection
+ - segment intersection
+ - segment intersects
+ - point to line
+ - PINBALL
+ - polygon area
+ - polygon inside
+ - TREASURE
+ - NERDS
+ - convex hull
+  - Gift wrapping algorithm
+  - Graham Scan
+ - plane sweeping, line sweeping
+ - rotating calipers
 - Set and String Problems
 
 # Algorithm Design
