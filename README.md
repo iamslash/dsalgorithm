@@ -83,8 +83,15 @@
 # Algorithm Designs
 
 - Brute Force
-- Backtracking
+  - [BOGGLE](https://algospot.com/judge/problem/read/BOGGLE)
+  - [PICNIC](https://algospot.com/judge/problem/read/PICNIC)
+  - [BOARDCOVER](https://algospot.com/judge/problem/read/BOARDCOVER)
+  - [CLOCKSYNC](https://algospot.com/judge/problem/read/CLOCKSYNC)
 - Divide and Conquor
+  - Karatsuba
+  - [QUADTREE](https://algospot.com/judge/problem/read/QUADTREE)
+  - [FENCE](https://algospot.com/judge/problem/read/FENCE)
+  - [FANMEETING](https://algospot.com/judge/problem/read/FANMEETING)
 - Dynamic programming
   - [JUMPGAME](https://algospot.com/judge/problem/read/JUMPGAME)
   - [WILDCARD](https://algospot.com/judge/problem/read/WILDCARD)
@@ -136,6 +143,7 @@
   - [sudoku](http://norvig.com/sudoku.html)
     - [sudoku-kor](https://github.com/jongman/articles/wiki/solving-every-sudoku-puzzle)
   - [Georgia Tech's TSP](http://www.tsp.gatech.edu/)
+- Back Tracking
 - optimization problems to Decision problems
   - [DARPA](https://algospot.com/judge/problem/read/DARPA)
   - [ARCTIC](https://algospot.com/judge/problem/read/ARCTIC)
