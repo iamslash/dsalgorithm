@@ -90,7 +90,7 @@
  - Combinatorial Search
    - [Artificial Intelligence: A Modern Approach](https://www.amazon.com/Artificial-Intelligence-Modern-Approach-3rd/dp/0136042597)
    - [sudoku](http://norvig.com/sudoku.html)
-   - [sudoku](http://links.algospot.com/sudoku)
+     - [sudoku-kor](https://github.com/jongman/articles/wiki/solving-every-sudoku-puzzle)
    - [Georgia Tech's TSP](http://www.tsp.gatech.edu/)
  - optimization problems to Decision problems
    - [DARPA](https://algospot.com/judge/problem/read/DARPA)
