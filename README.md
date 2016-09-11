@@ -60,8 +60,8 @@
  - TREASURE
  - NERDS
  - convex hull
-  - Gift wrapping algorithm
-  - Graham Scan
+   - Gift wrapping algorithm
+   - Graham Scan
  - plane sweeping, line sweeping
  - rotating calipers
 - Set and String Problems
