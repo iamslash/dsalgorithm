@@ -82,23 +82,32 @@
 
 # Algorithm Designs
 
- - Brute Force
- - Backtracking
- - Divide and Conquor
- - Dynamic programming
- - Greedy
- - Combinatorial Search
-   - [Artificial Intelligence: A Modern Approach](https://www.amazon.com/Artificial-Intelligence-Modern-Approach-3rd/dp/0136042597)
-   - [sudoku](http://norvig.com/sudoku.html)
-     - [sudoku-kor](https://github.com/jongman/articles/wiki/solving-every-sudoku-puzzle)
-   - [Georgia Tech's TSP](http://www.tsp.gatech.edu/)
- - optimization problems to Decision problems
-   - [DARPA](https://algospot.com/judge/problem/read/DARPA)
-   - [ARCTIC](https://algospot.com/judge/problem/read/ARCTIC)
-   - [CANADATRIP](https://algospot.com/judge/problem/read/CANADATRIP)
-   - [WITHDRAWAL](https://algospot.com/judge/problem/read/WITHDRAWAL)
- - Randomized
- - Genetics
+- Brute Force
+- Backtracking
+- Divide and Conquor
+- Dynamic programming
+- Greedy
+  - Combinatorial Search
+    - TSP (dynamic programming)
+    - TSP (exhaustive search)
+    - TSP (simple heuristic)
+    - TSP (greedy)
+    - TSP (MST heuristic)
+    - TSP (memoization)
+    - [BOARDCOVER2](https://algospot.com/judge/problem/read/BOARDCOVER2)
+    - [ALLERGY](https://algospot.com/judge/problem/read/ALLERGY)
+    - [KAKURO2](https://algospot.com/judge/problem/read/KAKURO2)
+    - [Artificial Intelligence: A Modern Approach](https://www.amazon.com/Artificial-Intelligence-Modern-Approach-3rd/dp/0136042597)
+    - [sudoku](http://norvig.com/sudoku.html)
+      - [sudoku-kor](https://github.com/jongman/articles/wiki/solving-every-sudoku-puzzle)
+    - [Georgia Tech's TSP](http://www.tsp.gatech.edu/)
+  - optimization problems to Decision problems
+    - [DARPA](https://algospot.com/judge/problem/read/DARPA)
+    - [ARCTIC](https://algospot.com/judge/problem/read/ARCTIC)
+    - [CANADATRIP](https://algospot.com/judge/problem/read/CANADATRIP)
+    - [WITHDRAWAL](https://algospot.com/judge/problem/read/WITHDRAWAL)
+- Randomized
+- Genetics
 
 # References
 
