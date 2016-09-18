@@ -79,8 +79,9 @@
     - Gift wrapping algorithm
     - Graham Scan
   - plane sweeping, line sweeping
-  - Shamos-Hoey
-  - Bentley-Ottmann
+  - segment intersects
+    - Shamos-Hoey
+    - Bentley-Ottmann
   - rotating calipers
 - Set and String Problems
 
