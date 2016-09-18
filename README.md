@@ -33,6 +33,8 @@
 # Algorithms
 
 - Bitmask
+  - set traversal
+  - maximal subset
   - [GRADUATION](https://algospot.com/judge/problem/read/GRADUATION)
 
 - Partial Sum
