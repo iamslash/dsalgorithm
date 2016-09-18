@@ -34,7 +34,7 @@
 
 - Bitmask
   - [GRADUATION](https://algospot.com/judge/problem/read/GRADUATION)
-- Subtotal
+- Partial Sum
 - List
 - Stack 
 - Queue, dequeue
@@ -83,6 +83,8 @@
     - Shamos-Hoey
     - Bentley-Ottmann
   - rotating calipers
+  - further reading
+    - (geometry algorithms)[http://geomalgorithms.com/]
 - Set and String Problems
 
 # Algorithm Designs
