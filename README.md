@@ -92,9 +92,9 @@
   - segment intersects (Shamos-Hoey)
   - segment intersects (Bentley-Ottmann)
   - rotating calipers
-  - bezier spline
-  - hermite spline
-  - B-spline (Basis spline)
+  - spline (bezier spline)
+  - spline (hermite spline)
+  - spline (B-spline, Basis spline)
   - closest pair of points
   - further reading
     - [geometry algorithms](http://geomalgorithms.com/)
