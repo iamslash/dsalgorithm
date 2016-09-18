@@ -96,6 +96,8 @@
   - spline (hermite spline)
   - spline (B-spline, Basis spline)
   - closest pair of points
+  - voronoi diagrams
+  - 
   - further reading
     - [geometry algorithms](http://geomalgorithms.com/)
 
