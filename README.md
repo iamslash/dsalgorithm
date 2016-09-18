@@ -34,14 +34,23 @@
 
 - Bitmask
   - [GRADUATION](https://algospot.com/judge/problem/read/GRADUATION)
+
 - Partial Sum
+
 - List
+
 - Stack 
+
 - Queue, dequeue
+
 - Priority queue
+
 - String
+
 - Tree
+
 - Graph
+
 - Numerical Analysis
   - bisection method
   - [ROOTS](https://algospot.com/judge/problem/read/ROOTS)
@@ -50,6 +59,7 @@
   - ternary search
   - [FOSSIL](https://algospot.com/judge/problem/read/FOSSIL)
   - simpson's method
+
 - Number Theory
   - prime number, composite number
   - prime factorization
@@ -61,27 +71,31 @@
   - extended euclidean algorithm
   - chinese remainder theorem
   - lucas' theorem
+
 - Computational Geometry
   - how much closer
   - dot product
   - cross product
   - line intersection
   - segment intersection
-  - segment intersects
+  - segment intersects (counter clock wise)
   - point to line
   - [PINBALL](https://algospot.com/judge/problem/read/PINBALL)
   - polygon area
   - polygon inside
   - [TREASURE](https://algospot.com/judge/problem/read/TREASURE)
   - [NERDS](https://algospot.com/judge/problem/read/NERDS)
-  - convex hull
-    - Gift wrapping algorithm
-    - Graham Scan
+  - convex hull (Gift Wrapping)
+  - convex hull (Javis's March)
+  - convex hull (Graham Scan)
   - plane sweeping, line sweeping
-  - segment intersects
-    - Shamos-Hoey
-    - Bentley-Ottmann
+  - segment intersects (Shamos-Hoey)
+  - segment intersects (Bentley-Ottmann)
   - rotating calipers
+  - bezier spline
+  - hermite spline
+  - B-spline (Basis spline)
+  - closest pair of points
   - further reading
     - [geometry algorithms](http://geomalgorithms.com/)
 
@@ -92,11 +106,13 @@
   - [PICNIC](https://algospot.com/judge/problem/read/PICNIC)
   - [BOARDCOVER](https://algospot.com/judge/problem/read/BOARDCOVER)
   - [CLOCKSYNC](https://algospot.com/judge/problem/read/CLOCKSYNC)
+
 - Divide and Conquor
   - Karatsuba
   - [QUADTREE](https://algospot.com/judge/problem/read/QUADTREE)
   - [FENCE](https://algospot.com/judge/problem/read/FENCE)
   - [FANMEETING](https://algospot.com/judge/problem/read/FANMEETING)
+
 - Dynamic programming
   - [JUMPGAME](https://algospot.com/judge/problem/read/JUMPGAME)
   - [WILDCARD](https://algospot.com/judge/problem/read/WILDCARD)
@@ -112,6 +128,7 @@
   - [POLY](https://algospot.com/judge/problem/read/POLY)
   - [NUMB3RS](https://algospot.com/judge/problem/read/NUMB3RS)
   - Markov Chain
+
 - Dynamic programming technique
   - [PACKING](https://algospot.com/judge/problem/read/PACKING)
   - [OCR](https://algospot.com/judge/problem/read/OCR)
@@ -128,12 +145,14 @@
   - [BLOCKGAME](https://algospot.com/judge/problem/read/BLOCKGAME)
   - [SUSHI](https://algospot.com/judge/problem/read/SUSHI)
   - [GENIUS](https://algospot.com/judge/problem/read/GENIUS)
+
 - Greedy
   - [MATCHORDER](https://algospot.com/judge/problem/read/MATCHORDER)
   - [LUNCHBOX](https://algospot.com/judge/problem/read/LUNCHBOX)
   - [STRJOIN](https://algospot.com/judge/problem/read/STRJOIN)
   - huffman code
   - [MINASTIRITH](https://algospot.com/judge/problem/read/MINASTIRITH)
+
 - Combinatorial Search
   - TSP (dynamic programming)
   - TSP (exhaustive search)
@@ -148,13 +167,17 @@
   - [sudoku](http://norvig.com/sudoku.html)
     - [sudoku-kor](https://github.com/jongman/articles/wiki/solving-every-sudoku-puzzle)
   - [Georgia Tech's TSP](http://www.tsp.gatech.edu/)
+
 - Back Tracking
+
 - optimization problems to Decision problems
   - [DARPA](https://algospot.com/judge/problem/read/DARPA)
   - [ARCTIC](https://algospot.com/judge/problem/read/ARCTIC)
   - [CANADATRIP](https://algospot.com/judge/problem/read/CANADATRIP)
   - [WITHDRAWAL](https://algospot.com/judge/problem/read/WITHDRAWAL)
+
 - Randomized
+
 - Genetics
 
 # References
