@@ -84,7 +84,7 @@
     - Bentley-Ottmann
   - rotating calipers
   - further reading
-    - (geometry algorithms)[http://geomalgorithms.com/]
+    - [geometry algorithms](http://geomalgorithms.com/)
 - Set and String Problems
 
 # Algorithm Designs
