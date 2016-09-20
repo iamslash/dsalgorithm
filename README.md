@@ -50,8 +50,10 @@
 - String
   - KMP
   - Manber Myers
+  - Boyer Moore
 
 - Tree
+  - Trie
 
 - Graph
 
