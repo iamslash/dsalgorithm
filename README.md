@@ -33,7 +33,7 @@
 # Algorithms
 
 - Bitmask
-  - set traversal
+  - subset traversal
   - maximal subset
   - [GRADUATION](https://algospot.com/judge/problem/read/GRADUATION)
 
@@ -48,6 +48,8 @@
 - Priority queue
 
 - String
+  - KMP
+  - Manber Myers
 
 - Tree
 
