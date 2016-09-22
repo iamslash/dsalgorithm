@@ -33,9 +33,10 @@
 # Algorithms
 
 - Bitmask
-  - subset traversal
+  - Bitmask preliminaries
   - maximal subset
   - [GRADUATION](https://algospot.com/judge/problem/read/GRADUATION)
+  - [Bit Twiddling Hacks](http://graphics.stanford.edu/~seander/bithacks.html)
 
 - Partial Sum
 
