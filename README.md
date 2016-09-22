@@ -59,6 +59,12 @@
   - red black tree
   - AVL tree
   - treap
+  - heap
+  - segment tree
+  - range minimum query (RMQ)
+  - fenwick tree
+  - Union-Find
+  - trie
 
 - Graph
 
