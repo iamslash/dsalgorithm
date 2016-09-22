@@ -68,6 +68,22 @@
   - Aho–Corasick
 
 - Graph
+  - adjacency list graph
+  - adjacency matrix graph
+  - depth first search (DFS)
+  - Eulerian circuit
+  - breadth first search (BFS)
+  - Dijkstra algorithm
+  - Bellman-Ford algorithm
+  - Kruskal's minimum spanning tree 
+  - Prim's minimum spanning tree
+  - Ford-Fulkerson algorithm
+  - Edmonds-Karp algorithm
+  - Dinic algorithm
+  - min-cost max-flow (MCMF)
+  - successive shortest path
+  - Kuhn–Munkres algorithm
+  - Kőnig's theorem
 
 - Numerical Analysis
   - bisection method
