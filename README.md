@@ -53,7 +53,10 @@
   - Boyer Moore
 
 - Tree
-  - Trie
+  - binary tree
+  - red black tree
+  - AVL tree
+  - treap
 
 - Graph
 
