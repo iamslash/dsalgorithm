@@ -52,6 +52,8 @@
   - Manber Myers
   - Boyer Moore
 
+- Hash
+
 - Tree
   - binary tree
   - red black tree
