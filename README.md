@@ -65,6 +65,7 @@
   - fenwick tree
   - Union-Find
   - trie
+  - Aho–Corasick
 
 - Graph
 
