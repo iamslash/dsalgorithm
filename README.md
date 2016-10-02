@@ -39,7 +39,8 @@
   - [Bit Twiddling Hacks](http://graphics.stanford.edu/~seander/bithacks.html)
 
 - Partial Sum
-
+  - [CHRISTMAS](https://algospot.com/judge/problem/read/CHRISTMAS)
+  
 - List
 
 - Stack 
