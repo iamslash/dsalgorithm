@@ -46,8 +46,10 @@
   - [Dancing Links](https://arxiv.org/abs/cs/0011047)
 
 - Stack 
+  - [BRACKETS2](http://algospot.com/judge/problem/read/BRACKETS2)
 
 - Queue, dequeue
+  - [ITES](http://algospot.com/judge/problem/read/ITES)
 
 - Priority queue
 
