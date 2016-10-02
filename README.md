@@ -42,6 +42,8 @@
   - [CHRISTMAS](https://algospot.com/judge/problem/read/CHRISTMAS)
   
 - List
+  - [JOSEPHUS](https://algospot.com/judge/problem/read/JOSEPHUS)
+  - [Dancing Links](https://arxiv.org/abs/cs/0011047)
 
 - Stack 
 
