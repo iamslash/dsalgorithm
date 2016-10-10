@@ -49,6 +49,7 @@
   - [BRACKETS2](http://algospot.com/judge/problem/read/BRACKETS2)
 
 - Queue, dequeue
+  - [FENCE](http://algospot.com/judge/problem/read/FENCE)
   - [ITES](http://algospot.com/judge/problem/read/ITES)
 
 - Priority queue
