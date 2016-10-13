@@ -56,6 +56,10 @@
 
 - String
   - KMP
+  - [NAMING](http://algospot.com/judge/problem/read/NAMING)
+  - [PALINDROMIZE](http://algospot.com/judge/problem/read/PALINDROMIZE)
+  - [JAEHASAFE](http://algospot.com/judge/problem/read/JAEHASAFE)
+  - [HABIT](http://algospot.com/judge/problem/read/HABIT)
   - Manber Myers
   - Boyer Moore
 
