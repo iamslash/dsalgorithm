@@ -59,9 +59,12 @@
   - [NAMING](http://algospot.com/judge/problem/read/NAMING)
   - [PALINDROMIZE](http://algospot.com/judge/problem/read/PALINDROMIZE)
   - [JAEHASAFE](http://algospot.com/judge/problem/read/JAEHASAFE)
-  - [HABIT](http://algospot.com/judge/problem/read/HABIT)
-  - Manber Myers
   - Boyer Moore
+  - suffix array
+  - suffix tree
+  - Manber Myers
+  - [HABIT](http://algospot.com/judge/problem/read/HABIT)
+  - [Kasai, T. et al., "Linear-Time Longest-Common-Prefix Computation in Suffix Arrays and Its Applications"]()
 
 - Hash
 
