@@ -55,16 +55,16 @@
 - Priority queue
 
 - String
-  - KMP
-  - Manber Myers
   - Boyer Moore
+  - KMP
   - [NAMING](http://algospot.com/judge/problem/read/NAMING)
   - [PALINDROMIZE](http://algospot.com/judge/problem/read/PALINDROMIZE)
   - [JAEHASAFE](http://algospot.com/judge/problem/read/JAEHASAFE)
-  - suffix array
+  - suffix tree
+  - suffix array (Manber Myers)[http://dl.acm.org/citation.cfm?id=320176.320218]
   - [HABIT](http://algospot.com/judge/problem/read/HABIT)
   - [Kasai, T. et al., "Linear-Time Longest-Common-Prefix Computation in Suffix Arrays and Its Applications"]()
-  - suffix tree
+
 
 - Hash
 
