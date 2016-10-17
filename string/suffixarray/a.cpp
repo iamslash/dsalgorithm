@@ -12,6 +12,12 @@ void print_v(const std::vector<int> v) {
   printf("\n");
 }
 
+void print_suffix_array(const std::string& s, const std::vector<int> v) {
+  for (int i = 0; i < v.size(); ++i) {
+    printf("%s\n", s.substr(v[i]).c_str());
+  }
+}
+
 // 각 접미사들의 첫 t글자를 기준으로 한 그룹번호가 주어질 때,
 // 주어진 두접미사를 첫 2 * t글자를 기준으로 비교한다.
 // group[]은 길이가 0인 접미사도 포함한다.
@@ -76,15 +82,48 @@ std::vector<int> get_suffix_array(const std::string& s) {
   return perm;
 }
 
-std::vector<int> suffixarray_search(const std::string& H, const std::string& N) {
+int match_string(const std::string& H,
+                 const std::string& N) {
+  int r = 0;
+  while (r < H.size() && r < N.size() && H[r] == N[r]) {
+    ++r;
+  }
+  if (r == N.size())
+    return 0;
+  if (H[r] < N[r])
+    return 1;
+  return -1;
+}
+
+std::vector<int> suffixarray_search(const std::string& H,
+                                    const std::string& N) {
   int h = H.size();
   int n = N.size();
-  std::vector<int> r;
+  std::vector<int> ret;
   //
-  std::vector<int> sa = get_suffix_array(N);
+  std::vector<int> a = get_suffix_array(H);
   // binary search in sa
+  // print_v(a);
+  // print_suffix_array(H, a);
+  int l = 0;
+  int r = a.size();
+  while (l < r) {
+    int m = (l+r)/2;
+    std::string T = H.substr(m);
+    int c = match_string(T, N);
+    printf("l[%d] m[%d] r[%d] c[%d] T[%s] N[%s]\n",
+           l, m, r, c, T.c_str(), N.c_str());
+    if (c == 0) {
+      ret.push_back(m);
+      l = m;
+    } else if (c < 0) {
+      r = m;
+    } else {
+      l = m;
+    }
+  }
 
-  return r;
+  return ret;
 }
 
 int main() {
@@ -96,7 +135,6 @@ int main() {
   printf("%s\n", h.c_str());
   printf("%s\n", n.c_str());
   print_v(r);
-  
-  //
+  // printf("%d\n", match_string("tfoo", "myname"));
   return 0;
 }
