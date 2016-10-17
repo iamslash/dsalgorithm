@@ -55,16 +55,18 @@
 - Priority queue
 
 - String
-  - KMP
-  - Manber Myers
-  - Boyer Moore
+  - Boyer Moore algorithm
+    - [Boyer, Robert S.; Moore, J Strother (October 1977). "A Fast String Searching Algorithm."](https://www.cs.utexas.edu/users/moore/publications/fstrpos.pdf)
+  - KMP algorithm
   - [NAMING](http://algospot.com/judge/problem/read/NAMING)
   - [PALINDROMIZE](http://algospot.com/judge/problem/read/PALINDROMIZE)
   - [JAEHASAFE](http://algospot.com/judge/problem/read/JAEHASAFE)
-  - suffix array
-  - [HABIT](http://algospot.com/judge/problem/read/HABIT)
-  - [Kasai, T. et al., "Linear-Time Longest-Common-Prefix Computation in Suffix Arrays and Its Applications"]()
   - suffix tree
+  - suffix array
+    - [Manber, Udi; Myers, Gene (1990). Suffix arrays: a new method for on-line string searches](http://webglimpse.net/pubs/suffix.pdf)
+  - [HABIT](http://algospot.com/judge/problem/read/HABIT)
+  - [Kasai, T. et al., "Linear-Time Longest-Common-Prefix Computation in Suffix Arrays and Its Applications"](http://alumni.cs.ucr.edu/~rakthant/cs234/01_KLAAP_Linear%20time%20LCP.PDF)
+
 
 - Hash
 
