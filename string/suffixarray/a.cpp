@@ -105,24 +105,30 @@ std::vector<int> suffixarray_search(const std::string& H,
   // binary search in sa
   // print_v(a);
   // print_suffix_array(H, a);
-  int l = 0;
-  int r = a.size();
-  while (l < r) {
-    int m = (l+r)/2;
-    std::string T = H.substr(m);
-    int c = match_string(T, N);
-    printf("l[%d] m[%d] r[%d] c[%d] T[%s] N[%s]\n",
-           l, m, r, c, T.c_str(), N.c_str());
-    if (c == 0) {
-      ret.push_back(m);
-      l = m;
-    } else if (c < 0) {
-      r = m;
-    } else {
-      l = m;
-    }
-  }
 
+  // search locates the starting position of the interval
+  int l = 0, r = h;
+  while (l < r) {
+    int m = (l+r) / 2;
+    int c = match_string(H.substr(m), N);
+    if (c > 0)
+      l = m + 1;
+    else
+      r = m;
+  }
+  // determines the end position
+  int s = l; r = n;
+  while (l < r) {
+    int m = (l+r) / 2;
+    int c = match_string(H.substr(m), N);
+    if (c < 0)
+      r = m;
+    else
+      l = m + 1;
+  }
+  printf("s: %d l: %d r: %d\n", s, l, r);
+
+  //
   return ret;
 }
 
