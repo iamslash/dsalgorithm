@@ -61,7 +61,7 @@
   - [PALINDROMIZE](http://algospot.com/judge/problem/read/PALINDROMIZE)
   - [JAEHASAFE](http://algospot.com/judge/problem/read/JAEHASAFE)
   - suffix tree
-  - suffix array (Manber Myers)[http://dl.acm.org/citation.cfm?id=320176.320218]
+  - suffix array (Manber Myers)[http://webglimpse.net/pubs/suffix.pdf]
   - [HABIT](http://algospot.com/judge/problem/read/HABIT)
   - [Kasai, T. et al., "Linear-Time Longest-Common-Prefix Computation in Suffix Arrays and Its Applications"]()
 
