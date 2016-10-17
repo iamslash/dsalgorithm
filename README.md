@@ -101,6 +101,32 @@
   - Kuhn–Munkres algorithm
   - Kőnig's theorem
 
+- Sort
+  - Selection Sort
+  - Isnertion sort
+  - Bubble Sort
+  - Shell Sort
+  - Quicksort
+  - Radix Sort
+  - Heapsort
+  - Merge sort
+  - External Sort
+  - Binary Tree Sort
+
+- Search
+  - Sequential Search with array
+  - Sequential Search with linked list
+  - Binary Search with array
+  - Interpolation Search
+  - Binary Tree Search 
+  - Radix Tree Search
+  - Radix Trie Search 
+  - Hash Table Linear Probing Search
+  - Hash Table Seperate Chaining Search
+  - B-Tree Search
+  - Red-Black Tree Search
+  - AVL Tree Search
+
 - Numerical Analysis
   - bisection method
   - [ROOTS](https://algospot.com/judge/problem/read/ROOTS)
