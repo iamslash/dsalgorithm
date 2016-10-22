@@ -69,6 +69,8 @@
   - [Rabin-Karp algorithm](https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm)
 
 - Hash
+  - seperate chaining
+  - quadratic probing
 
 - Tree
   - binary tree

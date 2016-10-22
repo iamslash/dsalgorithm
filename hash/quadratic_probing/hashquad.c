@@ -8,7 +8,7 @@
 
         struct HashEntry
         {
-            ElementType      Element;
+
             enum KindOfEntry Info;
         };
 
