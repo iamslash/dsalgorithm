@@ -52,8 +52,6 @@
   - [FENCE](http://algospot.com/judge/problem/read/FENCE)
   - [ITES](http://algospot.com/judge/problem/read/ITES)
 
-- Priority queue
-
 - String
   - Boyer Moore algorithm
     - [Boyer, Robert S.; Moore, J Strother (October 1977). "A Fast String Searching Algorithm."](https://www.cs.utexas.edu/users/moore/publications/fstrpos.pdf)
@@ -67,6 +65,7 @@
   - [HABIT](http://algospot.com/judge/problem/read/HABIT)
   - [Kasai, T. et al., "Linear-Time Longest-Common-Prefix Computation in Suffix Arrays and Its Applications"](http://alumni.cs.ucr.edu/~rakthant/cs234/01_KLAAP_Linear%20time%20LCP.PDF)
   - [Rabin-Karp algorithm](https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm)
+  - Aho–Corasick algorithm
 
 - Hash
   - seperate chaining
@@ -77,13 +76,14 @@
   - red black tree
   - AVL tree
   - treap
-  - heap
+  - priority queue with heap
   - segment tree
   - range minimum query (RMQ)
   - fenwick tree
   - Union-Find
   - trie
-  - Aho–Corasick
+  - suffix tree
+  - Aho–Corasick algorithm
 
 - Graph
   - adjacency list graph
