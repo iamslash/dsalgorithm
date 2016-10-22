@@ -95,6 +95,8 @@ int match_string(const std::string& H,
   return -1;
 }
 
+// 0. 정확히 찾을때까지 이진 탐색한다.
+// 1. 찾았다면 위아래로 검색한다. 접미사 배열은 문자순으로 정렬되어 있다.
 std::vector<int> suffixarray_search(const std::string& H,
                                     const std::string& N) {
   int h = H.size();
@@ -110,23 +112,26 @@ std::vector<int> suffixarray_search(const std::string& H,
   int l = 0, r = h;
   while (l < r) {
     int m = (l+r) / 2;
-    int c = match_string(H.substr(m), N);
-    if (c > 0)
+    int c = match_string(H.substr(a[m]), N);
+    if (c > 0) {
       l = m + 1;
-    else
+    } else if (c < 0) {
       r = m;
+    } else {  // matched
+      break;
+    }
   }
-  // determines the end position
-  int s = l; r = n;
-  while (l < r) {
-    int m = (l+r) / 2;
-    int c = match_string(H.substr(m), N);
-    if (c < 0)
-      r = m;
-    else
-      l = m + 1;
-  }
-  printf("s: %d l: %d r: %d\n", s, l, r);
+  // // determines the end position
+  // int s = l; r = n;
+  // while (l < r) {
+  //   int m = (l+r) / 2;
+  //   int c = match_string(H.substr(m), N);
+  //   if (c < 0)
+  //     r = m;
+  //   else
+  //     l = m + 1;
+  // }
+  // printf("s: %d l: %d r: %d\n", s, l, r);
 
   //
   return ret;
