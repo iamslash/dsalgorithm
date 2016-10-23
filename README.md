@@ -114,6 +114,7 @@
   - Merge sort
   - External Sort
   - Binary Tree Sort
+  - counting sort
 
 - Search
   - Sequential Search with array
