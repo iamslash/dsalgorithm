@@ -5,9 +5,9 @@
 #include <vector>
 #include <algorithm>
 
-void print_v(const std::vector<int> v) {
-  for (auto it = v.begin(); it != v.end(); ++it) {
-    printf("%d ", *it);
+void print_v_int(const std::vector<int>& a) {
+  for (int i=0; i < a.size(); ++i) {
+    printf("%d ", a[i]);
   }
   printf("\n");
 }
@@ -28,6 +28,7 @@ struct Comparator {
     t = _t;
   }
   bool operator() (int a, int b) {
+    // printf("a:(%3d)%2d, (%3d)b:%2d\n", group[a], a, group[b], b);
     // 첫 t글자가 다르면 이들을 이용해 비교한다.
     if (group[a] != group[b])
       return group[a] < group[b];
@@ -59,12 +60,18 @@ std::vector<int> get_suffix_array(const std::string& s) {
     // group[]은 첫 t글자를 기준으로 계산해 뒀다.
     // 첫 2t글자를 기준으로 perm을 다시 정렬한다.
     Comparator compare_using_2T(group, t);
+    // printf("====1st:%2d\n", t);
     sort(perm.begin(), perm.end(), compare_using_2T);
+
+    // print_v_int(group, perm, s);
 
     // 2t글자가 n을 넘는다면 이제 접미사 배열 완성.
     t *= 2;
     if (t >= n)
       break;
+
+    // printf("t is %d\n", compare_using_2T.t);
+    // printf("----2nd\n");
 
     // 2t글자를 기준으로 한 그룹 정보를 만든다.
     std::vector<int> new_group(n + 1);
@@ -78,6 +85,8 @@ std::vector<int> get_suffix_array(const std::string& s) {
       }
     }
     group = new_group;
+
+    // print_v_int(group, perm, s);
   }
   return perm;
 }
@@ -88,6 +97,8 @@ int match_string(const std::string& H,
   while (r < H.size() && r < N.size() && H[r] == N[r]) {
     ++r;
   }
+  // printf("%2d %s %s\n", r, H.c_str(), N.c_str());
+
   if (r == N.size())
     return 0;
   if (H[r] < N[r])
@@ -101,40 +112,58 @@ std::vector<int> suffixarray_search(const std::string& H,
                                     const std::string& N) {
   int h = H.size();
   int n = N.size();
-  std::vector<int> ret;
+  std::vector<int> rtrn;
   //
   std::vector<int> a = get_suffix_array(H);
   // binary search in sa
-  // print_v(a);
+  // print_v_int(a);
   // print_suffix_array(H, a);
 
   // search locates the starting position of the interval
-  int l = 0, r = h;
+  int l = 0, r = h, matched = -1;
   while (l < r) {
     int m = (l+r) / 2;
     int c = match_string(H.substr(a[m]), N);
-    if (c > 0) {
-      l = m + 1;
-    } else if (c < 0) {
-      r = m;
-    } else {  // matched
+    // printf("%d\n", c);
+
+    if (c == 0) {  // matched
+      matched = a[m];
+      rtrn.push_back(matched);
       break;
+    } else if (c > 0) {
+      l = m + 1;
+    } else {  // matched
+      r = m;
     }
   }
-  // // determines the end position
-  // int s = l; r = n;
-  // while (l < r) {
-  //   int m = (l+r) / 2;
-  //   int c = match_string(H.substr(m), N);
-  //   if (c < 0)
-  //     r = m;
-  //   else
-  //     l = m + 1;
-  // }
-  // printf("s: %d l: %d r: %d\n", s, l, r);
 
-  //
-  return ret;
+  if (matched >= 0) {
+    // find matched prefix on suffix
+    int up_matched = matched;
+    while (up_matched > 0) {
+      up_matched--;
+      int c = match_string(H.substr(a[up_matched]), N);
+      if (c == 0) {  // matched
+        rtrn.push_back(a[up_matched]);
+      } else {
+        up_matched = -1;
+      }
+    }
+
+    // find matched prefix on suffix
+    int dn_matched = matched;
+    while (dn_matched > 0 && dn_matched < h - 1) {
+      dn_matched++;
+      int c = match_string(H.substr(a[dn_matched]), N);
+      if (c == 0) {  // matched
+        rtrn.push_back(a[dn_matched]);
+      } else {
+        dn_matched = -1;
+      }
+    }
+  }
+
+  return rtrn;
 }
 
 int main() {
@@ -145,7 +174,7 @@ int main() {
 
   printf("%s\n", h.c_str());
   printf("%s\n", n.c_str());
-  print_v(r);
+  print_v_int(r);
   // printf("%d\n", match_string("tfoo", "myname"));
   return 0;
 }
