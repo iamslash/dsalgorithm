@@ -3,9 +3,17 @@
 
 #include <string>
 #include <vector>
+#include <deque>
 #include <algorithm>
 
 void print_v_int(const std::vector<int>& a) {
+  for (int i=0; i < a.size(); ++i) {
+    printf("%d ", a[i]);
+  }
+  printf("\n");
+}
+
+void print_deque_int(const std::deque<int>& a) {
   for (int i=0; i < a.size(); ++i) {
     printf("%d ", a[i]);
   }
@@ -108,11 +116,11 @@ int match_string(const std::string& H,
 
 // 0. 정확히 찾을때까지 이진 탐색한다.
 // 1. 찾았다면 위아래로 검색한다. 접미사 배열은 문자순으로 정렬되어 있다.
-std::vector<int> suffixarray_search(const std::string& H,
+std::deque<int> suffixarray_search(const std::string& H,
                                     const std::string& N) {
   int h = H.size();
   int n = N.size();
-  std::vector<int> rtrn;
+  std::deque<int> rtrn;
   //
   std::vector<int> a = get_suffix_array(H);
   // binary search in sa
@@ -127,8 +135,8 @@ std::vector<int> suffixarray_search(const std::string& H,
     // printf("%d\n", c);
 
     if (c == 0) {  // matched
-      matched = a[m];
-      rtrn.push_back(matched);
+      matched = m;
+      rtrn.push_front(a[matched]);
       break;
     } else if (c > 0) {
       l = m + 1;
@@ -170,11 +178,11 @@ int main() {
   std::string h = "hellomynameisslashmynameisnotfoo";
   std::string n = "myname";
 
-  std::vector<int> r = suffixarray_search(h, n);
+  std::deque<int> r = suffixarray_search(h, n);
 
   printf("%s\n", h.c_str());
   printf("%s\n", n.c_str());
-  print_v_int(r);
+  print_deque_int(r);
   // printf("%d\n", match_string("tfoo", "myname"));
   return 0;
 }
