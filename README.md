@@ -72,6 +72,8 @@
   - quadratic probing
 
 - Tree
+  - [TRAVERSAL](http://algospot.com/judge/problem/read/TRAVERSAL)
+  - [FORTRESS](http://algospot.com/judge/problem/read/FORTRESS)
   - binary search tree
   - red black tree
   - AVL tree
