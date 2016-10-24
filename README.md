@@ -72,7 +72,7 @@
   - quadratic probing
 
 - Tree
-  - binary tree
+  - binary search tree
   - red black tree
   - AVL tree
   - treap
