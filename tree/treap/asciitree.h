@@ -5,10 +5,12 @@
 //#include "treap.h"
 
 // struct TreapNode;
-// struct asciinode_struct;
+struct Tree;
+struct asciinode_struct;
 
 typedef struct asciinode_struct asciinode;
-typedef struct TreapNode Tree;
+typedef struct Tree Tree;
+// typedef struct TreapNode Tree;
 
 // asciinode * build_ascii_tree_recursive(Tree * t);
 // asciinode * build_ascii_tree(Tree * t);
