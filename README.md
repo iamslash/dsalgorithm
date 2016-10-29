@@ -12,8 +12,8 @@
  - f(n) = O(g(n)) means c · g(n) is an upper bound on f (n). Thus there exists some constant c such that f (n) is always ≤ c · g(n), for large enough n (i.e. , n ≥ n0 for some constant n0).
  - f(n) = Ω(g(n)) means c · g(n) is a lower bound on f(n). Thus there exists some constant c such that f(n) is always ≥ c · g(n), for all n ≥ n0.
  - f(n) = Θ(g(n)) means c1 · g(n) is an upper bound on f(n) and c2 · g(n) is a lower bound on f(n), for all n ≥ n0. Thus there exist constants c1 and c2 such that f (n) ≤ c1 · g(n) and f (n) ≥ c2 · g(n). This means that g(n) provides a nice, tight bound on f(n).
- - ![Graphic examples of the Θ, O, and Ω notations.](https://raw.githubusercontent.com/iamslash/dsalgorithm/master/img/Graphic%20examples%20of%20the%20%CE%98%2C%20O%2C%20and%20%E2%84%A6%20notations.jpeg)
- - ![Algorithm Graphs](https://raw.githubusercontent.com/iamslash/dsalgorithm/master/img/alg_graph.jpeg)
+ - ![Graphic examples of the Θ, O, and Ω notations.](https://raw.githubusercontent.com/iamslash/dsalgorithm/master/_img/Graphic%20examples%20of%20the%20%CE%98%2C%20O%2C%20and%20%E2%84%A6%20notations.jpeg)
+ - ![Algorithm Graphs](https://raw.githubusercontent.com/iamslash/dsalgorithm/master/_img/alg_graph.jpeg)
 
 
 # P, NP, NP Hard, NP Complete
@@ -78,12 +78,21 @@
   - red black tree
   - AVL tree
   - treap
+  - [NERD2](http://algospot.com/judge/problem/read/NERD2)
+  - [INSERTION](http://algospot.com/judge/problem/read/INSERTION)
   - priority queue with heap
+  - [RUNNINGMEDIAN](http://algospot.com/judge/problem/read/RUNNINGMEDIAN)
   - segment tree
+  - [MORDOR](http://algospot.com/judge/problem/read/MORDOR)
+  - [FAMILYTREE](http://algospot.com/judge/problem/read/FAMILYTREE)
+  - [MEASURETIME](http://algospot.com/judge/problem/read/MEASURETIME)
   - range minimum query (RMQ)
+  - [EDITORWARD](http://algospot.com/judge/problem/read/EDITORWARS)
   - fenwick tree
   - Union-Find
+  - [SOLONG](http://algospot.com/judge/problem/read/SOLONG)
   - trie
+  - [NH](http://algospot.com/judge/problem/read/NH)
   - suffix tree
   - Aho–Corasick algorithm
 
@@ -91,13 +100,32 @@
   - adjacency list graph
   - adjacency matrix graph
   - depth first search (DFS)
+  - [DICTIONARY](http://algospot.com/judge/problem/read/DICTIONARY)
+  - [WORDCHAIN](http://algospot.com/judge/problem/read/WORDCHAIN)
+  - [GALLERY](http://algospot.com/judge/problem/read/GALLERY)
+  - [MEETINGROOM](http://algospot.com/judge/problem/read/MEETINGROOM)
   - Eulerian circuit
   - breadth first search (BFS)
+  - [SORTGAME](http://algospot.com/judge/problem/read/SORTGAME)
+  - [CHILDRENDAY](http://algospot.com/judge/problem/read/CHILDRENDAY)
+  - [HANOI4B](http://algospot.com/judge/problem/read/HANOI4B)
   - Dijkstra algorithm
+  - [ROUTING](http://algospot.com/judge/problem/read/ROUTING)
+  - [FIRETRUCKS](http://algospot.com/judge/problem/read/FIRETRUCKS)
+  - [NTHLON](http://algospot.com/judge/problem/read/NTHLON)
+  - [TIMETRIP](http://algospot.com/judge/problem/read/TIMETRIP)
+  - [DRUNKEN](http://algospot.com/judge/problem/read/DRUNKEN)
+  - [PROMISES](http://algospot.com/judge/problem/read/PROMISES)
   - Bellman-Ford algorithm
   - Kruskal's minimum spanning tree 
+  - [LAN](http://algospot.com/judge/problem/read/LAN)
+  - [TPATH](http://algospot.com/judge/problem/read/TPATH)
   - Prim's minimum spanning tree
   - Ford-Fulkerson algorithm
+  - [MATCHFIX](http://algospot.com/judge/problem/read/MATCHFIX)
+  - [PROJECTS](http://algospot.com/judge/problem/read/PROJECTS)
+  - [BISHOPS](http://algospot.com/judge/problem/read/BISHOPS)
+  - [TRAPCARD](http://algospot.com/judge/problem/read/TRAPCARD)
   - Edmonds-Karp algorithm
   - Dinic algorithm
   - min-cost max-flow (MCMF)
