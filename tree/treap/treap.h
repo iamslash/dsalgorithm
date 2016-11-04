@@ -7,9 +7,16 @@
         #ifndef _Treap_H
         #define _Treap_H
 
-        struct TreapNode;
-        typedef struct TreapNode *Position;
-        typedef struct TreapNode *Treap;
+typedef struct TreapNode *Position;
+typedef struct TreapNode *Treap;
+
+struct TreapNode
+{
+  ElementType Element;
+  Treap       Left;
+  Treap       Right;
+  int         Priority;
+};
 
         Treap MakeEmpty( Treap T );
         Position Find( ElementType X, Treap T );

@@ -5,13 +5,6 @@
 #include "asciitree.h"
 #include "treap.h"
 
-typedef struct Tree Tree;
-
-struct Tree 
-{
-  Tree * left, * right;
-  int element;
-};
 
 Tree *make_empty(Tree *t)
 {
@@ -151,24 +144,6 @@ Tree * delete(int value, Tree * t)
 }
 
 
-//printing tree in ascii
-struct asciinode_struct
-{
-  asciinode * left, * right;
-
-  //length of the edge from this node to its children
-  int edge_length; 
-    
-  int height;      
-
-  int lablen;
-
-  //-1=I am left, 0=I am root, 1=right   
-  int parent_dir;   
-                         
-  //max supported unit32 in dec, 10 digits max
-  char label[11];  
-};
 
 
 #define MAX_HEIGHT 1000

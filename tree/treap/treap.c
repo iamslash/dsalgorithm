@@ -3,14 +3,6 @@
 #include "fatal.h"
 
 
-        struct TreapNode
-        {
-            ElementType Element;
-            Treap       Left;
-            Treap       Right;
-            int         Priority;
-        };
-
         Position NullNode = NULL;  /* Needs initialization */
 
 /* START: fig12_39.txt */
