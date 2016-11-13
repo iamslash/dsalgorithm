@@ -83,7 +83,7 @@
   - priority queue with heap
   - [RUNNINGMEDIAN](http://algospot.com/judge/problem/read/RUNNINGMEDIAN)
   - segment tree
-  - range minimum query (RMQ)
+    - range minimum query (RMQ)
   - [MORDOR](http://algospot.com/judge/problem/read/MORDOR)
   - [FAMILYTREE](http://algospot.com/judge/problem/read/FAMILYTREE)
   - fenwick tree  
