@@ -83,18 +83,19 @@
   - priority queue with heap
   - [RUNNINGMEDIAN](http://algospot.com/judge/problem/read/RUNNINGMEDIAN)
   - segment tree
+  - range minimum query (RMQ)
   - [MORDOR](http://algospot.com/judge/problem/read/MORDOR)
   - [FAMILYTREE](http://algospot.com/judge/problem/read/FAMILYTREE)
+  - fenwick tree  
   - [MEASURETIME](http://algospot.com/judge/problem/read/MEASURETIME)
-  - range minimum query (RMQ)
+  - Union-Find  
   - [EDITORWARD](http://algospot.com/judge/problem/read/EDITORWARS)
-  - fenwick tree
-  - Union-Find
+  - trie  
   - [SOLONG](http://algospot.com/judge/problem/read/SOLONG)
-  - trie
-  - [NH](http://algospot.com/judge/problem/read/NH)
+  - radix tree (patricia tree)
   - suffix tree
   - Aho–Corasick algorithm
+  - [NH](http://algospot.com/judge/problem/read/NH)
 
 - Graph
   - adjacency list graph
