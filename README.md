@@ -88,8 +88,8 @@
   - [FAMILYTREE](http://algospot.com/judge/problem/read/FAMILYTREE)
   - fenwick tree  
   - [MEASURETIME](http://algospot.com/judge/problem/read/MEASURETIME)
-  - Union-Find  
-  - [EDITORWARD](http://algospot.com/judge/problem/read/EDITORWARS)
+  - union-Find (merge-find)
+  - [EDITORWARS](http://algospot.com/judge/problem/read/EDITORWARS)
   - trie  
   - [SOLONG](http://algospot.com/judge/problem/read/SOLONG)
   - radix tree (patricia tree)
