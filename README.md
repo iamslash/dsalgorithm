@@ -92,6 +92,7 @@
   - [EDITORWARS](http://algospot.com/judge/problem/read/EDITORWARS)
   - trie  
   - [SOLONG](http://algospot.com/judge/problem/read/SOLONG)
+  - suffix trie
   - radix tree (patricia tree)
   - suffix tree
   - Aho–Corasick algorithm
