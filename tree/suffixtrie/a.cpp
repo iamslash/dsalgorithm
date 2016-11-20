@@ -1,6 +1,7 @@
 // Copyright (C) 2016 by iamslash
 
 #include <vector>
+#include <string>
 
 const int ALPHABETS = 26;
 int ToNumber(char ch) {
@@ -44,13 +45,14 @@ struct TrieNode {
 
 int main() {
   TrieNode* ptn = new TrieNode();
-  ptn->insert("hello");
-  ptn->insert("world");
-  TrieNode* ptn0 = ptn->find("hello");
-  TrieNode* ptn1 = ptn->find("ello");
+  std::string s = "BANANAS";
+  for (int i = 0; i < s.size(); ++i) {
+    // printf("%s\n", s.substr(i).c_str());
+    ptn->insert(s.substr(i).c_str());
+  }
+
+  TrieNode* ptn0  = ptn->find("NAS");
   if (ptn0)
-    printf("hello is in\n");
-  if (ptn1)
-    printf("ello is in\n");
+    printf("%s is in", "NAS");
   delete ptn;
 }
