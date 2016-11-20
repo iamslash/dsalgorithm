@@ -91,10 +91,10 @@
   - union-Find (merge-find)
   - [EDITORWARS](http://algospot.com/judge/problem/read/EDITORWARS)
   - trie  
-  - [SOLONG](http://algospot.com/judge/problem/read/SOLONG)
   - suffix trie
   - radix tree (patricia tree)
-  - suffix tree
+  - suffix tree  
+  - [SOLONG](http://algospot.com/judge/problem/read/SOLONG)
   - Aho–Corasick algorithm
   - [NH](http://algospot.com/judge/problem/read/NH)
 
