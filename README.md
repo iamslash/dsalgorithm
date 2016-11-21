@@ -289,9 +289,10 @@
   - [WITHDRAWAL](https://algospot.com/judge/problem/read/WITHDRAWAL)
 
 - Randomized
-
+  - 
 - Genetics
-
+  - 
+  
 # References
 - [c++로 배우는 알고리즘 동영상](https://www.youtube.com/watch?v=mzM3S5FtKuw&list=PLl5LpJCoD2mCIRn0Fkt8z07EK320ZmHgY)
 - [알고리즘 문제해결 전략](http://book.algospot.com/problems.html)
