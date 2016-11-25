@@ -130,7 +130,7 @@
   - [TRAPCARD](http://algospot.com/judge/problem/read/TRAPCARD)
   - Edmonds-Karp algorithm
   - Dinic algorithm
-  - min-cost max-flow (MCMF)
+  - MCMF (min-cost max-flow)
   - successive shortest path
   - Kuhn–Munkres algorithm
   - Kőnig's theorem
