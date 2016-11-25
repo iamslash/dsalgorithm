@@ -82,7 +82,7 @@
   - priority queue with heap
   - [RUNNINGMEDIAN](http://algospot.com/judge/problem/read/RUNNINGMEDIAN)
   - segment tree
-    - range minimum query (RMQ)
+    - rmq (range minimum query)
   - [MORDOR](http://algospot.com/judge/problem/read/MORDOR)
   - [FAMILYTREE](http://algospot.com/judge/problem/read/FAMILYTREE)
   - fenwick tree  
@@ -100,13 +100,14 @@
 - Graph
   - adjacency list graph
   - adjacency matrix graph
-  - depth first search (DFS)
+  - dfs (depth first search)
+  - topological sort
   - [DICTIONARY](http://algospot.com/judge/problem/read/DICTIONARY)
+  - eulerian circuit
   - [WORDCHAIN](http://algospot.com/judge/problem/read/WORDCHAIN)
   - [GALLERY](http://algospot.com/judge/problem/read/GALLERY)
   - [MEETINGROOM](http://algospot.com/judge/problem/read/MEETINGROOM)
-  - Eulerian circuit
-  - breadth first search (BFS)
+  - bfs (breadth first search)
   - [SORTGAME](http://algospot.com/judge/problem/read/SORTGAME)
   - [CHILDRENDAY](http://algospot.com/judge/problem/read/CHILDRENDAY)
   - [HANOI4B](http://algospot.com/judge/problem/read/HANOI4B)
