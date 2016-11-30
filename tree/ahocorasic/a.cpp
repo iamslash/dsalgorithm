@@ -98,15 +98,23 @@ std::vector<std::pair<int, int> > AhoCorasicSearch(
     const std::string& s, TrieNode* root) {
   std::vector<std::pair<int, int> > r;
   TrieNode* state = root;
+
   // 실제 반복문 내는 KMP와 별로 다를 것이 없다.
   for (int i = 0; i < s.size(); ++i) {
+    // printf(" %d\n", i);
+
     int chr = ToNumber(s[i]);
     while (state != root && state->children[chr] == NULL)
       state = state->fail;
+    // printf("  %d\n", i);
+
     if (state->children[chr])
       state = state->children[chr];
     for (int j = 0; j < state->output.size(); ++j)
       r.push_back(std::make_pair(i, state->output[j]));
+
+    // printf("   %d\n", i);
+    
   }  
   return r;
 }
@@ -114,13 +122,17 @@ std::vector<std::pair<int, int> > AhoCorasicSearch(
 int main() {
   // build trie
   TrieNode* ptn = new TrieNode();
-  ptn->insert("hello", 0);
-  ptn->insert("world", 1);
+  ptn->insert("HELLO", 0);
+  ptn->insert("WORLD", 1);
   ComputeFailFunc(ptn);
 
   // search
   std::vector<std::pair<int, int> > r = AhoCorasicSearch(
-      "ThisIsOurWorldHello", ptn);
+      "THISISHELLOWORLD", ptn);
+
+  for (auto it = r.begin(); it != r.end(); ++it) {
+    printf("%d %d\n", (*it).first, (*it).second);
+  }
 
   delete ptn;
 }
