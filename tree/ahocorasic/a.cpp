@@ -112,9 +112,7 @@ std::vector<std::pair<int, int> > AhoCorasicSearch(
       state = state->children[chr];
     for (int j = 0; j < state->output.size(); ++j)
       r.push_back(std::make_pair(i, state->output[j]));
-
     // printf("   %d\n", i);
-    
   }  
   return r;
 }
@@ -131,7 +129,7 @@ int main() {
       "THISISHELLOWORLD", ptn);
 
   for (auto it = r.begin(); it != r.end(); ++it) {
-    printf("%d %d\n", (*it).first, (*it).second);
+    printf("%d %d\n", (*it).first - 5 + 1, (*it).second);
   }
 
   delete ptn;
