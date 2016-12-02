@@ -33,24 +33,24 @@ struct TrieNode {
         delete children[i];
   }
   // 이 노드를 루트로 하는 트라이에 문자열 key를 추가한다.
-  void insert(const char* key, int order) {
+  void Insert(const char* key, int order) {
     if (*key == 0) {
       terminal = order;
     } else {
       int next = ToNumber(*key);
       if (children[next] == NULL)
         children[next] = new TrieNode();
-      children[next]->insert(key + 1, order);
+      children[next]->Insert(key + 1, order);
     }
   }
 
-  TrieNode* find(const char* key) {
+  TrieNode* Find(const char* key) {
     if (*key == 0)
       return this;
     int next = ToNumber(*key);
     if (children[next] == NULL)
       return NULL;
-    return children[next]->find(key + 1);
+    return children[next]->Find(key + 1);
   }
 };
 
@@ -118,18 +118,27 @@ std::vector<std::pair<int, int> > AhoCorasicSearch(
 }
 
 int main() {
-  // build trie
+  // needles
+  std::vector<std::string> v;
+  v.push_back("HELLO");
+  v.push_back("WORLD");
+
+  // build trie  
   TrieNode* ptn = new TrieNode();
-  ptn->insert("HELLO", 0);
-  ptn->insert("WORLD", 1);
+  for (int i = 0; i < v.size(); ++i) {
+    ptn->Insert(v[i].c_str(), i);    
+  }
   ComputeFailFunc(ptn);
 
   // search
   std::vector<std::pair<int, int> > r = AhoCorasicSearch(
       "THISISHELLOWORLD", ptn);
 
+  // print result
   for (auto it = r.begin(); it != r.end(); ++it) {
-    printf("%d %d\n", (*it).first - 5 + 1, (*it).second);
+    int idxterm = (*it).first;
+    int order = (*it).second;
+    printf("%d %d\n", order, idxterm - v[order].size() + 1);
   }
 
   delete ptn;
