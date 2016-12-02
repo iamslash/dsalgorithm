@@ -13,7 +13,8 @@ int N = 5;
 // adj[i][j] = i와 j사이의 간선의 수
 std::vector<std::vector<int> > adj;
 std::vector<bool> visited;
-std::vector<int> seen;
+// for topological sort
+// std::vector<int> seen;
 std::vector<int> order;
 
 // 무향 그래프의 인접 행렬 adj가 주어질 때 오일러 서킷을 계산한다.
@@ -50,16 +51,16 @@ void DfsAll() {
 
 std::vector<int> TopologicalSort() {
   int n = adj.size();
-  seen = std::vector<int>(n, 0);
+  // seen = std::vector<int>(n, 0);
   order.clear();
   for (int i = 0; i < n; ++i)
-    if (seen[i] == 0)
+    if (visited[i] == false)
       Dfs(i);
   std::reverse(order.begin(), order.end());
 
   for (int i = 0; i < n; ++i)
-    for (int j = j+1; j < n; ++j)
-      if (adj[order[j]][order[i]])
+    for (int j = i+1; j < n; ++j)
+      if (adj[order[j]][order[i]] > 0)
         return std::vector<int>();
 
   return order;
