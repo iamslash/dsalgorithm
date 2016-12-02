@@ -23,11 +23,12 @@ void PrintVInt(const std::vector<int>& v) {
   for (int i = 0; i < v.size(); ++i) {
     printf("%d ", v[i]);
   }
+  printf("\n");
 }
 
 void Dfs(int here) {
   // std::cout << "DFS visits " << here << endl;
-  printf("DFS visits %d\n", here);
+  // printf("DFS visits %d\n", here);
   visited[here] = true;
   // 모든 인접 정점을 순회하면서
   for (int i = 0; i < adj[here].size(); ++i) {
@@ -38,6 +39,7 @@ void Dfs(int here) {
   }
   // 더 이상 방문 할 정점이 없으니, 재귀 호출을 종료하고 이전 정점으로
   // 돌아간다.
+  order.push_back(here);
 }
 
 // 서로 연결되지 않은 graph까지 탐색한다.
@@ -58,23 +60,25 @@ std::vector<int> TopologicalSort() {
       Dfs(i);
   std::reverse(order.begin(), order.end());
 
+  // PrintVInt(order);
+
   for (int i = 0; i < n; ++i)
     for (int j = i+1; j < n; ++j)
-      if (adj[order[j]][order[i]] > 0)
+      if (order.size() > i && order.size() > j && adj[order[j]][order[i]] > 0)
         return std::vector<int>();
 
   return order;
 }
-  
 
 int main() {
     adj = std::vector<std::vector<int> >(N, std::vector<int>(N, 0));
     // visited 를 모두 false로 초기화한다.
-    visited = std::vector<bool>(adj.size(), false);
+    visited = std::vector<bool>(N, false);
 
     adj[0][1] = 1;
     adj[1][2] = 1;
     adj[1][3] = 1;
+    adj[2][3] = 1;
     adj[2][3] = 1;
 
     std::vector<int> c = TopologicalSort();

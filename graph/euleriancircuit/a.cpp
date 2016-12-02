@@ -18,6 +18,7 @@ void PrintVInt(const std::vector<int>& v) {
   for (int i = 0; i < v.size(); ++i) {
     printf("%d ", v[i]);
   }
+  printf("\n");
 }
 
 void GetEulerCircuit(int here, std::vector<int>& circuit) {
@@ -38,6 +39,8 @@ int main() {
     adj[1][2] = 1;
     adj[2][3] = 1;
     adj[2][0] = 1;
+    adj[3][4] = 1;
+    adj[4][0] = 1;
 
     std::vector<int> c;
     GetEulerCircuit(0, c);
