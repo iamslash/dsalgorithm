@@ -33,10 +33,10 @@ struct TrieNode {
         delete children[i];
   }
   // 이 노드를 루트로 하는 트라이에 문자열 key를 추가한다.
-  void Insert(const char* key, int order) {
-    if (*key == 0) {
-      terminal = order;
-    } else {
+  void Insert(const char* key, int order) {    
+    if (*key == 0) {  // base condition
+      terminal = order;    
+    } else {  // recursion
       int next = ToNumber(*key);
       if (children[next] == NULL)
         children[next] = new TrieNode();
@@ -44,14 +44,14 @@ struct TrieNode {
     }
   }
 
-  TrieNode* Find(const char* key) {
-    if (*key == 0)
-      return this;
-    int next = ToNumber(*key);
-    if (children[next] == NULL)
-      return NULL;
-    return children[next]->Find(key + 1);
-  }
+  // TrieNode* Find(const char* key) {
+  //   if (*key == 0)
+  //     return this;
+  //   int next = ToNumber(*key);
+  //   if (children[next] == NULL)
+  //     return NULL;
+  //   return children[next]->Find(key + 1);
+  // }
 };
 
 // 트라이가 주어질 때 각 노드에 대해 실패 연결과 출력 문자열 목록을
@@ -59,6 +59,7 @@ struct TrieNode {
 void ComputeFailFunc(TrieNode* root) {
   // 루트에서부터 시작해 한 단계씩 아래로 내려가며 각 노드의 실패
   // 연결을 계산한다.
+  // queue for BFS
   std::queue<TrieNode*> q;
   // 루트의 실패 연결은 자기 자신
   root->fail = root;
@@ -107,9 +108,12 @@ std::vector<std::pair<int, int> > AhoCorasicSearch(
     while (state != root && state->children[chr] == NULL)
       state = state->fail;
     // printf("  %d\n", i);
-
+    
+    // explorer children
     if (state->children[chr])
       state = state->children[chr];
+
+    // found it
     for (int j = 0; j < state->output.size(); ++j)
       r.push_back(std::make_pair(i, state->output[j]));
     // printf("   %d\n", i);
