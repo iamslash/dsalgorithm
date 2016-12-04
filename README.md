@@ -104,7 +104,13 @@
   - topological sort
   - [DICTIONARY](http://algospot.com/judge/problem/read/DICTIONARY)
   - eulerian circuit
+  - eulerian trail
   - [WORDCHAIN](http://algospot.com/judge/problem/read/WORDCHAIN)
+  - dfs spanning tree
+    - tree edge
+    - forward edge
+    - back edge
+    - cross edge
   - [GALLERY](http://algospot.com/judge/problem/read/GALLERY)
   - [MEETINGROOM](http://algospot.com/judge/problem/read/MEETINGROOM)
   - bfs (breadth first search)
