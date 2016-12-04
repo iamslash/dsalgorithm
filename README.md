@@ -104,6 +104,7 @@
   - topological sort
   - [DICTIONARY](http://algospot.com/judge/problem/read/DICTIONARY)
   - eulerian circuit
+    - DAG (directed asyclick graph)
   - eulerian trail
   - [WORDCHAIN](http://algospot.com/judge/problem/read/WORDCHAIN)
   - dfs spanning tree
