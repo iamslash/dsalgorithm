@@ -112,11 +112,13 @@
     - forward edge
     - back edge
     - cross edge
-  - bridge  
-  - [GALLERY](http://algospot.com/judge/problem/read/GALLERY)
+  - cut vertex
+  - bridge
   - tarjan's algorithm
-    - scc (strongly connected component)
+    - scc (strongly connected components)  
+  - [GALLERY](http://algospot.com/judge/problem/read/GALLERY)
   - [MEETINGROOM](http://algospot.com/judge/problem/read/MEETINGROOM)
+    - sat (SATisfiability, boolean satisfiability problem)
   - bfs (breadth first search)
   - [SORTGAME](http://algospot.com/judge/problem/read/SORTGAME)
   - [CHILDRENDAY](http://algospot.com/judge/problem/read/CHILDRENDAY)
