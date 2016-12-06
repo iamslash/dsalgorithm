@@ -112,7 +112,10 @@
     - forward edge
     - back edge
     - cross edge
+  - bridge  
   - [GALLERY](http://algospot.com/judge/problem/read/GALLERY)
+  - tarjan's algorithm
+    - scc (strongly connected component)
   - [MEETINGROOM](http://algospot.com/judge/problem/read/MEETINGROOM)
   - bfs (breadth first search)
   - [SORTGAME](http://algospot.com/judge/problem/read/SORTGAME)
