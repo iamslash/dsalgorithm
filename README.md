@@ -112,8 +112,9 @@
     - forward edge
     - back edge
     - cross edge
-  - cut vertex
-  - bridge
+  - finding cut vertex
+    - biconnected components
+  - finding bridge
   - tarjan's algorithm
     - scc (strongly connected components)  
   - [GALLERY](http://algospot.com/judge/problem/read/GALLERY)
