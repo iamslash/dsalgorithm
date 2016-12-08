@@ -115,9 +115,9 @@
   - cut vertex (articulation point)
     - biconnected components
   - bridge
-  - scc (strongly connected components)
-    - condensation
   - tarjan's algorithm
+    - scc (strongly connected components)
+      - condensation
   - [GALLERY](http://algospot.com/judge/problem/read/GALLERY)
   - [MEETINGROOM](http://algospot.com/judge/problem/read/MEETINGROOM)
     - sat (SATisfiability, boolean satisfiability problem)
