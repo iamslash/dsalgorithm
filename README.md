@@ -112,9 +112,9 @@
     - forward edge
     - back edge
     - cross edge
-  - finding cut vertex
+  - cut vertex (articulation point)
     - biconnected components
-  - finding bridge
+  - bridge
   - scc (strongly connected components)
     - condensation
   - tarjan's algorithm
