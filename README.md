@@ -119,6 +119,7 @@
     - scc (strongly connected components)
       - condensation
   - [GALLERY](http://algospot.com/judge/problem/read/GALLERY)
+    - dominating set
   - [MEETINGROOM](http://algospot.com/judge/problem/read/MEETINGROOM)
     - sat (SATisfiability, boolean satisfiability problem)
   - bfs (breadth first search)
