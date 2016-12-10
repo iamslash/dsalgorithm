@@ -123,6 +123,9 @@
     - unrooted tree
   - [MEETINGROOM](http://algospot.com/judge/problem/read/MEETINGROOM)
     - sat (SATisfiability, boolean satisfiability problem)
+    - conjunctive normal form
+    - 2-sat
+    - implication graph
   - bfs (breadth first search)
   - [SORTGAME](http://algospot.com/judge/problem/read/SORTGAME)
   - [CHILDRENDAY](http://algospot.com/judge/problem/read/CHILDRENDAY)
