@@ -129,6 +129,7 @@
   - bfs (breadth first search)
   - [SORTGAME](http://algospot.com/judge/problem/read/SORTGAME)
   - [CHILDRENDAY](http://algospot.com/judge/problem/read/CHILDRENDAY)
+  - ids (iteratively deep searching)
   - [HANOI4B](http://algospot.com/judge/problem/read/HANOI4B)
   - Dijkstra algorithm
   - [ROUTING](http://algospot.com/judge/problem/read/ROUTING)
