@@ -50,7 +50,6 @@ std::vector<int> Bfs(int start) {
 }
 
 int main() {
-  adj.clear();
   adj.resize(N);
   adj[0].push_back(1);
   adj[1].push_back(2);
