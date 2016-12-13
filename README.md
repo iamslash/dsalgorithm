@@ -40,7 +40,7 @@
 
 - recursion
   - tower of hanoi
-  - fibonacci
+  - fibonacci number
 
 - Partial Sum
   - [CHRISTMAS](https://algospot.com/judge/problem/read/CHRISTMAS)
@@ -133,8 +133,10 @@
   - bfs (breadth first search)
   - [SORTGAME](http://algospot.com/judge/problem/read/SORTGAME)
   - [CHILDRENDAY](http://algospot.com/judge/problem/read/CHILDRENDAY)
-  - ids (iteratively deep searching)
-  - [HANOI4B](http://algospot.com/judge/problem/read/HANOI4B)
+  - 15 puzzle - bfs
+  - 15 puzzle - bidrectional search
+  - 15 puzzle - ids (iteratively deep searching)
+  - [HANOI4](http://algospot.com/judge/problem/read/HANOI4)
   - Dijkstra algorithm
   - [ROUTING](http://algospot.com/judge/problem/read/ROUTING)
   - [FIRETRUCKS](http://algospot.com/judge/problem/read/FIRETRUCKS)
