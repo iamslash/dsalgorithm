@@ -40,4 +40,4 @@ if __name__ == "__main__":
 
     for i in range(g_n):
         if g_discovered[i] == -1:
-            Dfs(0)
+            Dfs(i)
