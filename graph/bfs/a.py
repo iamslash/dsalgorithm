@@ -5,9 +5,16 @@
 import sys
 
 adj = []
-for i in range(5):
-    adj.append([])
+discovered = []
+counter = 0
 
+def BuildGraph(n):
+    adj = []    
+    for i in range(n):
+        adj.append([])
+    discovered = []
+    counter = 0
+    
 # 넓이 우선 탐색
 def Bfs(n):
     discovered = l
