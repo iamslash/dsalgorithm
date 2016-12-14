@@ -38,10 +38,6 @@
   - [GRADUATION](https://algospot.com/judge/problem/read/GRADUATION)
   - [Bit Twiddling Hacks](http://graphics.stanford.edu/~seander/bithacks.html)
 
-- recursion
-  - tower of hanoi
-  - fibonacci number
-
 - Partial Sum
   - [CHRISTMAS](https://algospot.com/judge/problem/read/CHRISTMAS)
   
@@ -238,6 +234,10 @@
     - [geometry algorithms](http://geomalgorithms.com/)
 
 # Algorithm Design
+
+- recursion
+  - tower of hanoi
+  - fibonacci number
 
 - Brute Force
   - [BOGGLE](https://algospot.com/judge/problem/read/BOGGLE)
