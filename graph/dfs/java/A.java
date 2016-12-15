@@ -2,32 +2,45 @@
 
 // > java MainApp
 
-import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 // > java A
 public class A {
 
   private int N;
-  private List<List<Integer>> adj = new ArrayList<List<Integer>>();
+  private ArrayList<ArrayList<Integer>> adj = new ArrayList<ArrayList<Integer>>();
   private ArrayList<Integer> discovered;
   private int counter;
   
 
   private void BuildGraph(int n) {
+    adj.clear();
+    adj.ensureCapacity(n);
+    discovered.clear();
+    discovered.ensureCapacity(n);
+    for (Integer i : discovered) discovered.set(i, -1);
+    counter = 0;
 
+    adj.get(0).add(1);
+    adj.get(1).add(2);
+    adj.get(1).add(3);
+    adj.get(2).add(4);
   }
   
   private void Dfs(int here) {
-
+    discovered.set(here, counter++);
+    for (int i = 0; i < adj.get(here).size(); ++i) {
+      int there = adj.get(here).get(i);
+      if (discovered.get(there) == -1)
+        Dfs(there);
+    }
   }
   
   public void Solve() {
     BuildGraph(N);
     for (int i = 0; i < N; ++i) {
-      if (discovered[new Integer(i)] == -1)
-        Dfs();
+      if (discovered.get(i) == -1)
+        Dfs(i);
     }
   }
   
