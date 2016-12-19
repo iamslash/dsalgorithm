@@ -34,7 +34,7 @@
 
 - Bitmask
   - Bitmask set
-  - maximal subset
+  - maximal stable set
   - [GRADUATION](https://algospot.com/judge/problem/read/GRADUATION)
   - [Bit Twiddling Hacks](http://graphics.stanford.edu/~seander/bithacks.html)
 
