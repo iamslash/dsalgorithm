@@ -33,7 +33,20 @@
 # Algorithms
 
 - Bitmask
-  - Bitmask set
+  - bitmask set
+    - null set, full set
+    - add a element
+    - check a element included
+    - dell a element
+    - toggle a element
+    - set operation (added, intersection, removed, toggled)
+    - size of set (__builtin_popcount())
+    - find a min element (__builtin_ctz())
+    - del a min element
+    - traversal of set
+  - sieve of eratosthenes
+  - 15 puzzle
+  - priority queue with O(1)
   - maximal stable set
   - [GRADUATION](https://algospot.com/judge/problem/read/GRADUATION)
   - [Bit Twiddling Hacks](http://graphics.stanford.edu/~seander/bithacks.html)
