@@ -2,21 +2,51 @@
 
 #include <cstdio>
 #include <cstdint>
+#include <cstring>
+#include <cmath>
 
-int N;
-unsigned char sieve[(MAX_N + 7) / 8];
+#define MAX_N 987654321
+
+unsigned char SIEVE[(MAX_N + 7) / 8];
 
 // k is prime ???
 inline bool IsPrime(int k) {
-  return sieve[k >> 3] & (1 << (k & 7));
+  return SIEVE[k >> 3] & (1 << (k & 7));
 }
 
+// turn off the bit
 // k is not prime
 inline void SetComposite(int k) {
-  sieve[k >> 3] &= ~(1 << (k & 7));
+  SIEVE[k >> 3] &= ~(1 << (k & 7));
+}
+
+void PrintSieve(int n) {
+  for (int i = 0; i < n; ++i) {
+    if (IsPrime(i))
+        printf("%d ", i);
+  }
+  printf("\n");
+}
+
+void EratosThenes(int n) {
+  memset(SIEVE, 0xFF, sizeof(SIEVE));
+  SetComposite(0);
+  SetComposite(1);
+  int sqrtn = int(sqrt(n));
+  for (int i = 2; i <= sqrtn; ++i) {
+    if (IsPrime(i)) {
+      for (int j = i * i; j <= n; j += i) {
+        SetComposite(j);
+      }
+    }
+  }
+  printf("\n");
 }
 
 int main()
 {
-
+  int n = 1024;
+  EratosThenes(n);
+  PrintSieve(n);
+  return 0;
 }
