@@ -3,24 +3,49 @@
 #include <cstdio>
 #include <cstdint>
 
-// get the value which is wrote on mask at index
-// index is 15 puzzle's index
-int get(uint64_t mask, int index) {
-  return (mask >> (index << 2)) & 15;
+#define MAX_N 65535
+
+int N;
+int explodes[MAX_N] = {0,};
+
+bool IsStable(int set) {
+  for (int i = 0; i < N; ++i) {
+    // explodes[i]에 세팅된 비트가 set에 존재하는가???
+    if ((set & (1 << i)) && (set & explodes[i]))
+      return false;
+  }
+  return true;
 }
 
-// set the value which is on mask at index
-uint64_t set(uint64_t mask, int index, uint64_t value) {
-  return mask & ~(15LL << (index << 2)) | (value << (index << 2));
+int CountStableSet() {
+  int r = 0;
+
+  for (int set = 1; set < (1 << N); ++set) {
+    if (!IsStable(set))
+      continue;
+    bool can_extend = false;
+    for (int add = 0; add < N; ++add) {
+      if ((set & (1 << add)) == 0 && (explodes[add] & set) == 0) {
+        can_extend = true;
+        break;
+      }
+    }
+    if (!can_extend)
+      ++r;
+  }
+
+  return r;
 }
 
 int main()
 {
-  uint64_t puzzle = 0x00;
-  for (int i = 0; i < 16; ++i) {
-    puzzle = set(puzzle, i, i);
-  }
-  for (int i = 0; i < 16; ++i) {
-    printf("[%2d] %2d\n", i, get(puzzle, i));
-  }
+  N = 1;
+  explodes[0] = 0x03;
+
+  int element = 0x02;
+  printf("%x is %d\n", element, IsStable(element));
+  element = 0x09;
+  printf("%x is %d\n", element, IsStable(element));
+
+  return 0;
 }
