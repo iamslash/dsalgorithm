@@ -44,7 +44,6 @@
     - find a min element (__builtin_ctz())
     - del a min element
     - traversal of set
-    
   - sieve of eratosthenes
   - 15 puzzle
   - priority queue with O(1)
