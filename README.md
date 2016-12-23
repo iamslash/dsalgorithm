@@ -52,6 +52,10 @@
   - [Bit Twiddling Hacks](http://graphics.stanford.edu/~seander/bithacks.html)
 
 - Partial Sum
+  - partial sum, range sum
+  - variance
+  - grid sum
+  - range which is close to zero
   - [CHRISTMAS](https://algospot.com/judge/problem/read/CHRISTMAS)
   
 - List
