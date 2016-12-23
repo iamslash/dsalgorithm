@@ -3,6 +3,16 @@
 #include <cstdio>
 #include <cstdint>
 #include <vector>
+#include <algorithm>
+
+#define MAXN 987654321
+
+void PrintVInt(const std::vector<int>& a) {
+  for (int i = 0; i < a.size(); ++i) {
+    printf("%d ", a[i]);
+  }
+  printf("\n");
+}
 
 std::vector<int> PartialSum(const std::vector<int>& a) {
   std::vector<int> r(a.size());
@@ -19,12 +29,26 @@ int RangeSum(const std::vector<int>& psum, int a, int b) {
   return psum[b] - psum[a - 1];
 }
 
+int CloseToZero(std::vector<int>& psum) {
+  std::sort(psum.begin(), psum.end());
+
+  int r = MAXN;
+  
+  for (int i = 1; i < psum.size(); ++i) {
+    r = std::min(r, psum[i] - psum[i-1]);
+  }
+
+  return r;
+}
+
 int main()
 {
-  std::vector<int> a = {1,2,3,4,5,6,7};
-
+  std::vector<int> a = {-14,7,2,3,-8,4,-6,8,9,11};
   std::vector<int> psum = PartialSum(a);
-  printf("%d\n", RangeSum(psum, 2, 4));
+
+  // PrintVInt(psum);
+  
+  printf("%d\n", CloseToZero(psum));
 
   return 0;
 }
