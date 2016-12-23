@@ -59,6 +59,7 @@
   - [CHRISTMAS](https://algospot.com/judge/problem/read/CHRISTMAS)
   
 - List
+  - singly linked list
   - [JOSEPHUS](https://algospot.com/judge/problem/read/JOSEPHUS)
   - [Dancing Links](https://arxiv.org/abs/cs/0011047)
 
