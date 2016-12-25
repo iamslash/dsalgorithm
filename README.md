@@ -216,6 +216,7 @@
   - prime number, composite number
   - prime factorization
   - sieve of eratosthenes
+  - prime factorization with sive of eratosthenes
   - [PASS486](https://algospot.com/judge/problem/read/PASS486)
   - Euclidean algorithm
   - [POTION](https://algospot.com/judge/problem/read/POTION)
