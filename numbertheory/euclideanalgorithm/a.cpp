@@ -4,9 +4,10 @@
 #include <cstdint>
 #include <cstring>
 #include <cmath>
+#include <algorithm>
 
 int Gcd1(int p, int q) {
-  // printf("%d %d\n", p, q);
+  printf("- %d %d\n", p, q);
   if (p < q)
     std::swap(p, q);
   if (q == 0)
@@ -15,16 +16,18 @@ int Gcd1(int p, int q) {
 }
 
 int Gcd2(int p, int q) {
-  if (q == 0) return p;
+  printf("+ %d %d\n", p, q);
+  if (q == 0)
+    return p;
   return Gcd2(q, p % q);
 }
 
 
 int main() {
   printf("%d\n", Gcd1(128, 48));
-  printf("%d\n", Gcd1(37, 11));
+  // printf("%d\n", Gcd1(37, 11));
   printf("%d\n", Gcd2(128, 48));
-  printf("%d\n", Gcd2(37, 11));
+  // printf("%d\n", Gcd2(37, 11));
   // printf("%d\n", Gcd2(128, 48));
   return 0;
 }
