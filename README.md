@@ -1,8 +1,12 @@
 # Algorithm Proof
 
-- Counter Example
 - Mathmatical Induction
-- Contradiction
+- Proof by Contradiction
+- Direct Proof
+- Contrapositive Proof
+- Existence Proof
+- Proof by Counter Example
+- if and only if proof
 
 # Algorithm Analysis
 
