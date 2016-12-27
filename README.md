@@ -225,6 +225,8 @@
   - Euclidean algorithm
   - [POTION](https://algospot.com/judge/problem/read/POTION)
   - modular arithmetic
+    - add, sub, mul
+    - div
   - extended euclidean algorithm
   - chinese remainder theorem
   - lucas' theorem
