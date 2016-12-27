@@ -1,10 +1,12 @@
 # 
 CC  = c99
-CXX = g++
+CXX = g++ -std=c++11
 
 all: TAGS a.out
 
-a.out: a.o list.o
+a.exe: a.o 
+	$(CXX) $^ $(LDFLAGS) -o $@
+a.out: a.o 
 	$(CXX) $^ $(LDFLAGS) -o $@
 
 %.o: %.cpp

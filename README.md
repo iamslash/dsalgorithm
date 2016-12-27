@@ -61,9 +61,14 @@
   - grid sum
   - range which is close to zero
   - [CHRISTMAS](https://algospot.com/judge/problem/read/CHRISTMAS)
-  
+
+- Set
+  - ???
+
 - List
+  - dynamic array
   - singly linked list
+  - doubly linked list
   - [JOSEPHUS](https://algospot.com/judge/problem/read/JOSEPHUS)
   - [Dancing Links](https://arxiv.org/abs/cs/0011047)
 
@@ -71,9 +76,16 @@
   - [FENCE](http://algospot.com/judge/problem/read/FENCE)
   - [BRACKETS2](http://algospot.com/judge/problem/read/BRACKETS2)
 
-- Queue, deque
+- Queue
   - [JOSEPHUS](https://algospot.com/judge/problem/read/JOSEPHUS)
   - [ITES](http://algospot.com/judge/problem/read/ITES)
+
+- Deque
+  - ???
+
+- Map (Hash)
+  - seperate chaining
+  - quadratic probing
 
 - String
   - Boyer Moore algorithm
@@ -88,10 +100,6 @@
   - [Kasai, T. et al., "Linear-Time Longest-Common-Prefix Computation in Suffix Arrays and Its Applications"](http://alumni.cs.ucr.edu/~rakthant/cs234/01_KLAAP_Linear%20time%20LCP.PDF)
   - [Rabin-Karp algorithm](https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm)
   - Aho–Corasick algorithm
-
-- Hash
-  - seperate chaining
-  - quadratic probing
 
 - Tree
   - [TRAVERSAL](http://algospot.com/judge/problem/read/TRAVERSAL)
