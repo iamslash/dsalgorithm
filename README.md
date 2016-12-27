@@ -79,6 +79,8 @@
 - Queue
   - [JOSEPHUS](https://algospot.com/judge/problem/read/JOSEPHUS)
   - [ITES](http://algospot.com/judge/problem/read/ITES)
+    - online algorithm
+    - offline algorithm
 
 - Deque
   - ???
