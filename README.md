@@ -86,8 +86,12 @@
   - ???
 
 - Map (Hash)
-  - seperate chaining
-  - quadratic probing
+  - open hashing
+    - seperate chaining
+  - closed hashing
+    - linear probing
+    - quadratic probing
+    - double hashing
 
 - String
   - Boyer Moore algorithm
