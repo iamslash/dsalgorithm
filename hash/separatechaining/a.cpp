@@ -16,6 +16,10 @@ template <class TYPE, class HASH> class ChainMap {
   };
  public:
   ChainMap(const HASH& hash, int n_size = 100) {
+    m_p_arr = new std::list<TYPE>[n_size];    
+    m_hash = hash;
+    m_n_arr_size = n_size;
+    m_n_cnt = 0;
   }
   ~ChainMap() {
     delete[] m_p_arr;
@@ -27,7 +31,7 @@ template <class TYPE, class HASH> class ChainMap {
       m_p_arr[i].clear();
     }
   }
-  bool Find(const TYPE& key, TYPE& value) const {
+  bool Find(const TYPE& key) const {
     MapPos pos;
 
     pos.key = key;
