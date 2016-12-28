@@ -90,6 +90,7 @@
     - linear probing (open addressing)
     - quadratic probing
     - double hashing
+    - [A Simple Fraction](http://www.practice.geeksforgeeks.org/problem-page.php?pid=514)
 
 - String
   - Boyer Moore algorithm
