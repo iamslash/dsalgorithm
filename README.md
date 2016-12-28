@@ -86,10 +86,8 @@
   - ???
 
 - Map (Hash)
-  - open hashing
     - seperate chaining
-  - closed hashing
-    - linear probing
+    - linear probing (open addressing)
     - quadratic probing
     - double hashing
 
