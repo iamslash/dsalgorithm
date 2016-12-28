@@ -75,6 +75,8 @@
 - Stack 
   - [FENCE](http://algospot.com/judge/problem/read/FENCE)
   - [BRACKETS2](http://algospot.com/judge/problem/read/BRACKETS2)
+  - [Longest valid Parentheses](http://www.practice.geeksforgeeks.org/problem-page.php?pid=1247)
+  - [Maximum of minimum for every window size](http://www.practice.geeksforgeeks.org/problem-page.php?pid=170)
 
 - Queue
   - [JOSEPHUS](https://algospot.com/judge/problem/read/JOSEPHUS)
