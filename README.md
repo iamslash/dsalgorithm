@@ -165,6 +165,7 @@
     - 2-sat
     - implication graph
   - bfs (breadth first search)
+  - bfs shortest path
   - [SORTGAME](http://algospot.com/judge/problem/read/SORTGAME)
   - [CHILDRENDAY](http://algospot.com/judge/problem/read/CHILDRENDAY)
   - 15 puzzle - bfs

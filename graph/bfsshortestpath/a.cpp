@@ -22,10 +22,16 @@ void PrintVInt(const std::vector<int>& v) {
   printf("\n");
 }
 
-std::vector<int> GetShortestPath(const std::vector<int>& parent) {
-  std::vector<int> r;
-
-  
+std::vector<int> GetShortestPath(int v, const std::vector<int>& parent) {
+  std::vector<int> r(1, v);
+  int cnt = 0;
+  while (parent[v] >= 0) {
+    // printf("%d\n", parent[v]);
+    v = parent[v];
+    r.push_back(v);
+    if (++cnt >= 10)
+      break;
+  }
   
   return r;
 }
@@ -33,8 +39,8 @@ std::vector<int> GetShortestPath(const std::vector<int>& parent) {
 // start에서 시작해 그래프를 너비 우선 탐새갛고 각 정점의 방문 순서를 반환한다.
 std::vector<int> Bfs(int start) {
   // 각 정점의 방문 여부
-  std::vector<bool> distance(adj.size(), -1);
-  std::vector<bool> parent(adj.size(), -1);
+  std::vector<int> distance(adj.size(), -1);
+  std::vector<int> parent(adj.size(), -1);
   // 방문할 정점 목록을 유지하는 큐
   std::queue<int> q;
   // 정점의 방문 순서
@@ -59,7 +65,8 @@ std::vector<int> Bfs(int start) {
       }
     }
   }
-  return order;
+  // return order;
+  return parent;
 }
 
 int main() {
@@ -70,8 +77,8 @@ int main() {
   adj[1].push_back(3);
   adj[2].push_back(3);
 
-  std::vector<int> r = Bfs(0);
-
+  // Bfs(0);
+  std::vector<int> r = GetShortestPath(3, Bfs(0));
   PrintVInt(r);
 
   return 0;
