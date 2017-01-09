@@ -173,13 +173,14 @@
   - 15 puzzle - ids (iteratively deep searching)
   - [HANOI4](http://algospot.com/judge/problem/read/HANOI4)
   - Dijkstra algorithm
+  - Dijkstra algorithm without priority queue
   - [ROUTING](http://algospot.com/judge/problem/read/ROUTING)
   - [FIRETRUCKS](http://algospot.com/judge/problem/read/FIRETRUCKS)
   - [NTHLON](http://algospot.com/judge/problem/read/NTHLON)
+  - Bellman-Ford algorithm
   - [TIMETRIP](http://algospot.com/judge/problem/read/TIMETRIP)
   - [DRUNKEN](http://algospot.com/judge/problem/read/DRUNKEN)
   - [PROMISES](http://algospot.com/judge/problem/read/PROMISES)
-  - Bellman-Ford algorithm
   - Kruskal's minimum spanning tree 
   - [LAN](http://algospot.com/judge/problem/read/LAN)
   - [TPATH](http://algospot.com/judge/problem/read/TPATH)
