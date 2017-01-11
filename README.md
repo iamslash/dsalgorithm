@@ -92,6 +92,7 @@
     - linear probing (open addressing)
     - quadratic probing
     - double hashing
+    - consistent hashing
     - [A Simple Fraction](http://www.practice.geeksforgeeks.org/problem-page.php?pid=514)
 
 - String
