@@ -41,7 +41,7 @@ void Dfs(State here, const State& end, int steps) {
 }
 
 int Ids(State start, State end, int growthstep) {
-  for (int limit = 4; ;limit += growthstep) {
+  for (int limit = 4; ; limit += growthstep) {
     best = limit + 1;
     Dfs(start, end, 0);
     if (best <= limit)

@@ -180,12 +180,13 @@
   - [NTHLON](http://algospot.com/judge/problem/read/NTHLON)
   - Bellman-Ford algorithm
   - [TIMETRIP](http://algospot.com/judge/problem/read/TIMETRIP)
+  - Floyd algorithm
   - [DRUNKEN](http://algospot.com/judge/problem/read/DRUNKEN)
   - [PROMISES](http://algospot.com/judge/problem/read/PROMISES)
   - Kruskal's minimum spanning tree 
+  - Prim's minimum spanning tree
   - [LAN](http://algospot.com/judge/problem/read/LAN)
   - [TPATH](http://algospot.com/judge/problem/read/TPATH)
-  - Prim's minimum spanning tree
   - Ford-Fulkerson algorithm
   - [MATCHFIX](http://algospot.com/judge/problem/read/MATCHFIX)
   - [PROJECTS](http://algospot.com/judge/problem/read/PROJECTS)
