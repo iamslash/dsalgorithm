@@ -5,51 +5,79 @@
 #include <map>
 #include <queue>
 #include <cstdlib>
+#include <cstring>
 
-int best;
+#define MAX_INT 987654321
+#define MAX_V 6
 
-class State {
- public:
-  std::vector<State> GetAdj() const;
-  bool operator < (const State& rhs) const;
-  bool operator == (const State& rhs) const;
-};
-typedef std::map<State, int> StateMap;
+int V = MAX_V;
 
-int GetSign(int x) {
-  if (!x)
-    return 0;
-  return x > 0 ? 1 : -1;
+int adj[MAX_V][MAX_V];
+int via[MAX_V][MAX_V];
+
+void PrintVInt(const std::vector<int>& v) {
+  for (int i = 0; i < v.size(); ++i)
+    printf("%d ", v[i]);
+  printf("\n");
 }
 
-int Incr(int x) {
-  if (x < 0)
-    return x - 1;
-  return x + 1;
-}
-
-void Dfs(State here, const State& end, int steps) {
-  if (steps >= best)
-    return;
-  if (here == end) {
-    best = steps;
-    return;
+void floyd() {
+  for (int i = 0; i < V; ++i)
+    adj[i][i] = 0;
+  memset(via, -1, sizeof(via));
+  for (int k = 0; k < V; ++k) {
+    for (int i = 0; i < V; ++i) {
+      for (int j = 0; j < V; ++j) {
+        if (adj[i][j] > adj[i][k] + adj[k][j]) {
+          via[i][j] = k;
+          adj[i][j] = adj[i][k] + adj[k][j];
+        }
+      }
+    }
   }
-  std::vector<State> adj = here.GetAdj();
-  for (int i = 0; i < adj.size(); ++i)
-    Dfs(adj[i], end, steps + 1);
 }
 
-int Ids(State start, State end, int growthstep) {
-  for (int limit = 4; ; limit += growthstep) {
-    best = limit + 1;
-    Dfs(start, end, 0);
-    if (best <= limit)
-      return best;
+void reconstruct(int u, int v, std::vector<int>& path) {
+  if (via[u][v] == -1) {
+    path.push_back(u);
+    if (u != v)
+      path.push_back(v);
+  } else {
+    int w = via[u][v];
+    reconstruct(u, w, path);
+    path.pop_back();
+    reconstruct(w, v, path);
   }
-  return -1;
 }
 
 int main() {
+  for (int i = 0; i < V; ++i) {
+    for (int j = 0; j < V; ++j) {
+      adj[i][j] = MAX_INT;
+    }
+  }
+  // for (int i = 0; i < V; ++i) {
+  //   for (int j = 0; j < V; ++j) {
+  //     printf("%d ", adj[i][j]);
+  //   }
+  //   printf("\n");
+  // }
+  // printf("%d\n", sizeof(adj));
+
+  adj[0][1] = 10;
+  adj[0][5] = 8;
+  adj[1][3] = 2;
+  adj[2][1] = 1;
+  adj[3][2] = -2;
+  adj[4][1] = 2;
+  adj[4][3] = -1;
+  adj[5][4] = 1;
+
+  floyd();
+  
+  std::vector<int> r;
+  reconstruct(0, 5, r);
+  PrintVInt(r);
+  
   return 0;
 }
