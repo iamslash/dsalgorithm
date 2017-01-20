@@ -8,3 +8,4 @@ GPATH
 GRTAGS
 GTAGS
 *_flymake.*
+.vscode
