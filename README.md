@@ -62,8 +62,8 @@
   - range which is close to zero
   - [CHRISTMAS](https://algospot.com/judge/problem/read/CHRISTMAS)
 
-- Set
-  - ???
+- Disjoint Set
+  - union-find (merge-find)
 
 - List
   - dynamic array
