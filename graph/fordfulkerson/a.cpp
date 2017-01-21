@@ -6,50 +6,57 @@
 #include <queue>
 #include <cstdlib>
 
-int best;
+const int MAX_V = 7;
+const int MAX_I = 987654321;
+int V = MAX_V;
+int capacity[MAX_V][MAX_V];
+int flow[MAX_V][MAX_V];
 
-class State {
- public:
-  std::vector<State> GetAdj() const;
-  bool operator < (const State& rhs) const;
-  bool operator == (const State& rhs) const;
-};
-typedef std::map<State, int> StateMap;
+int NetworkFlow(int source, int sink) {
+  int r = 0;
 
-int GetSign(int x) {
-  if (!x)
-    return 0;
-  return x > 0 ? 1 : -1;
-}
-
-int Incr(int x) {
-  if (x < 0)
-    return x - 1;
-  return x + 1;
-}
-
-void Dfs(State here, const State& end, int steps) {
-  if (steps >= best)
-    return;
-  if (here == end) {
-    best = steps;
-    return;
+  for (int i = 0; i < MAX_V; ++i)
+    for (int j = 0; j < MAX_V; ++j)
+      flow[i][j] = 0;
+  while (true) {
+    std::vector<int> parent(MAX_V, -1);
+    std::queue<int> q;
+    parent[source] = source;
+    q.push(source);
+    while (!q.empty() && parent[sink] == -1) {
+      int here = q.front();
+      q.pop();
+      for (int there = 0; there < V; ++there) {
+        if (capacity[here][there] - flow[here][there] > 0 &&
+            parent[there] == -1) {
+          q.push(there);
+          parent[there] = here;
+        }
+      }
+    }
+    if (parent[sink] == -1)
+      break;
+    int amount = MAX_I;
+    for (int p = sink; p != source; p = parent[p]) {
+      amount = std::min(amount,
+                        capacity[parent[p]][p] - flow[parent[p]][p]);
+    }
+    for (int p = sink; p != source; p = parent[p]) {
+      flow[parent[p]][p] += amount;
+      flow[p][parent[p]] -= amount;
+    }
+    r += amount;
   }
-  std::vector<State> adj = here.GetAdj();
-  for (int i = 0; i < adj.size(); ++i)
-    Dfs(adj[i], end, steps + 1);
-}
-
-int Ids(State start, State end, int growthstep) {
-  for (int limit = 4; ; limit += growthstep) {
-    best = limit + 1;
-    Dfs(start, end, 0);
-    if (best <= limit)
-      return best;
-  }
-  return -1;
+  return r;
 }
 
 int main() {
-  return 0;
+  capacity[0][1] = 1;
+  capacity[0][2] = 2;
+  capacity[1][3] = 3;
+  capacity[1][2] = 1;
+  capacity[2][1] = 1;
+  capacity[2][3] = 1;
+
+  printf("%d\n", NetworkFlow(0, 3));
 }
