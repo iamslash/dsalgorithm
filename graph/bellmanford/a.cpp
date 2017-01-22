@@ -18,14 +18,14 @@ std::vector<int> BellmanFord(int src) {
   std::vector<int> upper(V, MAX_INT);
   upper[src] = 0;
   bool updated;
-  for (int iter = 0; iter < V; ++iter) {    
+  for (int iter = 0; iter < V; ++iter) {
     updated = false;
     for (int herenode = 0; herenode < V; ++herenode) {
       // printf("%d\n", herenode);
       for (int i = 0; i < adj[herenode].size(); ++i) {
         int therenode = adj[herenode][i].first;
         int therecost = adj[herenode][i].second;
-        
+
         if (upper[therenode] > upper[herenode] + therecost) {
           upper[therenode] = upper[herenode] + therecost;
           updated = true;
