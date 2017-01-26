@@ -9,3 +9,4 @@ GRTAGS
 GTAGS
 *_flymake.*
 .vscode
+\#*

@@ -12,12 +12,28 @@ int V = 7;
 
 std::vector<std::vector<int> > adj;
 
+void Dfs(std::vector<int>& dist, int here) {
+  printf("%d\n", here);
+  dist[here] = 1;
+  for (int i = 0; i < adj[here].size(); ++i) {
+    int there = adj[here][i];
+    if (dist[there] < 0)
+      Dfs(dist, there);
+  }
+}
+
 void DfsAll() {
-  
+  std::vector<int> dist(V, -1);
+  for (int i = 0; i < V; ++i) {
+    if (dist[i] < 0)
+      Dfs(dist, i);
+  }
 }
 
 int main() {
-  for (int i = 0; i < MAX_V; ++i)
+
+  adj.resize(V);
+  for (int i = 0; i < adj.size(); ++i)
     adj[i].clear();
 
   adj[0].push_back(1);
@@ -45,6 +61,8 @@ int main() {
   adj[6].push_back(1);
   adj[6].push_back(5);
 
+  // printf("before DfsAll\n");
+  
   DfsAll();
   
   return 0;
