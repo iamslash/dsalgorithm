@@ -1,5 +1,10 @@
 // Copyright (C) 2016 by iamslash
 
+// Prim algorithm
+//
+// 0. min_weight, parent
+// 1. select edges, vertices which are connected and have min weight.
+
 #include <cstdio>
 #include <vector>
 #include <map>
@@ -11,9 +16,9 @@ const int MAX_I = 987654321;
 int V = 7;
 std::vector<std::pair<int, int> > adj[MAX_V];
 
-int Prim(std::vector<std::pair<int, int> >& selected) {
+int Prim(std::vector<std::pair<int, int> > * selected) {
   int r = 0;
-  selected.clear();
+  selected->clear();
   std::vector<bool> added(V, false);
   std::vector<int> min_weight(V, MAX_I);
   std::vector<int> parent(V, -1);
@@ -25,7 +30,7 @@ int Prim(std::vector<std::pair<int, int> >& selected) {
           (u == -1 || min_weight[u] > min_weight[v]))
         u = v;
       if (parent[u] != u)
-        selected.push_back(std::make_pair(parent[u], u));
+        selected->push_back(std::make_pair(parent[u], u));
       r += min_weight[u];
       added[u] = true;
       for (int i = 0; i < adj[u].size(); ++i) {
@@ -72,7 +77,7 @@ int main() {
   adj[6].push_back(std::make_pair(5, 2));
 
   std::vector<std::pair<int, int> > r;
-  printf("%d\n", Prim(r));
+  printf("%d\n", Prim(&r));
 
   for (const std::pair<int, int>& p : r) {
     printf("%d -> %d\n", p.first, p.second);

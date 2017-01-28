@@ -1,5 +1,11 @@
 // Copyright (C) 2016 by iamslash
 
+// Kruskal algorithm
+//
+// 0. sort edges
+// 1. select edges, vertices in small order
+//
+
 #include <cstdio>
 #include <vector>
 #include <map>
@@ -35,9 +41,9 @@ const int MAX_V = 100;
 int V = 7;
 std::vector<std::pair<int, int> > adj[MAX_V];
 
-int Kruskal(std::vector<std::pair<int, int> >& selected) {
+int Kruskal(std::vector<std::pair<int, int> >* selected) {
   int r = 0;
-  selected.clear();
+  selected->clear();
   std::vector<std::pair<int, std::pair<int, int> > > edges;
   for (int u = 0; u < V; ++u) {
     for (int i = 0; i < adj[u].size(); ++i) {
@@ -55,7 +61,7 @@ int Kruskal(std::vector<std::pair<int, int> >& selected) {
     if (sets.find(u) == sets.find(v))
       continue;
     sets.merge(u, v);
-    selected.push_back(std::make_pair(u, v));
+    selected->push_back(std::make_pair(u, v));
     r += cost;
   }
 
@@ -92,7 +98,7 @@ int main() {
   adj[6].push_back(std::make_pair(5, 2));
 
   std::vector<std::pair<int, int> > r;
-  printf("%d\n", Kruskal(r));
+  printf("%d\n", Kruskal(&r));
 
   for (const std::pair<int, int>& p : r) {
     printf("%d -> %d\n", p.first, p.second);
