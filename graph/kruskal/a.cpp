@@ -45,6 +45,7 @@ int Kruskal(std::vector<std::pair<int, int> >* selected) {
   int r = 0;
   selected->clear();
   std::vector<std::pair<int, std::pair<int, int> > > edges;
+  // O(|V||E|), E = V^2
   for (int u = 0; u < V; ++u) {
     for (int i = 0; i < adj[u].size(); ++i) {
       int v = adj[u][i].first;
@@ -52,6 +53,7 @@ int Kruskal(std::vector<std::pair<int, int> >* selected) {
       edges.push_back(std::make_pair(cost, std::make_pair(u, v)));
     }
   }
+  // O(|E|lg|E|), O(|V]^2lg|V|^2)
   std::sort(edges.begin(), edges.end());
   OptimizedDisjointSet sets(V);
   for (int i = 0; i < edges.size(); ++i) {

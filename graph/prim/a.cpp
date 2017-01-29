@@ -23,6 +23,8 @@ int Prim(std::vector<std::pair<int, int> > * selected) {
   std::vector<int> min_weight(V, MAX_I);
   std::vector<int> parent(V, -1);
   min_weight[0] = parent[0] = 0;
+  // O(|V||V|)
+  // O(|V|^2+|E|)
   for (int iter = 0; iter < V; ++iter) {
     int u = -1;
     for (int v = 0; v < V; ++v) {
@@ -41,7 +43,7 @@ int Prim(std::vector<std::pair<int, int> > * selected) {
           min_weight[v] = weight;
         }
       }
-     }
+    }
   }
 
   return r;

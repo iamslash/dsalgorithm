@@ -1,4 +1,4 @@
-# Algorithm Proof
+Algorithm Proof
 
 - Mathmatical Induction
 - Proof by Contradiction
@@ -8,7 +8,7 @@
 - Proof by Counter Example
 - if and only if proof
 
-# Algorithm Analysis
+Algorithm Analysis
 
 - The RAM Model of Computation
 - The asymptotic analysis of worst-case complexity
@@ -20,7 +20,7 @@
  - ![Algorithm Graphs](https://raw.githubusercontent.com/iamslash/dsalgorithm/master/_img/alg_graph.jpeg)
 
 
-# P, NP, NP Hard, NP Complete
+P, NP, NP Hard, NP Complete
 
 - P
  - P means the existence of an algorithm for the task that runs in polynomial time.
@@ -34,7 +34,7 @@
   - C is in NP, and
   - Every problem in NP is reducible to C in polynomial time.
 
-# Algorithms
+Algorithms
 
 - Bitmask
   - bitmask set
