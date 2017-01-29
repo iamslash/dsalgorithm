@@ -137,8 +137,24 @@
   - [NH](http://algospot.com/judge/problem/read/NH)
 
 - Graph
-  - adjacency list graph
-  - adjacency matrix graph
+  - terms and definitions
+    - vertex, edge
+    - directed graph
+    - undirected graph
+    - weighted graph
+    - multi graph
+    - simple graph
+    - unrooted tree
+    - bipartite graph
+    - DAG (directed asyclick graph)
+    - simple path
+    - cycle
+    - circuit
+    - adjacency list 
+    - adjacency matrix 
+    - sparse graph
+    - dense graph
+    - implicit graph
   - dfs (depth first search)
   - topological sort
   - [DICTIONARY](http://algospot.com/judge/problem/read/DICTIONARY)

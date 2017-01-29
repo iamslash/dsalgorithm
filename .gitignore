@@ -10,3 +10,4 @@ GTAGS
 *_flymake.*
 .vscode
 \#*
+\.#*
