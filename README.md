@@ -204,11 +204,19 @@ Algorithms
   - [LAN](http://algospot.com/judge/problem/read/LAN)
   - [TPATH](http://algospot.com/judge/problem/read/TPATH)
   - Ford-Fulkerson algorithm
+    - flow network
+      - capacity contraint
+      - skew symmetry
+      - flow conversion
+    - augmenting path
+    - redidual capacity
+    - min-cut max-flow theorem
+  - Edmonds-Karp algorithm
+    - ford fulkerson with bfs
   - [MATCHFIX](http://algospot.com/judge/problem/read/MATCHFIX)
   - [PROJECTS](http://algospot.com/judge/problem/read/PROJECTS)
   - [BISHOPS](http://algospot.com/judge/problem/read/BISHOPS)
   - [TRAPCARD](http://algospot.com/judge/problem/read/TRAPCARD)
-  - Edmonds-Karp algorithm
   - Dinic algorithm
   - MCMF (min-cost max-flow)
   - successive shortest path
