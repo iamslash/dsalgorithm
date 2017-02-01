@@ -204,15 +204,17 @@ Algorithms
   - [LAN](http://algospot.com/judge/problem/read/LAN)
   - [TPATH](http://algospot.com/judge/problem/read/TPATH)
   - Ford-Fulkerson algorithm
-    - flow network
+    - mincut problem
+      - find a cut of minimum capacity
+    - Maxflow problem
+      - find a flow of maximum value
       - capacity contraint
-      - skew symmetry
-      - flow conversion
+      - local equilibrium
     - augmenting path
-    - redidual capacity
+    - flow, capacity, redidual capacity
     - min-cut max-flow theorem
   - Edmonds-Karp algorithm
-    - ford fulkerson with bfs
+    - ford fulkerson algorithm with bfs
   - [MATCHFIX](http://algospot.com/judge/problem/read/MATCHFIX)
   - [PROJECTS](http://algospot.com/judge/problem/read/PROJECTS)
   - [BISHOPS](http://algospot.com/judge/problem/read/BISHOPS)
