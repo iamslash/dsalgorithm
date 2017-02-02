@@ -217,12 +217,14 @@ Algorithms
     - ford fulkerson algorithm with bfs
   - [MATCHFIX](http://algospot.com/judge/problem/read/MATCHFIX)
   - [PROJECTS](http://algospot.com/judge/problem/read/PROJECTS)
+  - maximum matching problem
+    - bipartite mathing
   - [BISHOPS](http://algospot.com/judge/problem/read/BISHOPS)
   - [TRAPCARD](http://algospot.com/judge/problem/read/TRAPCARD)
   - Dinic algorithm
   - MCMF (min-cost max-flow)
-  - successive shortest path
-  - Kuhn–Munkres algorithm
+    - successive shortest path
+  - Kuhn–Munkres algorithm (hungarian algorithm)
   - Kőnig's theorem
 
 - Sort
