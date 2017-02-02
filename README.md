@@ -203,29 +203,32 @@ Algorithms
   - Prim's minimum spanning tree
   - [LAN](http://algospot.com/judge/problem/read/LAN)
   - [TPATH](http://algospot.com/judge/problem/read/TPATH)
-  - Ford-Fulkerson algorithm
-    - mincut problem
-      - find a cut of minimum capacity
-    - Maxflow problem
-      - find a flow of maximum value
-      - capacity contraint
-      - local equilibrium
+  - mincut problem
+    - find a cut of minimum capacity
+  - maxflow problem
+    - find a flow of maximum value
+    - capacity contraint
+    - local equilibrium
     - augmenting path
     - flow, capacity, redidual capacity
     - min-cut max-flow theorem
+  - Ford-Fulkerson algorithm
   - Edmonds-Karp algorithm
     - ford fulkerson algorithm with bfs
   - [MATCHFIX](http://algospot.com/judge/problem/read/MATCHFIX)
   - [PROJECTS](http://algospot.com/judge/problem/read/PROJECTS)
   - maximum matching problem
-    - bipartite mathing
+    - Edmond's matching algorithm
+    - bipartite mathing problem
   - [BISHOPS](http://algospot.com/judge/problem/read/BISHOPS)
   - [TRAPCARD](http://algospot.com/judge/problem/read/TRAPCARD)
   - Dinic algorithm
   - MCMF (min-cost max-flow)
-    - successive shortest path
-  - Kuhn–Munkres algorithm (hungarian algorithm)
-  - Kőnig's theorem
+    - successive shortest path algorithm
+  - assignment problem
+    - Kuhn–Munkres algorithm (hungarian algorithm)
+  - vertex cover problem
+    - Kőnig's theorem
 
 - Sort
   - Selection Sort
