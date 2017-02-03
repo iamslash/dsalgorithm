@@ -37,7 +37,7 @@ P, NP, NP Hard, NP Complete
 Algorithms
 
 - Bitmask
-  - bitmask set
+  - terms and definitions
     - null set, full set
     - add a element
     - check a element included
@@ -85,15 +85,15 @@ Algorithms
     - offline algorithm
 
 - Deque
-  - ???
+  - [Level order traversal in spiral form](http://www.practice.geeksforgeeks.org/problem-page.php?pid=700201)
 
 - Map (Hash)
-    - seperate chaining
-    - linear probing (open addressing)
-    - quadratic probing
-    - double hashing
-    - consistent hashing
-    - [A Simple Fraction](http://www.practice.geeksforgeeks.org/problem-page.php?pid=514)
+  - seperate chaining
+  - linear probing (open addressing)
+  - quadratic probing
+  - double hashing
+  - consistent hashing
+  - [A Simple Fraction](http://www.practice.geeksforgeeks.org/problem-page.php?pid=514)
 
 - String
   - Boyer Moore algorithm
@@ -383,6 +383,7 @@ Algorithms
   - [Georgia Tech's TSP](http://www.tsp.gatech.edu/)
 
 - Back Tracking
+  - 
 
 - optimization problems to Decision problems
   - [DARPA](https://algospot.com/judge/problem/read/DARPA)
@@ -410,16 +411,17 @@ Algorithms
 
 - [알고리즘 문제해결 전략](http://book.algospot.com/problems.html)
 - [c로 배우는 알고리즘](http://www.yes24.com/24/goods/18005?scode=032&OzSrank=1)
-- [The Algorithm Design Manual 2nd Edition by Steven S Skiena](http://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693/ref=sr_1_1?s=books&ie=UTF8&qid=1460283355&sr=1-1&keywords=the+algorithm+design+manual)
-- [Data Structures and Algorithm Analysis in C 2nd Edition by Mark A. Weiss ](https://users.cs.fiu.edu/~weiss/)
 - [Introduction to Algorithms, 3rd Edition (MIT Press)](http://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/ref=sr_1_1?s=books&ie=UTF8&qid=1460283565&sr=1-1&keywords=introduction+to+algorithms)
+- [Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne](http://algs4.cs.princeton.edu/home/)
+- [Data Structures and Algorithm Analysis in C 2nd Edition by Mark A. Weiss](https://users.cs.fiu.edu/~weiss/)
+- [The Algorithm Design Manual 2nd Edition by Steven S Skiena](http://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693/ref=sr_1_1?s=books&ie=UTF8&qid=1460283355&sr=1-1&keywords=the+algorithm+design+manual)
 
 ## Practice
 
+- [algospot](https://algospot.com/)
 - [cracking the coding interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=zg_bs_132570011_1?_encoding=UTF8&psc=1&refRID=3XW52MQJXCEJEWNTYJQ4)
 - [geekforgeeks](http://www.practice.geeksforgeeks.org/)
 - [baekunonline](https://www.acmicpc.net/)
-- [algospot](https://algospot.com/)
-- [programming-challnges](http://www.programming-challenges.com/)
 - [leetcode](https://leetcode.com/)
 - [hackerrank](https://www.hackerrank.com/)
+- [programming-challnges](http://www.programming-challenges.com/)
