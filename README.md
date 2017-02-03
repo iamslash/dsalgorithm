@@ -161,6 +161,7 @@ Algorithms
   - eulerian circuit
     - DAG (directed asyclick graph)
   - eulerian trail
+  - hamiltonian path
   - [WORDCHAIN](http://algospot.com/judge/problem/read/WORDCHAIN)
   - dfs spanning tree
     - tree edge
