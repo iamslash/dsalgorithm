@@ -368,6 +368,7 @@ Algorithms
   - [MINASTIRITH](https://algospot.com/judge/problem/read/MINASTIRITH)
 
 - Combinatorial Search
+  - Back Tracking
   - TSP (dynamic programming)
   - TSP (exhaustive search)
   - TSP (simple heuristic)
@@ -381,9 +382,6 @@ Algorithms
   - [sudoku](http://norvig.com/sudoku.html)
     - [sudoku-kor](https://github.com/jongman/articles/wiki/solving-every-sudoku-puzzle)
   - [Georgia Tech's TSP](http://www.tsp.gatech.edu/)
-
-- Back Tracking
-  - 
 
 - optimization problems to Decision problems
   - [DARPA](https://algospot.com/judge/problem/read/DARPA)
