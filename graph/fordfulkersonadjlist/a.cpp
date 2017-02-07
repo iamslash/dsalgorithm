@@ -57,10 +57,10 @@ int NetworkFlow(int source, int sink) {
       int here = q.front();
       q.pop();
       printf("  here: %d\n", here);
-      for (int there = 0; there < adj[here].size(); ++there) {
-        printf("    there: %d\n", there);
-              
-        Edge* e = adj[here][there];
+      for (int i = 0; i < adj[here].size(); ++i) {
+        Edge* e = adj[here][i];
+        int there = e->target;
+        printf("    there: %d\n", there);              
         if (e->ResidualCapacity() > 0 &&
             parent[there] == -1) {
           q.push(there);
