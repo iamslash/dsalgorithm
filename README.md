@@ -403,12 +403,12 @@
 
 ## Video
 
+- [c++로 배우는 알고리즘 동영상](https://www.youtube.com/watch?v=mzM3S5FtKuw&list=PLl5LpJCoD2mCIRn0Fkt8z07EK320ZmHgY)
 - [Sedgewick Algorithms I](https://www.youtube.com/user/algorithmscourses/playlists?shelf_id=2&view=50&sort=dd)
 - [Sedgewick Algorithms II](https://www.youtube.com/user/algorithmscourses/playlists?flow=list&shelf_id=3&view=50)
+- [michael sambol short videos](https://www.youtube.com/channel/UCzDJwLWoYCUQowF_nG3m5OQ)
 - [Curtis Lassam short videos](https://www.youtube.com/watch?v=r4r1DZcx1cM&list=PLmVb1OknmNJuC5POdcDv5oCS7_OUkDgpj&index=22)
   - trie, bloom filters, Endianness, scrum
-- [michael sambol short videos](https://www.youtube.com/channel/UCzDJwLWoYCUQowF_nG3m5OQ)
-- [c++로 배우는 알고리즘 동영상](https://www.youtube.com/watch?v=mzM3S5FtKuw&list=PLl5LpJCoD2mCIRn0Fkt8z07EK320ZmHgY)
 
 ## Book
 
@@ -422,9 +422,9 @@
 ## Practice
 
 - [cracking the coding interview](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=zg_bs_132570011_1?_encoding=UTF8&psc=1&refRID=3XW52MQJXCEJEWNTYJQ4)
-- [geekforgeeks](http://www.practice.geeksforgeeks.org/)
-- [baekunonline](https://www.acmicpc.net/)
-- [algospot](https://algospot.com/)
-- [programming-challnges](http://www.programming-challenges.com/)
 - [leetcode](https://leetcode.com/)
+- [geekforgeeks](http://www.practice.geeksforgeeks.org/)
+- [algospot](https://algospot.com/)
+- [baekunonline](https://www.acmicpc.net/)
 - [hackerrank](https://www.hackerrank.com/)
+- [programming-challnges](http://www.programming-challenges.com/)
