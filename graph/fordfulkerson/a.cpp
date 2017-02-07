@@ -15,11 +15,8 @@ int flow[MAX_V][MAX_V];
 int NetworkFlow(int source, int sink) {
   int r = 0;
 
-  for (int i = 0; i < MAX_V; ++i)
-    for (int j = 0; j < MAX_V; ++j)
-      flow[i][j] = 0;
   while (true) {
-    std::vector<int> parent(MAX_V, -1);
+    std::vector<int> parent(V, -1);
     std::queue<int> q;
     parent[source] = source;
     q.push(source);
@@ -51,6 +48,13 @@ int NetworkFlow(int source, int sink) {
 }
 
 int main() {
+  for (int i = 0; i < MAX_V; ++i) {
+    for (int j = 0; j < MAX_V; ++j) {
+      flow[i][j] = 0;
+      capacity[i][j] = 0;
+    }
+  }
+
   capacity[0][1] = 1;
   capacity[0][2] = 2;
   capacity[1][3] = 3;
@@ -59,5 +63,5 @@ int main() {
   capacity[2][3] = 1;
 
   printf("%d\n", NetworkFlow(0, 3));
-  printf("%d\n", NetworkFlow(0, 2));
+  // printf("%d\n", NetworkFlow(0, 2));
 }
