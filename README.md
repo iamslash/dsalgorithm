@@ -216,13 +216,14 @@ Algorithms
     - find a flow of maximum value
   - min-cut max-flow theorem
   - Ford-Fulkerson algorithm
+  - Ford-Fulkerson algorithm with adjacency list
   - Edmonds-Karp algorithm
     - ford fulkerson algorithm with bfs
   - [MATCHFIX](http://algospot.com/judge/problem/read/MATCHFIX)
   - [PROJECTS](http://algospot.com/judge/problem/read/PROJECTS)
   - maximum matching problem
     - Edmond's matching algorithm
-  - bipartite mathing problem
+  - bipartite matching problem
   - [BISHOPS](http://algospot.com/judge/problem/read/BISHOPS)
   - [TRAPCARD](http://algospot.com/judge/problem/read/TRAPCARD)
   - Dinic algorithm
@@ -232,6 +233,7 @@ Algorithms
     - Kuhn–Munkres algorithm (hungarian algorithm)
   - vertex cover problem
     - Kőnig's theorem
+  - Hopcroft-Karp algorithm
 
 - Sort
   - Selection Sort

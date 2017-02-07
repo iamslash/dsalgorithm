@@ -23,14 +23,21 @@ int NetworkFlow(int source, int sink) {
     std::queue<int> q;
     parent[source] = source;
     q.push(source);
+
+    printf("%d\n", source);
+
     while (!q.empty() && parent[sink] == -1) {
       int here = q.front();
       q.pop();
+      printf("  here: %d\n", here);
       for (int there = 0; there < V; ++there) {
+        printf("    there: %d\n", there);
+                
         if (capacity[here][there] - flow[here][there] > 0 &&
             parent[there] == -1) {
           q.push(there);
           parent[there] = here;
+          printf("      edge: %d -> %d\n", here, there);
         }
       }
     }
@@ -55,9 +62,7 @@ int main() {
   capacity[0][2] = 2;
   capacity[1][3] = 3;
   capacity[1][2] = 1;
-  capacity[2][1] = 1;
   capacity[2][3] = 1;
 
   printf("%d\n", NetworkFlow(0, 3));
-  printf("%d\n", NetworkFlow(0, 2));
 }
