@@ -1,4 +1,4 @@
-Algorithm Proof
+# Algorithm Proof
 
 - Mathmatical Induction
 - Proof by Contradiction
@@ -8,7 +8,7 @@ Algorithm Proof
 - Proof by Counter Example
 - if and only if proof
 
-Algorithm Analysis
+# Algorithm Analysis
 
 - The RAM Model of Computation
 - The asymptotic analysis of worst-case complexity
@@ -20,7 +20,7 @@ Algorithm Analysis
  - ![Algorithm Graphs](https://raw.githubusercontent.com/iamslash/dsalgorithm/master/_img/alg_graph.jpeg)
 
 
-P, NP, NP Hard, NP Complete
+# P, NP, NP Hard, NP Complete
 
 - P
  - P means the existence of an algorithm for the task that runs in polynomial time.
@@ -34,7 +34,7 @@ P, NP, NP Hard, NP Complete
   - C is in NP, and
   - Every problem in NP is reducible to C in polynomial time.
 
-Algorithms
+# Algorithms
 
 - Bitmask
   - bitmask set
@@ -85,7 +85,7 @@ Algorithms
     - offline algorithm
 
 - Deque
-  - ???
+  - [Level order traversal in spiral form](http://www.practice.geeksforgeeks.org/problem-page.php?pid=700201)
 
 - Map (Hash)
     - seperate chaining
@@ -373,6 +373,7 @@ Algorithms
   - [MINASTIRITH](https://algospot.com/judge/problem/read/MINASTIRITH)
 
 - Combinatorial Search
+  - back tracking
   - TSP (dynamic programming)
   - TSP (exhaustive search)
   - TSP (simple heuristic)
@@ -386,8 +387,6 @@ Algorithms
   - [sudoku](http://norvig.com/sudoku.html)
     - [sudoku-kor](https://github.com/jongman/articles/wiki/solving-every-sudoku-puzzle)
   - [Georgia Tech's TSP](http://www.tsp.gatech.edu/)
-
-- Back Tracking
 
 - optimization problems to Decision problems
   - [DARPA](https://algospot.com/judge/problem/read/DARPA)
@@ -415,6 +414,7 @@ Algorithms
 
 - [알고리즘 문제해결 전략](http://book.algospot.com/problems.html)
 - [c로 배우는 알고리즘](http://www.yes24.com/24/goods/18005?scode=032&OzSrank=1)
+- [Algorithms 4th Edition by Robert Sedgewick and Kevin Wayne](http://algs4.cs.princeton.edu/home/)
 - [The Algorithm Design Manual 2nd Edition by Steven S Skiena](http://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1848000693/ref=sr_1_1?s=books&ie=UTF8&qid=1460283355&sr=1-1&keywords=the+algorithm+design+manual)
 - [Data Structures and Algorithm Analysis in C 2nd Edition by Mark A. Weiss ](https://users.cs.fiu.edu/~weiss/)
 - [Introduction to Algorithms, 3rd Edition (MIT Press)](http://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/ref=sr_1_1?s=books&ie=UTF8&qid=1460283565&sr=1-1&keywords=introduction+to+algorithms)
