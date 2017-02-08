@@ -54,25 +54,31 @@ int NetworkFlow(int source, int sink) {
     printf("%d\n", source);
     
     while (!q.empty() && parent[sink] == -1) {
+      printf("...\n");
       int here = q.front();
       q.pop();
-      printf("  here: %d\n", here);
+      printf("  here: %d, size: %d\n", here, adj[here].size());
       for (int i = 0; i < adj[here].size(); ++i) {
         Edge* e = adj[here][i];
         int there = e->target;
-        printf("    there: %d\n", there);              
+        printf("    there: %d, rcapa: %d, parent[there]: %d\n", there, e->ResidualCapacity(), parent[there]);
         if (e->ResidualCapacity() > 0 &&
             parent[there] == -1) {
+          // printf("----");
           q.push(there);
           parent[there] = here;
-          printf("      edge: %d -> %d\n", here, there);
+          printf("      edge: %d -> %d queue: [%d,%d] of %d\n",
+                 here, there, q.front(), q.back(), q.size());
         }
       }
     }
     if (parent[sink] == -1)
       break;
     int amount = MAX_I;
+
+    // TODO: 
     for (int p = sink; p != source; p = parent[p]) {
+      printf(":: %d -> %d\n", parent[p], p);
       amount = std::min(amount, adj[parent[p]][p]->ResidualCapacity() );
       printf("        amount: %d\n", amount);
     }
