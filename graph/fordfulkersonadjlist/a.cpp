@@ -42,6 +42,17 @@ void AddEdge(int u, int v, int capacity) {
   adj[v].push_back(vu);
 }
 
+Edge* GetEdge(int u, int v) {
+  Edge* r = NULL;
+  for (int i = 0; i < adj[u].size(); ++i) {
+    r = adj[u][i];
+    if (r->target == v) {
+      break;
+    }
+  }
+  return r;
+}
+
 int NetworkFlow(int source, int sink) {
   int r = 0;
 
@@ -78,12 +89,11 @@ int NetworkFlow(int source, int sink) {
 
     // TODO: 
     for (int p = sink; p != source; p = parent[p]) {
-      printf(":: %d -> %d\n", parent[p], p);
-      amount = std::min(amount, adj[parent[p]][p]->ResidualCapacity() );
+      amount = std::min(amount, GetEdge(parent[p], p)->ResidualCapacity() );
       printf("        amount: %d\n", amount);
     }
-    for (int p = sink; p != source; p = parent[p]) {      
-      adj[parent[p]][p]->push(amount);
+    for (int p = sink; p != source; p = parent[p]) {
+      GetEdge(parent[p], p)->push(amount);
     }
     r += amount;
   }
