@@ -169,6 +169,8 @@
     - forward edge
     - back edge
     - cross edge
+  - proof of topological sort
+  - check cycle
   - cut vertex (articulation point)
     - biconnected components
   - bridge
