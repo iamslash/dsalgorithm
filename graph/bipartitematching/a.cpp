@@ -6,12 +6,11 @@
 #include <queue>
 #include <cstdlib>
 
-const int MAX_N = 3;
-const int MAX_M = 3;
+const int MAX_V = 3;
 const int MAX_I = 987654321;
 
 int N, M;
-bool adj[MAX_N][MAX_M];
+bool adj[MAX_V][MAX_V];
 std::vector<int> a_match;
 std::vector<int> b_match;
 std::vector<bool> visited;
@@ -49,19 +48,18 @@ int BipartiteMatch() {
 }
 
 int main() {
-
   N = 3;
   M = 3;
-  for (int i = 0; i < MAX_N; ++i) {
-    for (int j = 0; j < MAX_M; ++j) {
+  for (int i = 0; i < MAX_V; ++i) {
+    for (int j = 0; j < MAX_V; ++j) {
       adj[i][j] = false;
     }
   }
-  adj[0][3] = true;
-  adj[0][4] = true;
-  adj[1][4] = true;
-  adj[1][5] = true;
-  adj[2][5] = true;  
-  
+  adj[0][0] = true;
+  adj[0][1] = true;
+  adj[1][1] = true;
+  adj[1][2] = true;
+  adj[2][2] = true;
+
   printf("%d\n", BipartiteMatch());
 }
