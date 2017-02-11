@@ -55,11 +55,10 @@ int main() {
       adj[i][j] = false;
     }
   }
-  adj[0][0] = true;
   adj[0][1] = true;
+  adj[0][2] = true;
   adj[1][1] = true;
-  adj[1][2] = true;
-  adj[2][2] = true;
+  // adj[2][0] = true;
 
   printf("%d\n", BipartiteMatch());
 }
