@@ -321,6 +321,7 @@
 - recursion
   - tower of hanoi
   - fibonacci number
+  - pick k numbers from n numbers
 
 - Brute Force
   - [BOGGLE](https://algospot.com/judge/problem/read/BOGGLE)
