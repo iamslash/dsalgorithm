@@ -221,13 +221,19 @@
   - Ford-Fulkerson algorithm with adjacency list
   - Edmonds-Karp algorithm
     - ford fulkerson algorithm with bfs
+  - [MILEAGE](http://algospot.com/judge/problem/read/MILEAGE)
+  - [SAINTTAIL](http://algospot.com/judge/problem/read/SAINTTAIL)
   - [MATCHFIX](http://algospot.com/judge/problem/read/MATCHFIX)
   - [PROJECTS](http://algospot.com/judge/problem/read/PROJECTS)
   - maximum matching problem
     - Edmond's matching algorithm
   - bipartite matching problem
+  - [TRAVELPICTURES](http://algospot.com/judge/problem/read/TRAVELPICTURES)
+  - [DOMINOS](http://algospot.com/judge/problem/read/DOMINOS)
   - [BISHOPS](http://algospot.com/judge/problem/read/BISHOPS)
   - [TRAPCARD](http://algospot.com/judge/problem/read/TRAPCARD)
+    - independent set
+    - maximum independent set
   - Dinic algorithm
   - MCMF (min-cost max-flow)
     - successive shortest path algorithm
