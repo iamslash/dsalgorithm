@@ -106,6 +106,11 @@
   - [JAEHASAFE](http://algospot.com/judge/problem/read/JAEHASAFE)
   - suffix array
     - [Manber, Udi; Myers, Gene (1990). Suffix arrays: a new method for on-line string searches](http://webglimpse.net/pubs/suffix.pdf)
+  - get suffix array using naive algorithm
+    - O(N^2lgN)
+  - get suffix array using manber myers algorithm
+    - perm[], group[], t
+    - O(N(lgN)^2)
   - suffix array search
   - circular string
   - the number of different substrings

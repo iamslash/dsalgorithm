@@ -7,9 +7,8 @@
 #include <cstdlib>
 
 const int MAX_V = 3;
-const int MAX_I = 987654321;
 
-int N, M;
+int L, R;
 bool adj[MAX_V][MAX_V];
 std::vector<int> a_match;
 std::vector<int> b_match;
@@ -19,7 +18,7 @@ bool Dfs(int a) {
   if (visited[a])
     return false;
   visited[a] = true;
-  for (int b = 0; b < M; ++b) {
+  for (int b = 0; b < R; ++b) {
     if (adj[a][b]) {
       printf("  %d : %d\n", a, b);
       if (b_match[b] == -1 || Dfs(b_match[b])) {
@@ -35,12 +34,12 @@ bool Dfs(int a) {
 }
 
 int BipartiteMatch() {
-  a_match = std::vector<int>(N, -1);
-  b_match = std::vector<int>(M, -1);
+  a_match = std::vector<int>(L, -1);
+  b_match = std::vector<int>(R, -1);
   int r = 0;
-  for (int start = 0; start < N; ++start) {
+  for (int start = 0; start < L; ++start) {
     printf("start: %d\n", start);
-    visited = std::vector<bool>(N, false);
+    visited = std::vector<bool>(L, false);
     if (Dfs(start))
       ++r;
   }
@@ -48,8 +47,8 @@ int BipartiteMatch() {
 }
 
 int main() {
-  N = 3;
-  M = 3;
+  L = 3;
+  R = 3;
   for (int i = 0; i < MAX_V; ++i) {
     for (int j = 0; j < MAX_V; ++j) {
       adj[i][j] = false;
