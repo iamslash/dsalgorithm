@@ -106,6 +106,9 @@
   - [JAEHASAFE](http://algospot.com/judge/problem/read/JAEHASAFE)
   - suffix array
     - [Manber, Udi; Myers, Gene (1990). Suffix arrays: a new method for on-line string searches](http://webglimpse.net/pubs/suffix.pdf)
+  - suffix array search
+  - circular string
+  - the number of different substrings
   - [HABIT](http://algospot.com/judge/problem/read/HABIT)
   - [Kasai, T. et al., "Linear-Time Longest-Common-Prefix Computation in Suffix Arrays and Its Applications"](http://alumni.cs.ucr.edu/~rakthant/cs234/01_KLAAP_Linear%20time%20LCP.PDF)
   - [Rabin-Karp algorithm](https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm)
