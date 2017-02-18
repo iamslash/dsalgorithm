@@ -61,9 +61,9 @@ std::vector<int> GetSuffixArray(const std::string& s) {
     group2[sa[0]] = 0;
     for (int i = 1; i < s.size(); ++i) {
       if (c(sa[i-1], sa[i]))
-        group2[sa[i]] = group[sa[i-1]] + 1;
+        group2[sa[i]] = group2[sa[i-1]] + 1;
       else
-        group2[sa[i]] = group[sa[i-1]];
+        group2[sa[i]] = group2[sa[i-1]];
     }
     group = group2;
   }
