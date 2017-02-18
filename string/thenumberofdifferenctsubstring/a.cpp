@@ -43,11 +43,28 @@ std::vector<int> GetSuffixArray(const std::string& s) {
   return r;
 }
 
+int GetSubstringsCnt(const char * sz) {
+  int n = strlen(sz);
+  return n * (n + 1) / 2;
+}
+
+int GetLongestCommonPrefix(const char * l, const char * r) {
+  int cnt = 0;
+  while (l != NULL && r != NULL && *l == *r) {
+    cnt++;
+    l++;
+    r++;
+  }
+  return cnt;
+}
+
 int Solve(const std::string& h) {
-  int r;
   std::vector<int> sa = GetSuffixArray(h);
-  for (int i = 1; i < sa.size(); ++i) {
-    
+  int r = GetSubstringsCnt(h.c_str());
+  for (int i = 0; i < sa.size() - 1; ++i) {
+    int c = GetLongestCommonPrefix(h.c_str() + sa[i],
+                                   h.c_str() + sa[i+1]);
+    r -= (c * (c + 1) / 2);
   }
 
   return r;
