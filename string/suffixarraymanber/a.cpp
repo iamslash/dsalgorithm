@@ -18,15 +18,19 @@ void PrintSuffixArray(const std::string& h, const std::vector<int>& sa) {
 }
 
 struct Comp {
+  std::string m_h;
   std::vector<int> m_group;
   int m_t;
-  explicit Comp(const std::vector<int>& group, int t) {
+  explicit Comp(const std::string& h, const std::vector<int>& group, int t) {
+    m_h = h;
     m_group = group;
     m_t = t;
   }
   bool operator() (int i, int j) {
     if (m_group[i] != m_group[j])
       return m_group[i] < m_group[j];
+    printf("[%2d] %2d %2d %-10s %-10s\n", m_t, i, j,
+           m_h.c_str()+i, m_h.c_str()+j);
     return m_group[i+m_t] < m_group[j+m_t];
   }
 };
@@ -43,12 +47,13 @@ std::vector<int> GetSuffixArray(const std::string& s) {
   int t = 1;
 
   while (true) {
-    // sort suffix array
-    Comp c(group, t);
-    std::sort(sa.begin(), sa.end(), c);
+    printf("[%d] ---------------------------------------\n", t);
 
-    printf("[%d] --------------------\n", t);
-    PrintSuffixArray(s, sa);
+    // sort suffix array
+    Comp c(s, group, t);
+    std::sort(sa.begin(), sa.end(), c);
+    printf("[%d] =======================================\n", t);
+    // PrintSuffixArray(s, sa);
 
     // make new t
     t *= 2;
@@ -74,7 +79,7 @@ std::vector<int> GetSuffixArray(const std::string& s) {
 int main() {
   std::string h = "mississipi";
   std::vector<int> sa = GetSuffixArray(h);
-  printf("====================\n");
+  // printf("====================\n");
   PrintSuffixArray(h, sa);
   return 0;
 }
