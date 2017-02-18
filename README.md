@@ -109,7 +109,7 @@
   - get suffix array using naive algorithm
     - O(N^2lgN)
   - get suffix array using manber myers algorithm
-    - perm[], group[], t
+    - sa[], group[], t
     - O(N(lgN)^2)
   - suffix array search
   - circular string

@@ -35,7 +35,11 @@ std::vector<int> GetSuffixArray(const std::string& s) {
   for (int i = 0; i < s.size(); ++i) {
     r[i] = i;
   }
-  std::sort(r.begin(), r.end(), Comp(s));
+  // std::sort(r.begin(), r.end(), Comp(s));
+  std::sort(r.begin(), r.end(),
+            [s](int i, int j) -> bool {
+              return strcmp(s.c_str()+i, s.c_str()+j) < 0;
+            });
   return r;
 }
 
