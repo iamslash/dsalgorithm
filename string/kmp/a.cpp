@@ -33,7 +33,7 @@ std::vector<int> Kmp(const std::string& h, const std::string& n) {
   int matched = 0;
   std::vector<int> pi = GetPartialMatch(n);
 
-  while (begin <= h.size() - n.size()) {
+  while (begin + matched <= h.size()) {
     // if match
     if (h[begin + matched] == n[matched]) {
       matched++;
@@ -41,11 +41,13 @@ std::vector<int> Kmp(const std::string& h, const std::string& n) {
         r.push_back(begin);
     } else {
       
-      if (matched == 0)
+      if (matched == 0) {
         begin++;
       // 
-      else
+      } else {
         begin += matched - pi[matched - 1];
+        matched = pi[matched - 1];
+      }
     }
   }
 

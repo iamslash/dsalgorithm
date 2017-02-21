@@ -96,9 +96,8 @@
     - [A Simple Fraction](http://www.practice.geeksforgeeks.org/problem-page.php?pid=514)
 
 - String
-  - Boyer Moore algorithm
-    - [Boyer, Robert S.; Moore, J Strother (October 1977). "A Fast String Searching Algorithm."](https://www.cs.utexas.edu/users/moore/publications/fstrpos.pdf)
-  - KMP algorithm
+  - search with naive algorithm
+  - search with kmp algorithm
     - needle, haystack, begin, matched, pi[]
     - O(|N| + |H|)
   - [NAMING](http://algospot.com/judge/problem/read/NAMING)
@@ -109,12 +108,14 @@
   - get suffix array using naive algorithm
     - O(N^2lgN)
   - get suffix array using manber myers algorithm
-    - perm[], group[], t
+    - sa[], group[], t
     - O(N(lgN)^2)
   - suffix array search
   - circular string
   - the number of different substrings
   - [HABIT](http://algospot.com/judge/problem/read/HABIT)
+  - Boyer Moore algorithm
+    - [Boyer, Robert S.; Moore, J Strother (October 1977). "A Fast String Searching Algorithm."](https://www.cs.utexas.edu/users/moore/publications/fstrpos.pdf)
   - [Kasai, T. et al., "Linear-Time Longest-Common-Prefix Computation in Suffix Arrays and Its Applications"](http://alumni.cs.ucr.edu/~rakthant/cs234/01_KLAAP_Linear%20time%20LCP.PDF)
     - O(|N| + lg|H|)
   - [Rabin-Karp algorithm](https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm)
