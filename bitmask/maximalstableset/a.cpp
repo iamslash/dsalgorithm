@@ -15,52 +15,6 @@
 int N;
 int explodes[MAX_N] = {0,};
 
-void PrintBitmask(int set) {
-  printf("  ");
-  for (int i = 7; i >= 0; --i) {
-    printf("%d", (set & (1 << i)) ? 1 : 0);
-  }
-  printf("\n");
-}
-
-bool IsStable(int set) {
-  for (int i = 0; i < N; ++i) {
-    if (explodes[i] == 0)
-      continue;
-    // ith 원소가 set에 있고 explodes[i]가 set에 존재하는가?
-    if ((set & (1 << i)) && (set & explodes[i]))
-      return false;
-  }
-  return true;
-}
-
-int CountStableSet() {
-  int r = 0;
-
-  // 0x01, 0x02, 0x03
-  for (int set = 1; set < (1 << N); ++set) {
-    // 안정적이지 않다면 더이상 생각해 볼 필요가 없다.
-    if (!IsStable(set))
-      continue;
-    PrintBitmask(set);
-    // 극대 안정 집합인지 확인하기 위해, 넣을 수 있는 다른 물질이 있나
-    // 확인한다.
-    bool can_extend = false;
-    for (int add = 0; add < N; ++add) {
-      // add가 set에 존재하지 않고 
-      if ((set & (1 << add)) == 0 && (explodes[add] & set) == 1) {
-        can_extend = true;
-        break;
-      }
-    }
-    if (!can_extend) {
-      ++r;
-    }
-  }
-
-  return r;
-}
-
 int main()
 {
   // total 5 elements
