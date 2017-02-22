@@ -9,49 +9,51 @@
 
 unsigned char SIEVE[(MAX_N + 7) / 8];
 
-// k is prime ???
-inline bool IsPrime(int k) {
-  return SIEVE[k >> 3] & (1 << (k & 7));
+bool is_prime(const int& n) {
+  int div = n / 8;
+  int mod = n % 8;
+  return (SIEVE[div] & (1 << mod)) ? true : false;;
 }
 
-// turn off the bit
-// k is not prime
-inline void SetComposite(int k) {
-  SIEVE[k >> 3] &= ~(1 << (k & 7));
+void set_composite(const int& n) {
+  int div = n / 8;
+  int mod = n % 8;
+  SIEVE[div] &= ~(1 << mod);
 }
 
-void PrintSieve(int n) {
+void print_sieve(const int& n) {
   for (int i = 0; i < n; ++i) {
-    if (IsPrime(i))
-        printf("%d ", i);
+    if (is_prime(i))
+      printf("%d ", i);
   }
   printf("\n");
 }
 
-void EratosThenes(int n) {
-  memset(SIEVE, 0xFF, sizeof(SIEVE));
-  SetComposite(0);
-  SetComposite(1);
+void eratos_thenes(const int& n) {
+  set_composite(0);
+  set_composite(1);
 
-  // any composite number is consisted of p and q (p x q)
-  // p <= sqrt(n)
-  // q >= sqrt(n)
-  int sqrtn = int(sqrt(n));
-  for (int i = 2; i <= sqrtn; ++i) {
-    if (IsPrime(i)) {
-      // j is not from i * 2 because it is watched already
-      for (int j = i * i; j <= n; j += i) {
-        SetComposite(j);
+  // i = p * q ( p <= q)
+  // p <= sqrt(i)
+  // j is from i * i to n - 1
+  // 
+  int sqrtn = sqrt(n);
+  for (int i = 2; i < sqrtn; ++i) {
+    if (is_prime(i)) {
+      printf("  %d\n", i);
+      for (int j = i*i; j < n; j+=i) {
+        printf("%d ", j);
+        set_composite(j);
       }
+      printf("\n");
     }
   }
-  printf("\n");
 }
 
-int main()
-{
-  int n = 1024;
-  EratosThenes(n);
-  PrintSieve(n);
+int main() {
+  memset(SIEVE, 255, sizeof(SIEVE));
+  int N = 64;
+  eratos_thenes(N);
+  print_sieve(N);
   return 0;
 }
