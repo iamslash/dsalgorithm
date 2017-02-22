@@ -3,6 +3,7 @@
 #include <cstdio>
 #include <cstdint>
 #include <cstring>
+
 // priority queue by bitmask
 // can represent 0 ~ 191 numbers
 uint64_t pqueue[3] = {0x00,};
