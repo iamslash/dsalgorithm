@@ -1,33 +1,43 @@
 // Copyright (C) 2016 by iamslash
 
-// 문제의 정의가 명확하지 않다. 한개만 더 넣으면 폭발하는 집합을
-// 구하라는 건가?  explodes[i]는 i번째 원소와 함께 존재하면 터지는
-// 모든 원소일까 아니면 일부 원소일까
-//
-// 한개만 더 넣으면 폭발하는 극대 안정 집합의 수를 구한다고 가정했다.
-// explodes[i]는 i번째 원소와 함께 존재하면 터지는 원소들의 목록이라고 가정했다.
-
 #include <cstdio>
 #include <cstdint>
 
 #define MAX_N 65535
 
 int N;
-int explodes[MAX_N] = {0,};
+// explodes[i] = bitmask set which is i-th element will be exploded with
+int explodes[MAX_N] = {0, };
 
-int main()
-{
+// what if i is included will it explode or not???
+bool is_stable(int set) {
+  for (int i = 0; i < N; ++i) {
+    if ((set & (1 << i)) && (set && explodes[i]))
+      return false;
+  }
+  return true;
+}
+
+// get count of maximal stable set
+int cnt_stable_set() {
+  int r = 0;
+  return r;
+}
+
+int main() {
   // total 5 elements
   N = 3;
   // 0th element will explode with 3th element
-  explodes[0] = 0x02;
-  int element = 0x00;
-  
-  // element = 0x02;
-  // printf("%x is %d\n", element, IsStable(element));
+  explodes[0] = 0x03;  // 00000011
+  explodes[1] = 0x07;  // 00000111
+  explodes[2] = 0x0E;  // 00001111
+  int set = 0x00;
+
+  set = 0x02;
+  printf("%x is %d\n", set, is_stable(set));
   // element = 0x09;
   // printf("%x is %d\n", element, IsStable(element));
-  printf("%d\n", CountStableSet());
+  // printf("%d\n", CountStableSet());
 
   return 0;
 }
