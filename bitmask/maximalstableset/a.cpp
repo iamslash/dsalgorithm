@@ -9,10 +9,10 @@ int N;
 // explodes[i] = bitmask set which is i-th element will be exploded with
 int explodes[MAX_N] = {0, };
 
-// what if i is included will it explode or not???
+// set is stable ???
 bool is_stable(int set) {
   for (int i = 0; i < N; ++i) {
-    if ((set & (1 << i)) && (set && explodes[i]))
+    if ((set & (1 << i)) && (set & explodes[i]))
       return false;
   }
   return true;
@@ -21,6 +21,22 @@ bool is_stable(int set) {
 // get count of maximal stable set
 int cnt_stable_set() {
   int r = 0;
+
+  for (int set = 1; set < (1 << N); ++set) {
+    if (!is_stable(set))
+      continue;
+    //
+    bool can_extend = false;
+    for (int i = 0; i < N; ++i) {
+      if (((set & (1 << i)) == 0) && ((set & explodes[i]) == 0)) {
+        can_extend = true;
+        break;
+      }
+    }
+    if (!can_extend)
+      ++r;
+  }
+
   return r;
 }
 
