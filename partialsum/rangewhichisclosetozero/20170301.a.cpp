@@ -1,54 +1,25 @@
-// Copyright (C) 2016 by iamslash
+-*- mode: compilation; default-directory: "~/prj/github/dsalgorithm/partialsum/rangewhichisclosetozero/" -*-
+Compilation started at Sun Mar  5 12:12:03
 
-#include <cstdio>
-#include <cstdint>
-#include <vector>
-#include <algorithm>
+make -k a.out
+g++  -c -std=c++11  -o a.o a.cpp -MMD
+a.cpp:25:21: error: call to 'abs' is ambiguous
+    r = std::min(r, std::abs(psum[i] - psum[i-1]));
+                    ^~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cmath:664:1: note: 
+      candidate function
+abs(float __lcpp_x) _NOEXCEPT {return fabsf(__lcpp_x);}
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cmath:668:1: note: 
+      candidate function
+abs(double __lcpp_x) _NOEXCEPT {return fabs(__lcpp_x);}
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cmath:672:1: note: 
+      candidate function
+abs(long double __lcpp_x) _NOEXCEPT {return fabsl(__lcpp_x);}
+^
+1 error generated.
+make: *** [a.o] Error 1
+make: Target `a.out' not remade because of errors.
 
-#define MAXN 987654321
-
-void PrintVInt(const std::vector<int>& a) {
-  for (int i = 0; i < a.size(); ++i) {
-    printf("%d ", a[i]);
-  }
-  printf("\n");
-}
-
-std::vector<int> PartialSum(const std::vector<int>& a) {
-  std::vector<int> r(a.size());
-  r[0] = a[0];
-  for (int i = 1; i < a.size(); ++i) {
-    r[i] = r[i-1] + a[i];
-  }
-  return r;
-}
-
-int RangeSum(const std::vector<int>& psum, int a, int b) {
-  if ( a == 0)
-    return psum[b];
-  return psum[b] - psum[a - 1];
-}
-
-int CloseToZero(std::vector<int>& psum) {
-  std::sort(psum.begin(), psum.end());
-
-  int r = MAXN;
-  
-  for (int i = 1; i < psum.size(); ++i) {
-    r = std::min(r, psum[i] - psum[i-1]);
-  }
-
-  return r;
-}
-
-int main()
-{
-  std::vector<int> a = {-14,7,2,3,-8,4,-6,8,9,11};
-  std::vector<int> psum = PartialSum(a);
-
-  // PrintVInt(psum);
-  
-  printf("%d\n", CloseToZero(psum));
-
-  return 0;
-}
+Compilation exited abnormally with code 2 at Sun Mar  5 12:12:03

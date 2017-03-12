@@ -15,7 +15,9 @@ std::vector<int> GetPartialMatch(const std::string& n) {
   std::vector<int> r(n.size(), 0);
 
   for (int begin = 1; begin < n.size(); ++begin) {
-    for (int i = 0; i < begin + i < n.size(); ++i) {
+    printf("begin: %d\n", begin);
+    for (int i = 0; i < n.size(); ++i) {
+      printf("  i: %d\n", i);
       // there is no match let's go to next begin
       if (n[i] != n[begin + i])
         break;
@@ -55,15 +57,17 @@ std::vector<int> Kmp(const std::string& h, const std::string& n) {
 }
 
 int main() {
-  std::string h = "hellomynameisslashmynameisnotfoo";
-  std::string n = "myname";
+  // std::string h = "hellomynameisslashmynameisnotfoo";
+  // std::string n = "myname";
 
-  std::vector<int> r = Kmp(h, n);
+  // std::vector<int> r = Kmp(h, n);
 
-  printf("%s\n", h.c_str());
-  printf("%s\n", n.c_str());
+  // printf("%s\n", h.c_str());
+  // printf("%s\n", n.c_str());
+  // PrintVInt(r);
+  //
+  std::vector<int> r = GetPartialMatch("aabaabac");
   PrintVInt(r);
   
-  //
   return 0;
 }
