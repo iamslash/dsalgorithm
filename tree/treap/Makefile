@@ -5,9 +5,9 @@ CXXFLAGS = -std=c++11
 
 all: TAGS a.out
 
-a.exe: a.o treap.o asciitree.o
+a.exe: a.o 
 	$(CXX) $^ $(LDFLAGS) -o $@
-a.out: a.o treap.o asciitree.o
+a.out: a.o 
 	$(CXX) $^ $(LDFLAGS) -o $@
 
 %.o: %.cpp
