@@ -100,9 +100,36 @@ Node* erase(Node* root, KeyType key) {
   return root;
 }
 
+Node* kth(Node* root, int k) {
+  int leftsize = 0;
+  if (root->left != NULL)
+    leftsize = root->left->size;
+
+  if (k <= leftsize)
+    return kth(root->left, k);
+  if (k == leftsize + 1)
+    return root;
+  return kth(root->right, k - leftsize - 1);
+}
+
+int count_less_than(Node* root, KeyType key) {
+  if (root == NULL)
+    return 0;
+  if (root->key >= key)
+    return count_less_than(root->left, key);
+  //
+  int ls = (root->left ? root->left->size : 0);
+  return ls + 1 + count_less_than(root->right, key);
+}
+
 int main() {
-  Node * root = new Node(1);
-  root = insert(root, new Node(2));
+  Node * root = insert(root, new Node(0));
+  for (int i = 1; i <= 10; ++i) {
+    root = insert(root, new Node(i));
+  }
+
+  Node * node = kth(root, 3);
+  printf("%d\n", node->key);
 
   return 0;
 }

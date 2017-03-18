@@ -123,15 +123,25 @@
   - Aho–Corasick algorithm
 
 - Tree
+  - terms and definitions
+    - node, edge
+    - parent, child, sibling
+    - ancestor, descendant
+    - root, leaf
+    - depth, height
   - [TRAVERSAL](http://algospot.com/judge/problem/read/TRAVERSAL)
   - [FORTRESS](http://algospot.com/judge/problem/read/FORTRESS)
   - binary search tree
-  - red black tree
-  - AVL tree
+  - red black tree (balanced binary search tree)
+  - AVL tree (balanced binary search tree)
   - treap
+    - insert, split, erase, merge
+  - get kth element
+  - get count of elements which are lesser than X
   - [NERD2](http://algospot.com/judge/problem/read/NERD2)
   - [INSERTION](http://algospot.com/judge/problem/read/INSERTION)
   - priority queue with heap
+    - push_heap, pop_heap
   - [RUNNINGMEDIAN](http://algospot.com/judge/problem/read/RUNNINGMEDIAN)
   - segment tree
     - rmq (range minimum query)
