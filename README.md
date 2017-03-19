@@ -147,14 +147,17 @@
     - rmq (range minimum query)
   - [MORDOR](http://algospot.com/judge/problem/read/MORDOR)
   - [FAMILYTREE](http://algospot.com/judge/problem/read/FAMILYTREE)
-  - fenwick tree  
+  - fenwick tree
   - [MEASURETIME](http://algospot.com/judge/problem/read/MEASURETIME)
   - union-Find (merge-find)
+    - union rank optimization
+    - pass compression optimization
   - [EDITORWARS](http://algospot.com/judge/problem/read/EDITORWARS)
-  - trie  
+  - trie
+  - triple array trie
   - suffix trie
   - radix tree (patricia tree)
-  - suffix tree  
+  - suffix tree
   - [SOLONG](http://algospot.com/judge/problem/read/SOLONG)
   - Aho–Corasick algorithm
   - [NH](http://algospot.com/judge/problem/read/NH)
