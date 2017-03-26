@@ -145,6 +145,8 @@
   - [RUNNINGMEDIAN](http://algospot.com/judge/problem/read/RUNNINGMEDIAN)
   - segment tree
     - rmq (range minimum query)
+  - get the smallest two minimum elements from the range
+  - get the maximum frequency of occurrence in the range of ordered sequences
   - [MORDOR](http://algospot.com/judge/problem/read/MORDOR)
   - [FAMILYTREE](http://algospot.com/judge/problem/read/FAMILYTREE)
   - fenwick tree
