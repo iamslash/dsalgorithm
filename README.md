@@ -143,8 +143,7 @@
   - priority queue with heap
     - push_heap, pop_heap
   - [RUNNINGMEDIAN](http://algospot.com/judge/problem/read/RUNNINGMEDIAN)
-  - segment tree
-    - rmq (range minimum query)
+  - rmq (range minimum query) with segment tree
   - get the smallest two minimum elements from the range
   - get the maximum frequency of occurrence in the range of ordered sequences
   - [MORDOR](http://algospot.com/judge/problem/read/MORDOR)
