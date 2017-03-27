@@ -148,7 +148,7 @@
   - get the maximum frequency of occurrence in the range of ordered sequences
   - [MORDOR](http://algospot.com/judge/problem/read/MORDOR)
   - [FAMILYTREE](http://algospot.com/judge/problem/read/FAMILYTREE)
-  - fenwick tree
+  - fenwick tree (binary indexed tree)
   - [MEASURETIME](http://algospot.com/judge/problem/read/MEASURETIME)
   - union-Find (merge-find)
     - union rank optimization
