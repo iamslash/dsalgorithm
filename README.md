@@ -157,10 +157,16 @@
   - track the largest set
   - [EDITORWARS](http://algospot.com/judge/problem/read/EDITORWARS)
   - trie
+    - a tree whose key is a character for searching strings
+    - use too much memory
   - triple array trie
+    - use less memory than trie
   - suffix trie
-  - radix tree (patricia tree)
+    - a trie which saves suffix array but uses too much memeory.
   - suffix tree
+    - a tree which saves suffix array and uses less memory. but time complexity of simple algorithm is O(N^2). suffix array is better.
+  - radix tree (patricia tree)
+    - compress trie like suffix tree.
   - [SOLONG](http://algospot.com/judge/problem/read/SOLONG)
   - Aho–Corasick algorithm
   - [NH](http://algospot.com/judge/problem/read/NH)

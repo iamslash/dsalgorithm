@@ -3,51 +3,46 @@
 #include <vector>
 
 const int ALPHABETS = 26;
-int to_num(char c) {
-  return c - 'A';
+int ToNumber(char ch) {
+  return ch - 'A';
 }
 
+// node of trie
 struct TrieNode {
   TrieNode* children[ALPHABETS];
+  // this node is terminal
   bool terminal;
   TrieNode() : terminal(false) {
-    for (int i = 0; i < ALPHABETS; ++i)
-      children[i] = NULL;
+    memset(children, 0, sizeof(children));
   }
   ~TrieNode() {
     for (int i = 0; i < ALPHABETS; ++i)
-      if (children[i] != NULL)
+      if (children[i])
         delete children[i];
   }
+  // 이 노드를 루트로 하는 트라이에 문자열 key를 추가한다.
   void insert(const char* key) {
-    // base condition
     if (*key == 0) {
       terminal = true;
-      return;
+    } else {
+      int next = ToNumber(*key);
+      if (children[next] == NULL)
+        children[next] = new TrieNode();
+      children[next]->insert(key + 1);
     }
-    // recursion
-    int next = to_num(*key);
-    if (children[next] == NULL)
-      children[next] = new TrieNode();
-    children[next]->insert(key + 1);
   }
+
   TrieNode* find(const char* key) {
-    // base condition
     if (*key == 0)
       return this;
-    int next = to_num(*key);
+    int next = ToNumber(*key);
     if (children[next] == NULL)
       return NULL;
-    // recursion
     return children[next]->find(key + 1);
   }
 };
 
 int main() {
-  // a terminal character of literal string is 0.
-  // const char * a = "hello";
-  // printf("%d\n", *(a+5));
-
   TrieNode* ptn = new TrieNode();
   ptn->insert("hello");
   ptn->insert("world");
