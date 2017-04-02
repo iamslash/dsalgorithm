@@ -157,6 +157,7 @@
   - track the largest set
   - [EDITORWARS](http://algospot.com/judge/problem/read/EDITORWARS)
   - trie
+    - insert, find
     - a tree whose key is a character for searching strings
     - use too much memory
   - triple array trie
