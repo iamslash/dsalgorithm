@@ -157,7 +157,7 @@
   - track the largest set
   - [EDITORWARS](http://algospot.com/judge/problem/read/EDITORWARS)
   - trie
-    - insert, find
+    - children, terminal, insert, find
     - a tree whose key is a character for searching strings
     - use too much memory
   - triple array trie
@@ -170,6 +170,7 @@
     - compress trie like suffix tree.
   - [SOLONG](http://algospot.com/judge/problem/read/SOLONG)
   - Aho–Corasick algorithm
+    - children, fail, terminal, output, insert, compute_fail_func
   - [NH](http://algospot.com/judge/problem/read/NH)
 
 - Graph
