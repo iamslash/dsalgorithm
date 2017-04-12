@@ -159,7 +159,7 @@
   - [EDITORWARS](http://algospot.com/judge/problem/read/EDITORWARS)
   - trie 
     - [pdf](https://raw.githubusercontent.com/iamslash/dsalgorithm/master/_pdf/trie.pdf) [video]()
-    - children, terminal, insert, find
+    - TrieNode, children, terminal, insert, find
     - a tree whose key is a character for searching strings
     - use too much memory
   - triple array trie
