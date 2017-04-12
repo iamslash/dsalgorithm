@@ -59,6 +59,6 @@ int main() {
     printf("their is in\n");
   if (ptn->find("the") != NULL)
     printf("the is in\n");
-  
+
   delete ptn;
 }
