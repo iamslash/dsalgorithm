@@ -1,8 +1,11 @@
 // Copyright (C) 2016 by iamslash
 
-#include <cstdio>
+#include <vector>
 
 const int ALPHABETS = 26;
+int to_num(char c) {
+  return c - 'A';
+}
 
 struct TrieNode {
   TrieNode* children[ALPHABETS];
@@ -16,9 +19,6 @@ struct TrieNode {
       if (children[i] != NULL)
         delete children[i];
   }
-  int tonum(char c) {
-    return c - 'A';
-  }
   void insert(const char* key) {
     // base condition
     if (*key == 0) {
@@ -26,17 +26,16 @@ struct TrieNode {
       return;
     }
     // recursion
-    int next = tonum(*key);
+    int next = to_num(*key);
     if (children[next] == NULL)
       children[next] = new TrieNode();
     children[next]->insert(key + 1);
   }
   TrieNode* find(const char* key) {
     // base condition
-    if (*key == 0) {
+    if (*key == 0)
       return this;
-    }
-    int next = tonum(*key);
+    int next = to_num(*key);
     if (children[next] == NULL)
       return NULL;
     // recursion
@@ -45,20 +44,18 @@ struct TrieNode {
 };
 
 int main() {
-  TrieNode* ptn = new TrieNode();
-  ptn->insert("there");
-  ptn->insert("their");
-  ptn->insert("the");
-  ptn->insert("answer");
-  ptn->insert("a");
-  ptn->insert("bye");
+  // a terminal character of literal string is 0.
+  // const char * a = "hello";
+  // printf("%d\n", *(a+5));
 
-  if (ptn->find("hello") != NULL)
+  TrieNode* ptn = new TrieNode();
+  ptn->insert("hello");
+  ptn->insert("world");
+  TrieNode* ptn0 = ptn->find("hello");
+  TrieNode* ptn1 = ptn->find("ello");
+  if (ptn0)
     printf("hello is in\n");
-  if (ptn->find("their") != NULL)
-    printf("their is in\n");
-  if (ptn->find("the") != NULL)
-    printf("the is in\n");
-  
+  if (ptn1)
+    printf("ello is in\n");
   delete ptn;
 }
