@@ -13,26 +13,26 @@
 - The RAM Model of Computation
 - The asymptotic analysis of worst-case complexity
 - notations
- - f(n) = O(g(n)) means c · g(n) is an upper bound on f (n). Thus there exists some constant c such that f (n) is always ≤ c · g(n), for large enough n (i.e. , n ≥ n0 for some constant n0).
- - f(n) = Ω(g(n)) means c · g(n) is a lower bound on f(n). Thus there exists some constant c such that f(n) is always ≥ c · g(n), for all n ≥ n0.
- - f(n) = Θ(g(n)) means c1 · g(n) is an upper bound on f(n) and c2 · g(n) is a lower bound on f(n), for all n ≥ n0. Thus there exist constants c1 and c2 such that f (n) ≤ c1 · g(n) and f (n) ≥ c2 · g(n). This means that g(n) provides a nice, tight bound on f(n).
- - ![Graphic examples of the Θ, O, and Ω notations.](https://raw.githubusercontent.com/iamslash/dsalgorithm/master/_img/Graphic%20examples%20of%20the%20%CE%98%2C%20O%2C%20and%20%E2%84%A6%20notations.jpeg)
- - ![Algorithm Graphs](https://raw.githubusercontent.com/iamslash/dsalgorithm/master/_img/alg_graph.jpeg)
+  - f(n) = O(g(n)) means c · g(n) is an upper bound on f (n). Thus there exists some constant c such that f (n) is always ≤ c · g(n), for large enough n (i.e. , n ≥ n0 for some constant n0).
+  - f(n) = Ω(g(n)) means c · g(n) is a lower bound on f(n). Thus there exists some constant c such that f(n) is always ≥ c · g(n), for all n ≥ n0.
+  - f(n) = Θ(g(n)) means c1 · g(n) is an upper bound on f(n) and c2 · g(n) is a lower bound on f(n), for all n ≥ n0. Thus there exist constants c1 and c2 such that f (n) ≤ c1 · g(n) and f (n) ≥ c2 · g(n). This means that g(n) provides a nice, tight bound on f(n).
+  - ![Graphic examples of the Θ, O, and Ω notations.](https://raw.githubusercontent.com/iamslash/dsalgorithm/master/_img/Graphic%20examples%20of%20the%20%CE%98%2C%20O%2C%20and%20%E2%84%A6%20notations.jpeg)
+  - ![Algorithm Graphs](https://raw.githubusercontent.com/iamslash/dsalgorithm/master/_img/alg_graph.jpeg)
 
 
 # P, NP, NP Hard, NP Complete
 
 - P
- - P means the existence of an algorithm for the task that runs in polynomial time.
+  - P means the existence of an algorithm for the task that runs in polynomial time.
 - NP
- - set of decision problems for which any yes instance has some 'proof' that verifies the problem to be yes in polynomial step
+  - set of decision problems for which any yes instance has some 'proof' that verifies the problem to be yes in polynomial step
 - NP Hard
- - A decision problem H is NP-hard when for every problem L in NP,
+  - A decision problem H is NP-hard when for every problem L in NP,
  there is a polynomial-time reduction from L to H
 - NP Complete
- - A decision problem C is NP-complete if:
-  - C is in NP, and
-  - Every problem in NP is reducible to C in polynomial time.
+  - A decision problem C is NP-complete if:
+    - C is in NP, and
+    - Every problem in NP is reducible to C in polynomial time.
 
 # Algorithms
 
@@ -121,6 +121,7 @@
   - [Rabin-Karp algorithm](https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm)
   - suffix
   - Aho–Corasick algorithm
+    - children, fail, terminal, output, insert, compute_fail_func, search
 
 - Tree
   - terms and definitions
@@ -170,7 +171,7 @@
     - compress trie like suffix tree.
   - [SOLONG](http://algospot.com/judge/problem/read/SOLONG)
   - Aho–Corasick algorithm
-    - children, fail, terminal, output, insert, compute_fail_func
+    - children, fail, terminal, output, insert, compute_fail_func, search
   - [NH](http://algospot.com/judge/problem/read/NH)
 
 - Graph
