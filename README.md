@@ -172,7 +172,7 @@
     - compress trie like suffix tree.
   - [SOLONG](http://algospot.com/judge/problem/read/SOLONG)
   - Aho–Corasick algorithm
-    - children, fail, terminal, output, insert, compute_fail_func, search
+    - children, fail, terminal, insert, fail, output, compute_fail, search
   - [NH](http://algospot.com/judge/problem/read/NH)
 
 - Graph
