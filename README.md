@@ -176,7 +176,7 @@
   - [NH](http://algospot.com/judge/problem/read/NH)
 
 - Graph
-  - terms and definitions
+  - [terms and definitions](https://raw.githubusercontent.com/iamslash/dsalgorithm/master/doc/graph_terms_and_definitions)
     - vertex, edge
     - directed graph
     - undirected graph
