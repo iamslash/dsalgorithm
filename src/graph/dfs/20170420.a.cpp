@@ -1,28 +1,32 @@
 // Copyright (C) 2017 by iamslash
 
+// dfs
+// 0. find a vertex which is not visited yet.
+// 1. visit neighbors of a vertex.
+
 #include <vector>
 #include <cstdio>
 
-const int V = 7;
+const int MAX_V = 10;
+int V = 7;
+
 std::vector<std::vector<int> > adj;
 
-void dfs(std::vector<bool>& visited, int here) {
-  printf("%d ", here);
-  visited[here] = true;
+void Dfs(std::vector<int>& dist, int here) {
+  printf("%d\n", here);
+  dist[here] = 1;
   for (int i = 0; i < adj[here].size(); ++i) {
-    int child = adj[here][i];
-    if (visited[child] == false) {
-      dfs(visited, child);
-    }
+    int there = adj[here][i];
+    if (dist[there] < 0)
+      Dfs(dist, there);
   }
 }
 
-void dfs_all() {
-  std::vector<bool> visited(V, false);
+void DfsAll() {
+  std::vector<int> dist(V, -1);
   for (int i = 0; i < V; ++i) {
-    if (visited[i] == false) {
-      dfs(visited, i);
-    }
+    if (dist[i] < 0)
+      Dfs(dist, i);
   }
 }
 
@@ -59,9 +63,7 @@ int main() {
 
   // printf("before DfsAll\n");
   
-  dfs_all();
-
-  printf("\n");
+  DfsAll();
   
   return 0;
 }

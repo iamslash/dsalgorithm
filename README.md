@@ -195,8 +195,11 @@
     - dense graph
     - implicit graph
   - dfs (depth first search)
+    - adj, visited
   - finding out two vertices are connected
+    - dfs(u) and find out whether v is visited.
   - counting the number of components 
+    - count the number of dfs in dfs_all.
   - topological sort
   - [DICTIONARY](http://algospot.com/judge/problem/read/DICTIONARY)
   - eulerian circuit
