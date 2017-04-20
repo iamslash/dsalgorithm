@@ -200,8 +200,8 @@
     - dfs(u) and find out whether v is visited.
   - counting the number of components 
     - count the number of dfs in dfs_all.
-  - topological sort
-    - ...
+  - [topological sort](doc/graph_topological_sort.md)
+    - adj, visited, dfs, dfs_all, order
   - [DICTIONARY](http://algospot.com/judge/problem/read/DICTIONARY)
   - eulerian circuit
     - DAG (directed asyclick graph)
