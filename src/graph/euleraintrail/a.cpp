@@ -5,11 +5,12 @@
 #include <vector>
 #include <limits>
 #include <cstring>
+#include <algorithm>
 
 int N = 5;
 
 std::vector<std::vector<int> > adj;
-std::vector<int> circuit;
+std::vector<int> trail;
 
 void print_v_int(const std::vector<int>& v) {
   for (int i = 0; i < v.size(); ++i) {
@@ -26,7 +27,15 @@ void get_euler_circuit(int here) {
       get_euler_circuit(there);
     }
   }
-  circuit.push_back(here);
+  trail.push_back(here);
+}
+
+void get_euler_trail(int start, int end) {
+  adj[start][end] = 1;
+  adj[end][start] = 1;
+  get_euler_circuit(start);
+  std::reverse(trail.begin(), trail.end());
+  trail.pop_back();
 }
 
 int main() {
@@ -35,12 +44,9 @@ int main() {
     adj[1][0] = 1;
     adj[1][2] = 1;
     adj[2][1] = 1;
-    adj[2][0] = 1;
-    adj[0][2] = 1;
 
-    get_euler_circuit(0);
-    std::reverse(circuit.begin(), circuit.end());
-    print_v_int(circuit);
+    get_euler_trail(0, 2);
+    print_v_int(trail);
   //
   return 0;
 }
