@@ -19,6 +19,22 @@ void print_v_int(const std::vector<int>& v) {
 }
 
 void dfs_spanning_tree(int here) {
+  discovered[here] = ++counter;
+  for (int there = 0; there < adj[here].size(); ++there) {
+    if (adj[here][there] == 0)
+      continue;
+    if (discovered[there] < 0) {  // tree edge
+      printf("%d-%d : tree\n", here, there);
+      dfs_spanning_tree(there);
+    } else if (discovered[here] < discovered[there]) {  // forward edge
+      printf("%d-%d : forward\n", here, there);
+    } else if (finished[there] == 0) {
+      printf("%d-%d : backward\n", here, there);
+    } else {
+      printf("%d-%d : cross\n", here, there);
+    }
+  }
+  finished[here] = 1;
 }
 
 int main() {
