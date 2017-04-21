@@ -189,8 +189,8 @@
   - [topological sort](doc/graph_topological_sort.md)
     - adj, visited, dfs, dfs_all, order
   - [DICTIONARY](http://algospot.com/judge/problem/read/DICTIONARY)
-  - eulerian circuit
-    - DAG (directed asyclick graph)
+  - [eulerian circuit](doc/graph_eulerian_circuit.md)
+    - adj, circuit, eulerian_circuit
   - eulerian trail
   - [WORDCHAIN](http://algospot.com/judge/problem/read/WORDCHAIN)
   - dfs spanning tree
