@@ -177,23 +177,9 @@
 
 - Graph
   - [terms and definitions](doc/graph_terms_and_definitions.md)
-    - vertex, edge
-    - directed graph
-    - undirected graph
-    - weighted graph
-    - multi graph
-    - simple graph
-    - unrooted tree
-    - bipartite graph
-    - DAG (directed asyclick graph)
-    - simple path
-    - cycle
-    - circuit
-    - adjacency list 
-    - adjacency matrix 
-    - sparse graph
-    - dense graph
-    - implicit graph
+    - vertex, edge, directed graph, undirected graph, weighted graph, multi graph, simple graph
+    - unrooted tree, bipartite graph, DAG (directed asyclick graph), simple path
+    - cycle, circuit, adjacency list, adjacency matrix , sparse graph, dense graph, implicit graph
   - dfs (depth first search)
     - adj, visited, dfs, dfs_all
   - finding out two vertices are connected
@@ -208,10 +194,7 @@
   - eulerian trail
   - [WORDCHAIN](http://algospot.com/judge/problem/read/WORDCHAIN)
   - dfs spanning tree
-    - tree edge
-    - forward edge
-    - back edge
-    - cross edge
+    - tree edge, forward edge, back edge, cross edge
   - proof of topological sort
   - check cycle
   - cut vertex (articulation point)
