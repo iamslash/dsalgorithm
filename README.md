@@ -190,8 +190,9 @@
     - adj, visited, dfs, dfs_all, order
   - [DICTIONARY](http://algospot.com/judge/problem/read/DICTIONARY)
   - [eulerian circuit](doc/graph_eulerian_circuit.md)
-    - adj, circuit, eulerian_circuit
-  - eulerian trail
+    - adj, circuit, get_eulerian_circuit
+  - [eulerian trail](doc/graph_eulerian_trail.md)
+    - adj, circuit, get_eulerian_circuit, get_eulerian_trail
   - [WORDCHAIN](http://algospot.com/judge/problem/read/WORDCHAIN)
   - dfs spanning tree
     - tree edge, forward edge, back edge, cross edge
