@@ -192,12 +192,13 @@
   - [eulerian circuit](doc/graph_eulerian_circuit.md)
     - adj, circuit, get_eulerian_circuit
   - [eulerian trail](doc/graph_eulerian_trail.md)
-    - adj, circuit, get_eulerian_circuit, get_eulerian_trail
+    - adj, trail, get_eulerian_circuit, get_eulerian_trail
   - [WORDCHAIN](http://algospot.com/judge/problem/read/WORDCHAIN)
-  - dfs spanning tree
+  - [dfs spanning tree](doc/graph_dfs_spanning_tree.md)
     - tree edge, forward edge, back edge, cross edge
+    - adj, discovered, finished, counter, dfs_spanning_tree
   - proof of topological sort
-  - check cycle
+  - [check the cycle](doc/graph_check_the_cycle.md)
   - cut vertex (articulation point)
     - biconnected components
   - bridge

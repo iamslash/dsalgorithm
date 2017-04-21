@@ -12,14 +12,13 @@ std::vector<std::vector<int> > adj;
 std::vector<int> discovered, finished;
 int counter = 0;
 
-void PrintVInt(const std::vector<int>& v) {
+void print_v_int(const std::vector<int>& v) {
   for (int i = 0; i < v.size(); ++i) {
     printf("%d ", v[i]);
   }
 }
 
-void DfsSpanningTree(int here) {
-  
+void dfs_spanning_tree(int here) {
 }
 
 int main() {
@@ -33,8 +32,6 @@ int main() {
   adj[3][2] = 1;
   discovered = std::vector<int>(N, -1);
   finished = std::vector<int>(N, 0);
-
-  DfsSpanningTree(0);
-  
+  dfs_spanning_tree(0);
   return 0;
 }
