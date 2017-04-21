@@ -14,7 +14,7 @@ std::vector<int> order;
 
 void print_v_int(const std::vector<int>& v) {
   for (int i = 0; i < v.size(); ++i) {
-    printf("%d ", i);
+    printf("%d ", v[i]);
   }
   printf("\n");
 }
@@ -35,7 +35,7 @@ void dfs_all() {
   }
 }
 
-std::vector<int> topological_sort() {  
+std::vector<int> topological_sort() {
   dfs_all();
   std::reverse(order.begin(), order.end());
 
@@ -51,17 +51,20 @@ std::vector<int> topological_sort() {
 }
 
 int main() {
-    adj = std::vector<std::vector<int> >(N, std::vector<int>(N, 0));
-    // visited 를 모두 false로 초기화한다.
-    visited = std::vector<bool>(N, false);
+  adj = std::vector<std::vector<int> >(N, std::vector<int>(N, 0));
+  // visited 를 모두 false로 초기화한다.
+  visited = std::vector<bool>(N, false);
 
-    adj[0][1] = 1;
-    adj[0][2] = 1;
-    adj[3][2] = 1;
-    adj[4][3] = 1;
+  adj[0][1] = 1;
+  adj[0][2] = 1;
+  adj[3][2] = 1;
+  adj[4][3] = 1;
 
-    std::vector<int> c = topological_sort();
-    print_v_int(c);
-  //
+  std::vector<int> c = topological_sort();
+  print_v_int(c);
+
+  // adj[0][4] = 1;
+  // dfs_all();
+  // print_v_int(order);
   return 0;
 }
