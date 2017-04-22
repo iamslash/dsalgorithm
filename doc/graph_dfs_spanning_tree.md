@@ -30,4 +30,4 @@
   - (u, v)가 tree, forward, back edge가 아니라면 (u, v)는 cross edge이다.
     u는 v의 선조도 아니고 v는 u의 자손도 아니다.
 
-  ![](https://upload.wikimedia.org/wikipedia/commons/5/57/Tree_edges.svg)
+  ![](https://commons.wikimedia.org/wiki/File:Tree_edges.svg#/media/File:Tree_edges.svg)

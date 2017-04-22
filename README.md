@@ -199,8 +199,9 @@
     - adj, discovered, finished, counter, dfs_spanning_tree
   - proof of topological sort
   - [check the cycle](doc/graph_check_the_cycle.md)
-  - cut vertex (articulation point)
+  - [cut vertex (articulation point)](doc/graph_cut_vertex.md)
     - biconnected components
+    - adj, discovered, iscutvertex, counter, find_cut_vertex
   - bridge
   - tarjan's algorithm
     - scc (strongly connected components)
