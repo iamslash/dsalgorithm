@@ -201,11 +201,12 @@
   - [check the cycle](doc/graph_check_the_cycle.md)
   - [cut vertex (articulation point)](doc/graph_cut_vertex.md)
     - biconnected components
-    - adj, discovered, iscutvertex, counter, find_cut_vertex
-  - bridge
-  - tarjan's algorithm
+    - adj, discovered, is_cut_vertex, counter, find_cut_vertex
+  - [bridge](doc/graph_bridge.md)
+    - adj, discovered, is_bridge, counter, find_bridge
+  - [tarjan's algorithm](doc/tarjan_algorithm.md)
     - scc (strongly connected components)
-      - condensation
+    - condensation
   - [GALLERY](http://algospot.com/judge/problem/read/GALLERY)
     - dominating set
     - unrooted tree
