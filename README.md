@@ -203,7 +203,7 @@
     - biconnected components
     - adj, discovered, is_cut_vertex, counter, find_cut_vertex
   - [bridge](doc/graph_bridge.md)
-    - adj, discovered, is_bridge, counter, find_bridge
+    - adj, discovered, bridge, counter, find_bridge
   - [tarjan's algorithm](doc/tarjan_algorithm.md)
     - scc (strongly connected components)
     - condensation
