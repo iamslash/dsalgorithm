@@ -15,7 +15,7 @@ class State {
 };
 typedef std::map<State, int> StateMap;
 
-int Bfs(State start, State end) {
+int bfs(State start, State end) {
   if (start == end)
     return 0;
   StateMap sm;
