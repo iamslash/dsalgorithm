@@ -204,9 +204,10 @@
     - adj, discovered, is_cut_vertex, counter, find_cut_vertex
   - [bridge](doc/graph_bridge.md)
     - adj, discovered, bridge, counter, find_bridge
-  - [tarjan's algorithm](doc/tarjan_algorithm.md)
+  - [tarjan's algorithm](doc/graph_tarjan_algorithm.md)
     - scc (strongly connected components)
     - condensation
+  - [topological sort of scc](doc/graph_topological_sort_of_scc)
   - [GALLERY](http://algospot.com/judge/problem/read/GALLERY)
     - dominating set
     - unrooted tree
@@ -216,7 +217,11 @@
     - 2-sat
     - implication graph
   - bfs (breadth first search)
-  - bfs shortest path
+    - adj, bfs, discovered, q, order
+    - O(|V| + |E|) adjacency list
+    - O(|V|^2) adjacency matrix
+  - [bfs shortest path](doc/graph_bfs_shortest_path.md)
+    - adj, bfs, distance, parent, q
   - [SORTGAME](http://algospot.com/judge/problem/read/SORTGAME)
   - [CHILDRENDAY](http://algospot.com/judge/problem/read/CHILDRENDAY)
   - 15 puzzle - bfs
