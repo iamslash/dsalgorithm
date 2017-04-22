@@ -221,7 +221,7 @@
     - O(|V| + |E|) adjacency list
     - O(|V|^2) adjacency matrix
   - [bfs shortest path](doc/graph_bfs_shortest_path.md)
-    - adj, bfs, distance, parent, q
+    - adj, get_shortest_path, bfs, distance, parent, q
   - [SORTGAME](http://algospot.com/judge/problem/read/SORTGAME)
   - [CHILDRENDAY](http://algospot.com/judge/problem/read/CHILDRENDAY)
   - 15 puzzle - bfs
