@@ -11,7 +11,8 @@ int N = 7;
 
 std::vector<std::vector<int> > adj;
 std::vector<int> discovered;
-std::vector<std::pair<int, int> > bridge;
+// std::vector<std::pair<int, int> > bridge;
+std::vector<std::vector<bool> > bridge;
 int counter;
 
 void print_v_pair(const std::vector<std::pair<int, int> >& v) {
@@ -21,8 +22,42 @@ void print_v_pair(const std::vector<std::pair<int, int> >& v) {
   printf("\n");
 }
 
-int find_bridge(int here, bool b_root) {
-  int r;
+void print_v_bool(const std::vector<std::vector<bool> >& v) {
+  for (int i = 0; i < v.size(); ++i) {
+    for (int j = 0; j < v[i].size(); ++j) {
+      if (v[i][j])
+        printf("%d-%d\n", i, j);
+    }
+  }
+  printf("\n");
+}
+
+// here를 시작으로 back edge의 terminal node중
+// 발견 순서가 가장 최소인 녀석을 리턴한다.
+// there를 루트로 하는 서브트리에서 here를 제외한
+// here의 부모로 가는 back edge가 없다면
+// (here, there)는 bridge이다.
+int find_bridge(int here) {
+  printf("  %d\n", here);
+  discovered[here] = counter++;
+  int r = discovered[here];
+
+  // 자식들을 순회하자.
+  for (int i = 0; i < adj[here].size(); ++i) {
+    int there = adj[here][i];
+
+    // tree edge만 검사하자.
+    if (discovered[there] == -1) {
+      int subtree = find_bridge(there);
+      if (subtree == r) {
+        // bridge.push_back(std::make_pair(here, there));
+        bridge[here][there] = true;
+      }
+      r = std::min(r, subtree);
+    } else {
+      r = std::min(r, discovered[there]);
+    }
+  }
 
   return r;
 }
@@ -48,9 +83,11 @@ int main() {
   adj[6].push_back(1);
 
   discovered = std::vector<int>(N, -1);
-  bridge = std::vector<std::pair<int, int>>();
-  find_bridge(0, true);
+  bridge = std::vector<std::vector<bool> >(N, std::vector<bool>(N, false));
 
-  print_v_pair(bridge);
+  find_bridge(0);
+  // std::unique(bridge.begin(), bridge.end());
+  // print_v_pair(bridge);
+  print_v_bool(bridge);
   return 0;
 }
