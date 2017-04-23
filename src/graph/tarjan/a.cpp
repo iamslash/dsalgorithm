@@ -18,36 +18,36 @@ std::vector<int> scc_id;
 // 각 정점의 발견순서
 std::vector<int> discovered;
 // 정점의 번호를 담는 스택
-std::stack<int> st;
+std::stack<int> stck;
 //
 int scc_counter, vertex_counter = 0;
 
-void PrintVInt(const std::vector<int>& v) {
+void print_v_int(const std::vector<int>& v) {
   for (int i = 0; i < v.size(); ++i) {
     printf("%d ", v[i]);
   }
 }
 
-void PrintVBool(const std::vector<bool>& v) {
+void print_v_bool(const std::vector<bool>& v) {
   for (int i = 0; i < v.size(); ++i) {
-    printf("%d ", (int)v[i]);
+    printf("%d ", static_cast<int>(v[i]));
   }
 }
 
 // here를 루트로 하는 서브 트리에서 역방향 간선이나 교차 간선을 통해
 // 갈 수 있는 정점 중 최소 발견 순서를 반환한다.
-int Scc(int here) {
+int scc(int here) {
   int r = discovered[here] = vertex_counter++;
   // 스택에 here를 넣는다. here의 후손들은 모두 스택에서 here후에
   // 들어간다.
-  st.push(here);
+  stck.push(here);
   for (int i = 0; i < adj[here].size(); ++i) {
     int there = i;
     if (adj[here][there] == 0)
       continue;
     //
     if (discovered[there] == -1)
-      r = std::min(r, Scc(there));
+      r = std::min(r, scc(there));
     // there가 무시해야 하는 교차 간선이 아니라면
     else if (scc_id[there] == -1)
       r = std::min(r, discovered[there]);
@@ -57,8 +57,8 @@ int Scc(int here) {
     // hdre를 루트로 하는 서브트리에 남아 있는 정점들을 전부 하나의
     // 컴포넌트로 묶는다.
     while (true) {
-      int t = st.top();
-      st.pop();
+      int t = stck.top();
+      stck.pop();
       scc_id[t] = scc_counter;
       if (t == here)
         break;
@@ -68,7 +68,7 @@ int Scc(int here) {
 }
 
 // tarjan의 scc알고리즘
-std::vector<int> TarjanScc() {
+std::vector<int> tarjan_scc() {
   // 배열들을 전부 초기화
   scc_id = discovered = std::vector<int>(adj.size(), -1);
   // 카운터 초기화
@@ -76,7 +76,7 @@ std::vector<int> TarjanScc() {
   // 모든 정점에 대해 Scc()호출
   for (int i = 0; i < adj.size(); ++i) {
     if (discovered[i] == -1)
-      Scc(i);
+      scc(i);
   }
   return scc_id;
 }
@@ -92,9 +92,9 @@ int main() {
   adj[6][4] = 1;
   adj[6][5] = 1;
 
-  std::vector<int> r = TarjanScc();
+  std::vector<int> r = tarjan_scc();
 
-  PrintVInt(r);
+  print_v_int(r);
 
   return 0;
 }

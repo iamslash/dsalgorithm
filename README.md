@@ -207,6 +207,7 @@
   - [tarjan's algorithm](doc/graph_tarjan_algorithm.md)
     - scc (strongly connected components)
     - condensation
+    - adj, scc_id, discovered, stck, scc_counter, vertex_counter, scc, tarjan_scc
   - [topological sort of scc](doc/graph_topological_sort_of_scc)
   - [GALLERY](http://algospot.com/judge/problem/read/GALLERY)
     - dominating set
