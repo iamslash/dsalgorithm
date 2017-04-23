@@ -7,7 +7,7 @@
 #include <cstring>
 #include <stack>
 
-int N = 7;
+int N = 5;
 
 // 그래프의 인접 행렬
 // adj[i][j] = i와 j사이의 간선의 수
@@ -16,7 +16,7 @@ std::vector<std::vector<int> > adj;
 // 컴포넌트에 속한 정점들의 컴포넌트 번호가 같다.
 std::vector<int> scc_id;
 // 각 정점의 발견순서
-std::vector<int> discovered;
+std::vector<int> discovered, finished;
 // 정점의 번호를 담는 스택
 std::stack<int> stck;
 //
@@ -41,15 +41,16 @@ int scc(int here) {
   // 스택에 here를 넣는다. here의 후손들은 모두 스택에서 here후에
   // 들어간다.
   stck.push(here);
-  for (int i = 0; i < adj[here].size(); ++i) {
-    int there = i;
+  for (int there = 0; there < adj[here].size(); ++there) {
+    // 연결되어 있지 않다.
     if (adj[here][there] == 0)
       continue;
     //
     if (discovered[there] == -1)
       r = std::min(r, scc(there));
     // there가 무시해야 하는 교차 간선이 아니라면
-    else if (scc_id[there] == -1)
+    else if (discovered[there] < discovered[here] &&
+             finished[there] != 1)
       r = std::min(r, discovered[there]);
   }
   // here에서 부모로 올라가는 간선을 끊어야 할지 확인한다.
@@ -63,7 +64,9 @@ int scc(int here) {
       if (t == here)
         break;
     }
+    ++scc_counter;
   }
+  finished[here] = 1;
   return r;
 }
 
@@ -83,14 +86,11 @@ std::vector<int> tarjan_scc() {
 
 int main() {
   adj = std::vector<std::vector<int> >(N, std::vector<int>(N, 0));
-  adj[1][2] = 1;
-  adj[1][5] = 1;
-  adj[2][3] = 1;
+  adj[1][0] = 1;
+  adj[2][1] = 1;
+  adj[0][2] = 1;
+  adj[0][3] = 1;
   adj[3][4] = 1;
-  adj[4][2] = 1;
-  adj[5][6] = 1;
-  adj[6][4] = 1;
-  adj[6][5] = 1;
 
   std::vector<int> r = tarjan_scc();
 

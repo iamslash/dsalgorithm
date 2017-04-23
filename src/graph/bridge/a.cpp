@@ -49,13 +49,14 @@ int find_bridge(int here) {
     // tree edge만 검사하자.
     if (discovered[there] == -1) {
       int subtree = find_bridge(there);
-      if (subtree == r) {
-        // bridge.push_back(std::make_pair(here, there));
-        bridge[here][there] = true;
-      }
       r = std::min(r, subtree);
     } else {
       r = std::min(r, discovered[there]);
+    }
+
+    if (r == here) {
+      // bridge.push_back(std::make_pair(here, there));
+      bridge[here][there] = true;
     }
   }
 

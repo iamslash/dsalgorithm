@@ -20,3 +20,5 @@
 
   - spanning tree를 제작한다.
   - 
+  
+  ![](http://dyewrv1redcbt.cloudfront.net//wp-content/uploads/SCC.png)
