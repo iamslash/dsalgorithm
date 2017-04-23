@@ -5,8 +5,6 @@
 #include <map>
 #include <queue>
 
-int N = 5;
-
 class State {
  public:
   // 0이 상하좌우로 이동했을때 각 State을 계산해서 리턴한다.

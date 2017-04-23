@@ -226,8 +226,10 @@
   - [CHILDRENDAY](http://algospot.com/judge/problem/read/CHILDRENDAY)
   - [15 puzzle - bfs](doc/graph_15_puzzle_bfs.md)
     - State, get_adj, operator<, operator==, bitmask, move, get, set, swap, get_zero_idx, state_map, bfs
-  - 15 puzzle - bidrectional search
-  - 15 puzzle - ids (iteratively deep searching)
+  - [15 puzzle - bfs bidrectional search](doc/graph_15_puzzle_bfs_bs.md)
+    - State, get_adj, operator<, operator==, bitmask, move, get, set, swap, get_zero_idx, state_map, get_sign, incr, bfs_bs
+  - [15 puzzle - bfs ids (iteratively deep searching)](doc/graph_15_puzzle_bfs_ids.md)
+    - State, get_adj, operator<, operator==, bitmask, move, get, set, swap, get_zero_idx, best, dfs, ids
   - [HANOI4](http://algospot.com/judge/problem/read/HANOI4)
   - Dijkstra algorithm
   - Dijkstra algorithm without priority queue
