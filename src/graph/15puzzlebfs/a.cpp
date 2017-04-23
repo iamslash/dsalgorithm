@@ -69,11 +69,12 @@ class State {
     swap(zidx, didx);
   }
   // idx에 해당하는 값
-  int get(int idx) const {
-    return (bitmask >> (idx << 2)) * 0x0f;
+  uint64_t get(int idx) const {
+    return (bitmask >> (idx << 2)) & 0x0f;
   }
   int set(int idx, uint64_t val) {
-    bitmask = (bitmask & ~(0x0f << (idx << 2))) | ((val & 0x0f) << (idx << 2));
+    bitmask = bitmask & ~((uint64_t)0x0f << (idx << 2));
+    bitmask = bitmask | ((val & 0x0f) << (idx << 2));
     return val;
   }
   void swap(int src, int dst) {
@@ -138,30 +139,42 @@ int main() {
                      2,  3,  0,  5,
                      6,  9, 10, 11,
                     12, 13, 14, 15};
+  // uint64_t a[16] = { 1,  2,  3,  4,
+  //                    5,  6,  7,  8,
+  //                    9, 10, 11, 12,
+  //                   0, 13, 14,  15};
   uint64_t b[16] = { 1,  2,  3,  4,
                      5,  6,  7,  8,
                      9, 10, 11, 12,
                     13, 14, 15,  0};
   State start = State(a);
   State end = State(b);
-  // printf("%d\n", bfs(start, end));
+  printf("%d\n", bfs(start, end));
 
-  // test get, set
-  // start.print();
-  // start.set(0, 0);
-  // start.set(6, 7);
-  // start.print();
+  // // test get, set
+  // for (int i = 0; i < 16; ++i) {
+  //   start.set(i, i);
+  // }
+  // // printf("%llu\n", ((uint64_t)0x0f << (15 << 2)));
+  // // start.set(15, 15);
+  // for (int i = 0; i < 16; ++i) {
+  //   printf("%2llu ", start.get(i));
+  // }
+  // // printf("\n");
 
-  // test move
-  start.print();
-  for (int i = 0; i < 4; ++i) {
-    start.move(i);
-    start.print();
-  }
+  // // test move
+  // start.print();
+  // for (int i = 0; i < 4; ++i) {
+  //   start.move(0);
+  //   start.print();
+  // }
 
   // test print
   // start.print();
   // end.print();
 
+
+  
+  
   return 0;
 }
