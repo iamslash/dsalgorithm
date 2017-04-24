@@ -10,8 +10,8 @@
   - bridge는 tree edge일 수 밖에 없다. (u, v)가 forward, back edge라면 u와
     v를 잇는 또 다른 경로가 있다는 것이다. tree edge들에 대해서만 bridge판정을 해야 한다.
   - u가 v의 부모라고 하자. tree edge (u, v)가 bridge이기 위해서는 v를 루트로 하는
-    서브트리와 이 외의 점들을 연결하는 유일한 간선이 (u, v)이어야 한다.
-  - (u, v)를 제외한 back edge로 u보다 먼저 발견된 vertex에 갈 수 없을 경우 (u, v)
+    서브트리와 이 외의 점들을 연결하는 유일한 간선이 (u, v)이어야 한다. 
+  - (u, v)를 제외하고 back edge로 u 혹은 먼저 발견된 vertex에 갈 수 없을 경우 (u, v)
     는 bridge이다.
 
   ![](http://dyewrv1redcbt.cloudfront.net//wp-content/uploads/Bridge2-300x176.png)
