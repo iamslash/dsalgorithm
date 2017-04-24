@@ -19,6 +19,16 @@
 
 
   - spanning tree를 제작한다.
-  - 
+  - (u, v) edge 가 있다. v를 root로 하는 subtree에서 u 혹은 u보다 선조로 
+    가는 edge가 없다면 v를 root로 하는 subtree는 scc이다. 
+  - stack을 활용해서 scc의 정점들을 구해내자.
+  - 아래 그림에서 vertex 3을 처리한다고 해보자. 3은 stack에
+    삽입한다. 4를 root로 하는 서브트리는 edge중 발견된 순서가
+    최소인 vertex는 4이다. vertex 4이하는 scc이다.
+  - vertex 4를 처리한다고 해보자. 4는 stack에 삽입한다. 4와 연결된
+    edge가 없다. 4 가 등장 할 때까지 stack에서 pop한다. 새로운 scc를
+    구성한다.
+  - 다시 vertex 3으로 돌아온다. 현재 stack에는 3이 있다. 3이 등장 할
+    때까지 stack에서 pop한다. 새로운 scc를 구성한다.
   
   ![](http://dyewrv1redcbt.cloudfront.net//wp-content/uploads/SCC.png)

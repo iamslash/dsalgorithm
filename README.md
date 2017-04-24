@@ -190,24 +190,24 @@
     - adj, visited, dfs, dfs_all, order
   - [DICTIONARY](http://algospot.com/judge/problem/read/DICTIONARY)
   - [eulerian circuit](doc/graph_eulerian_circuit.md)
-    - adj, circuit, get_eulerian_circuit
+    - adj, circuit, dfs_get_eulerian_circuit
   - [eulerian trail](doc/graph_eulerian_trail.md)
-    - adj, trail, get_eulerian_circuit, get_eulerian_trail
+    - adj, trail, dfs_get_eulerian_circuit, dfs_get_eulerian_trail
   - [WORDCHAIN](http://algospot.com/judge/problem/read/WORDCHAIN)
   - [dfs spanning tree](doc/graph_dfs_spanning_tree.md)
     - tree edge, forward edge, back edge, cross edge
     - adj, discovered, finished, counter, dfs_spanning_tree
-  - proof of topological sort
+  - [proof of topological sort](doc/graph_proof_of_topological_srt.md)
   - [check the cycle](doc/graph_check_the_cycle.md)
   - [cut vertex (articulation point)](doc/graph_cut_vertex.md)
     - biconnected components
-    - adj, discovered, is_cut_vertex, counter, find_cut_vertex
+    - adj, discovered, is_cut_vertex, counter, dfs_find_cut_vertex
   - [bridge](doc/graph_bridge.md)
-    - adj, discovered, bridge, counter, find_bridge
+    - adj, discovered, bridge, counter, dfs_find_bridge
   - [tarjan's algorithm](doc/graph_tarjan_algorithm.md)
     - scc (strongly connected components)
     - condensation
-    - adj, scc_id, discovered, stck, scc_counter, vertex_counter, scc, tarjan_scc
+    - adj, scc_id, discovered, finished, stck, scc_counter, vertex_counter, dfs_scc, tarjan_scc
   - [topological sort of scc](doc/graph_topological_sort_of_scc)
   - [GALLERY](http://algospot.com/judge/problem/read/GALLERY)
     - dominating set
