@@ -14,6 +14,6 @@
   - (u, v)를 제외하고 back edge로 u 혹은 먼저 발견된 vertex에 갈 수 없을 경우 (u, v)
     는 bridge이다.
 
-  ![](http://dyewrv1redcbt.cloudfront.net//wp-content/uploads/Bridge2.png)
-  ![](http://dyewrv1redcbt.cloudfront.net//wp-content/uploads/Bridge1.png)
-  ![](http://dyewrv1redcbt.cloudfront.net//wp-content/uploads/Bridge3.png)
+  ![](http://dyewrv1redcbt.cloudfront.net//wp-content/uploads/Bridge2.png =256x)
+  ![](http://dyewrv1redcbt.cloudfront.net//wp-content/uploads/Bridge1.png =256x)
+  ![](http://dyewrv1redcbt.cloudfront.net//wp-content/uploads/Bridge3.png =256x)
