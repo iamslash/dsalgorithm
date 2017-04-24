@@ -15,7 +15,6 @@
     는 bridge이다.
 
   <img src="http://dyewrv1redcbt.cloudfront.net//wp-content/uploads/Bridge2.png" width="256">
-  ![](http://dyewrv1redcbt.cloudfront.net//wp-content/uploads/Bridge2.png)
-  ![](http://dyewrv1redcbt.cloudfront.net//wp-content/uploads/Bridge1.png)
-  ![](http://dyewrv1redcbt.cloudfront.net//wp-content/uploads/Bridge3.png)
+  <img src="http://dyewrv1redcbt.cloudfront.net//wp-content/uploads/Bridge1.png" width="256">
+  <img src="http://dyewrv1redcbt.cloudfront.net//wp-content/uploads/Bridge3.png" width="256">
   
