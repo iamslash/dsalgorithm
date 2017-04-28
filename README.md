@@ -187,7 +187,7 @@
   - counting the number of components 
     - count the number of dfs in dfs_all.
   - [topological sort](doc/graph_topological_sort.md)
-    - adj, visited, dfs, dfs_all, order
+    - adj, visited, dfs, dfs_topological_sort, order
   - [DICTIONARY](http://algospot.com/judge/problem/read/DICTIONARY)
   - [eulerian circuit](doc/graph_eulerian_circuit.md)
     - adj, circuit, dfs_get_eulerian_circuit
