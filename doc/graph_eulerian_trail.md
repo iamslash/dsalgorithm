@@ -1,6 +1,8 @@
 # intro
 
+  - 한 붓 그리기이다.
   - euler circuit처럼 모든 간선을 지나지만 시작점과 끝점이 다른 경로
+  - 홀수점은 2개이어야 한다. 0개 이면 eulieran circuit이다.
 
 # idea
 
