@@ -212,7 +212,7 @@
   - [GALLERY](http://algospot.com/judge/problem/read/GALLERY)
     - dominating set
     - unrooted tree
-  - [MEETINGROOM](http://algospot.com/judge/problem/read/MEETINGROOM)
+  - [MEETINGROOM](doc/algospot_MEETEINGROOM.md)
     - sat (SATisfiability, boolean satisfiability problem)
     - conjunctive normal form
     - 2-sat
@@ -224,7 +224,7 @@
   - [bfs shortest path](doc/graph_bfs_shortest_path.md)
     - adj, get_shortest_path, bfs, distance, parent, q
   - [SORTGAME](http://algospot.com/judge/problem/read/SORTGAME)
-  - [CHILDRENDAY](http://algospot.com/judge/problem/read/CHILDRENDAY)
+  - [CHILDRENDAY](doc/algospot_CHILDRENDAY.md)
   - [15 puzzle - bfs](doc/graph_15_puzzle_bfs.md)
     - State, get_adj, operator<, operator==, bitmask, move, get, set, swap, get_zero_idx, state_map, bfs
   - [15 puzzle - bfs bidrectional search](doc/graph_15_puzzle_bfs_bs.md)
@@ -232,14 +232,14 @@
   - [15 puzzle - bfs ids (iteratively deep searching)](doc/graph_15_puzzle_bfs_ids.md)
     - State, get_adj, operator<, operator==, bitmask, move, get, set, swap, get_zero_idx, best, dfs, ids
   - [HANOI4](http://algospot.com/judge/problem/read/HANOI4)
-  - Dijkstra algorithm
-  - Dijkstra algorithm without priority queue
+  - [Dijkstra algorithm](doc/graph_dijkstra.md)
+  - [Dijkstra algorithm without priority queue](doc/graph_dijkstra_without_pq.md)
   - [ROUTING](http://algospot.com/judge/problem/read/ROUTING)
   - [FIRETRUCKS](http://algospot.com/judge/problem/read/FIRETRUCKS)
   - [NTHLON](http://algospot.com/judge/problem/read/NTHLON)
-  - Bellman-Ford algorithm
+  - [Bellman-Ford algorithm](doc/graph_bellman_ford.md)
   - [TIMETRIP](http://algospot.com/judge/problem/read/TIMETRIP)
-  - Floyd algorithm
+  - [Floyd algorithm](doc/graph_floyd.md)
   - [DRUNKEN](http://algospot.com/judge/problem/read/DRUNKEN)
   - [PROMISES](http://algospot.com/judge/problem/read/PROMISES)
   - Kruskal's minimum spanning tree 
