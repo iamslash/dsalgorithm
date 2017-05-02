@@ -23,7 +23,7 @@ std::vector<int> dijkstra(int src) {
   dist[src] = 0;
   visited[src] = false;
   while (true) {
-    // find a closest vertex which is not visited yet.
+    // find a here vertex which is not visited yet.
     int closest = MAX_INT;
     int here;
     for (int i = 0; i < V; ++i) {

@@ -8,7 +8,7 @@
 #define MAX_V 7
 #define MAX_INT 987654321
 
-int V = 7;
+int V = MAX_V;
 std::vector<std::pair<int, int> > adj[MAX_V];
 
 void print_v_int(const std::vector<int>& v) {
@@ -19,7 +19,7 @@ void print_v_int(const std::vector<int>& v) {
 }
 
 std::vector<int> dijkstra(int src) {
-  std::vector<int> dist(V, INF);
+  std::vector<int> dist(V, MAX_INT);
   dist[src] = 0;
   std::priority_queue<std::pair<int, int> > pq;
   pq.push(std::make_pair(0, src));
@@ -31,7 +31,7 @@ std::vector<int> dijkstra(int src) {
     if (dist[here] < cost)
       continue;
     //
-    for (int = 0; i < adj[here].size(), ++i) {
+    for (int i = 0; i < adj[here].size(); ++i) {
       int there = adj[here][i].first;
       int there_cost = cost + adj[here][i].second;
       if (dist[there] > there_cost) {
