@@ -5,13 +5,13 @@
 #include <map>
 #include <queue>
 
-#define MAX_V 7
+#define MAX_V 10
 #define MAX_INT 987654321
 
 int V = 7;
 std::vector<std::pair<int, int> > adj[MAX_V];
 
-void print_v_int(const std::vector<int>& v) {
+void PrintVInt(const std::vector<int>& v) {
   for (int i = 0; i < v.size(); ++i) {
     printf("[%c]%d ", 'a'+i, v[i]);
   }
@@ -19,26 +19,27 @@ void print_v_int(const std::vector<int>& v) {
 }
 
 std::vector<int> dijkstra(int src) {
-  std::vector<int> dist(V, INF);
+  std::vector<int> dist(V, MAX_INT);
   dist[src] = 0;
   std::priority_queue<std::pair<int, int> > pq;
   pq.push(std::make_pair(0, src));
   while (!pq.empty()) {
-    int cost = -pq.top().first;
-    int here = pq.top().second;
+    int herecost = -pq.top().first;
+    int herenode = pq.top().second;
     pq.pop();
-    //
-    if (dist[here] < cost)
+
+    if (dist[herenode] < herecost)
       continue;
-    //
-    for (int = 0; i < adj[here].size(), ++i) {
-      int there = adj[here][i].first;
-      int there_cost = cost + adj[here][i].second;
-      if (dist[there] > there_cost) {
-        dist[there] = there_cost;
-        pq.push(std::make_pair(-there_cost, there));
+
+    for (int i = 0; i < adj[herenode].size(); ++i) {
+      int therenode = adj[herenode][i].first;
+      int therecost = herecost + adj[herenode][i].second;
+      if (dist[therenode] > therecost) {
+        dist[therenode] = therecost;
+        pq.push(std::make_pair(-therecost, therenode));
       }
     }
+
   }
   return dist;
 }
@@ -64,17 +65,17 @@ int main() {
   adj[3].push_back(std::make_pair(6, 3));
 
   adj[4].push_back(std::make_pair(3, 5));
-
+  
   adj[5].push_back(std::make_pair(1, 3));
   adj[5].push_back(std::make_pair(6, 2));
-
+  
   adj[6].push_back(std::make_pair(1, 3));
   adj[6].push_back(std::make_pair(3, 3));
   adj[6].push_back(std::make_pair(5, 2));
-
+      
   std::vector<int> r = dijkstra(0);
 
-  print_v_int(r);
-
+  PrintVInt(r);  
+  
   return 0;
 }
