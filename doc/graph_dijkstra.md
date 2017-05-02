@@ -17,6 +17,7 @@
   거리는 -1을 곱하여 저장한다.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gdmfOwyQlcI" frameborder="0" allowfullscreen></iframe>
+
 # outro
 
 - 시간 복잡도는 O(|E|lg|V|)이다. 간선의 개수만큼 방문 하고 정점의 개수
