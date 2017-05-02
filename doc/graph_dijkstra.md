@@ -16,7 +16,7 @@
   경로가 존재하지 않는다면 미래정점들을 우선선위 큐에 삽입한다. 이때
   거리는 -1을 곱하여 저장한다.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gdmfOwyQlcI" frameborder="0" allowfullscreen></iframe>
+[dijkstra video in geeksforgeeks](https://www.youtube.com/embed/gdmfOwyQlcI)
 
 # outro
 
