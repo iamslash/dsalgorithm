@@ -233,10 +233,15 @@
     - State, get_adj, operator<, operator==, bitmask, move, get, set, swap, get_zero_idx, best, dfs, ids
   - [HANOI4](http://algospot.com/judge/problem/read/HANOI4)
   - [Dijkstra algorithm](doc/graph_dijkstra.md)
-    
-    vector<pair<int, int>> adj, vector<int> dijkstra, vector<int> dist, priority_queue<pair<int, int>> pq
-  
+    ```cpp
+    vector<pair<int, int>> adj, dijkstra, dist, priority_queue<pair<int, int>> pq
+    ```
+    - O(|E|lg|V|)
   - [Dijkstra algorithm without priority queue](doc/graph_dijkstra_without_pq.md)
+    ```cpp
+    vector<pair<int, int>> adj, dijkstra, dist, visited
+    ```
+    - O(|V|^2 + |E|)
   - [ROUTING](http://algospot.com/judge/problem/read/ROUTING)
   - [FIRETRUCKS](http://algospot.com/judge/problem/read/FIRETRUCKS)
   - [NTHLON](http://algospot.com/judge/problem/read/NTHLON)

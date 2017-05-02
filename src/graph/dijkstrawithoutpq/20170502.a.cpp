@@ -5,10 +5,11 @@
 #include <map>
 #include <queue>
 
+#define MAX_V 10
 #define MAX_INT 987654321
 
 int V = 7;
-std::vector<std::pair<int, int> > adj[V];
+std::vector<std::pair<int, int> > adj[MAX_V];
 
 void PrintVInt(const std::vector<int>& v) {
   for (int i = 0; i < v.size(); ++i) {
@@ -19,11 +20,37 @@ void PrintVInt(const std::vector<int>& v) {
 
 std::vector<int> dijkstra(int src) {
   std::vector<int> dist(V, MAX_INT);
-  std::vector<bool> visited(V, false);
   dist[src] = 0;
+  std::priority_queue<std::pair<int, int> > pq;
+  pq.push(std::make_pair(0, src));
+  while (!pq.empty()) {
+    int herecost = -pq.top().first;
+    int herenode = pq.top().second;
+    pq.pop();
+
+    if (dist[herenode] < herecost)
+      continue;
+
+    for (int i = 0; i < adj[herenode].size(); ++i) {
+      int therenode = adj[herenode][i].first;
+      int therecost = herecost + adj[herenode][i].second;
+      if (dist[therenode] > therecost) {
+        dist[therenode] = therecost;
+        pq.push(std::make_pair(-therecost, therenode));
+      }
+    }
+
+  }
+  return dist;
+}
+
+std::vector<int> dijkstrawithoutpq(int src) {
+  std::vector<int> dist(V, MAX_INT);
+  dist[src] = 0;
+  std::vector<bool> visited(V, false);
   visited[src] = false;
+
   while (true) {
-    // find a closest vertex which is not visited yet.
     int closest = MAX_INT;
     int here;
     for (int i = 0; i < V; ++i) {
@@ -39,15 +66,17 @@ std::vector<int> dijkstra(int src) {
       int there = adj[here][i].first;
       if (visited[there])
         continue;
-      int there_cost = dist[here] + adj[here][i].second;
-      dist[there] = std::min(dist[there], there_cost);
+      int theredist = dist[here] + adj[here][i].second;
+      dist[there] = std::min(dist[there], theredist);
     }
   }
+  
   return dist;
 }
 
+
 int main() {
-  for (int i = 0; i < V; ++i)
+  for (int i = 0; i < MAX_V; ++i)
     adj[i].clear();
 
   adj[0].push_back(std::make_pair(1, 5));
@@ -67,17 +96,17 @@ int main() {
   adj[3].push_back(std::make_pair(6, 3));
 
   adj[4].push_back(std::make_pair(3, 5));
-
+  
   adj[5].push_back(std::make_pair(1, 3));
   adj[5].push_back(std::make_pair(6, 2));
-
+  
   adj[6].push_back(std::make_pair(1, 3));
   adj[6].push_back(std::make_pair(3, 3));
   adj[6].push_back(std::make_pair(5, 2));
-
+      
   std::vector<int> r = dijkstra(0);
 
-  print_v_int(r);
-
+  PrintVInt(r);  
+  
   return 0;
 }
