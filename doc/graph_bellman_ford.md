@@ -20,4 +20,5 @@ vector<pair<int, int>> adj[], bellmanford, vector<int> upper, bool updated
 
 # reference
 
+- [bellman-ford in 5 minutes in youtube](https://www.youtube.com/watch?v=obWXjtg0L64)
 - [bellman-ford in geeksforgeeks](http://www.geeksforgeeks.org/dynamic-programming-set-23-bellman-ford-algorithm/)
