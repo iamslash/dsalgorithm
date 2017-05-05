@@ -246,8 +246,15 @@
   - [FIRETRUCKS](http://algospot.com/judge/problem/read/FIRETRUCKS)
   - [NTHLON](http://algospot.com/judge/problem/read/NTHLON)
   - [Bellman-Ford algorithm](doc/graph_bellman_ford.md)
+    ```cpp
+    vector<pair<int, int>> adj[], bellmanford, vector<int> upper, bool updated
+    ```
+    - O(|E||V|)
   - [TIMETRIP](http://algospot.com/judge/problem/read/TIMETRIP)
   - [Floyd algorithm](doc/graph_floyd.md)
+    ```cpp
+    adj[][], via[][], floyd, reconstruct
+    ```
   - [DRUNKEN](http://algospot.com/judge/problem/read/DRUNKEN)
   - [PROMISES](http://algospot.com/judge/problem/read/PROMISES)
   - Kruskal's minimum spanning tree 

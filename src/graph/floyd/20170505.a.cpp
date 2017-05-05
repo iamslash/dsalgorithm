@@ -15,7 +15,7 @@ int V = MAX_V;
 int adj[MAX_V][MAX_V];
 int via[MAX_V][MAX_V];
 
-void print_v_int(const std::vector<int>& v) {
+void PrintVInt(const std::vector<int>& v) {
   for (int i = 0; i < v.size(); ++i)
     printf("%d ", v[i]);
   printf("\n");
@@ -24,9 +24,7 @@ void print_v_int(const std::vector<int>& v) {
 void floyd() {
   for (int i = 0; i < V; ++i)
     adj[i][i] = 0;
-  for (int i = 0; i < V; ++i)
-    for (int j = 0; j < V; ++j)
-      via[i][j] = -1;
+  memset(via, -1, sizeof(via));
   for (int k = 0; k < V; ++k) {
     for (int i = 0; i < V; ++i) {
       for (int j = 0; j < V; ++j) {
@@ -76,10 +74,10 @@ int main() {
   adj[5][4] = 1;
 
   floyd();
-
+  
   std::vector<int> r;
   reconstruct(0, 5, r);
-  print_v_int(r);
-
+  PrintVInt(r);
+  
   return 0;
 }

@@ -14,37 +14,32 @@ int V = MAX_V;
 
 std::vector<std::pair<int, int> > adj[MAX_V];
 
-void print_v_int(const std::vector<int>& v) {
-  for (int i = 0; i < v.size(); ++i) {
-    printf("%d ", v[i]);
-  }
-  printf("\n");
-}
-
-// return empty vector if there is a negative cycle.
-std::vector<int> bellmanford(int src) {
+std::vector<int> BellmanFord(int src) {
   std::vector<int> upper(V, MAX_INT);
   upper[src] = 0;
-  bool updated = false;
-  for (int i = 0; i < V; ++i) {
+  bool updated;
+  for (int iter = 0; iter < V; ++iter) {
     updated = false;
-    for (int here = 0; here < V; ++here) {
-      for (int j = 0; j < adj[here].size(); ++j) {
-        int there = adj[here][j].first;
-        int cost = adj[here][j].second;
-        if (upper[there] > upper[here] + cost) {
-          upper[there] = upper[here] + cost;
+    for (int herenode = 0; herenode < V; ++herenode) {
+      // printf("%d\n", herenode);
+      for (int i = 0; i < adj[herenode].size(); ++i) {
+        int therenode = adj[herenode][i].first;
+        int therecost = adj[herenode][i].second;
+
+        if (upper[therenode] > upper[herenode] + therecost) {
+          upper[therenode] = upper[herenode] + therecost;
           updated = true;
+          printf(" %d -> %d %d\n", herenode, therenode, upper[therenode]);
         }
       }
     }
-    // if there is no relax, terminate loop
     if (!updated)
       break;
   }
-  // there is a negative cycle if there is relax at last loop.
-  if (updated)
+
+  if (!updated)
     upper.clear();
+
   return upper;
 }
 
@@ -60,11 +55,11 @@ int main() {
   adj[4].push_back(std::make_pair(1, 2));
   adj[4].push_back(std::make_pair(3, -1));
   adj[5].push_back(std::make_pair(4, 1));
+  
+  std::vector<int> r = BellmanFord(0);
 
-  std::vector<int> r = bellmanford(0);
-
-  print_v_int(r);
-
-
+  // PrintVInt(r);
+  
+  
   return 0;
 }
