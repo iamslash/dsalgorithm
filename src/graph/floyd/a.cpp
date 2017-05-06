@@ -27,6 +27,9 @@ void floyd() {
   for (int i = 0; i < V; ++i)
     for (int j = 0; j < V; ++j)
       via[i][j] = -1;
+  // k는 경유 정점
+  // i는 시작점
+  // j는 끝점
   for (int k = 0; k < V; ++k) {
     for (int i = 0; i < V; ++i) {
       for (int j = 0; j < V; ++j) {
@@ -58,13 +61,6 @@ int main() {
       adj[i][j] = MAX_INT;
     }
   }
-  // for (int i = 0; i < V; ++i) {
-  //   for (int j = 0; j < V; ++j) {
-  //     printf("%d ", adj[i][j]);
-  //   }
-  //   printf("\n");
-  // }
-  // printf("%d\n", sizeof(adj));
 
   adj[0][1] = 10;
   adj[0][5] = 8;
