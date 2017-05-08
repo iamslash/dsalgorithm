@@ -257,8 +257,10 @@
     ```
   - [DRUNKEN](http://algospot.com/judge/problem/read/DRUNKEN)
   - [PROMISES](http://algospot.com/judge/problem/read/PROMISES)
-  - Kruskal's minimum spanning tree 
-  - Prim's minimum spanning tree
+  - [Kruskal's minimum spanning tree](doc/graph_kruskal.md)
+    - 
+  - [Prim's minimum spanning tree](doc/graph_prim.md)
+    - 
   - [LAN](http://algospot.com/judge/problem/read/LAN)
   - [TPATH](http://algospot.com/judge/problem/read/TPATH)
   - flow network
