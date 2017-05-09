@@ -12,7 +12,7 @@
 ```cpp
 vector<pair<int, int> > adj[], DisjointSet,
 kruskal, int totalcost, vector<pair<int, int> > mst,
-vector<pair<int, int> > edges
+vector<pair<int, pair<int, int> > > edges
 ```
 
 # idea

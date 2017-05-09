@@ -1,20 +1,19 @@
 // Copyright (C) 2016 by iamslash
 
-// Kruskal algorithm
-//
-// 0. sort edges
-// 1. select edges, vertices in small order
-//
-
 #include <cstdio>
 #include <vector>
 #include <map>
 #include <queue>
 #include <cstdlib>
 
-struct OptimizedDisjointSet {
+
+#define MAX_V  7
+int V = MAX_V;
+std::vector<std::pair<int, int> > adj[MAX_V];
+
+struct DisjointSet {
   std::vector<int> parent, rank;
-  explicit OptimizedDisjointSet(int n) : parent(n), rank(n, 1) {
+  explicit DisjointSet(int n) : parent(n), rank(n, 1) {
     for (int i = 0; i < n; ++i)
       parent[i] = i;
   }
@@ -37,36 +36,30 @@ struct OptimizedDisjointSet {
   }
 };
 
-const int MAX_V = 100;
-int V = 7;
-std::vector<std::pair<int, int> > adj[MAX_V];
-
-int Kruskal(std::vector<std::pair<int, int> >* selected) {
+int kruskal(std::vector<std::pair<int, int> >& mst) {
   int r = 0;
-  selected->clear();
+  mst.clear();
   std::vector<std::pair<int, std::pair<int, int> > > edges;
-  // O(|V||E|), E = V^2
   for (int u = 0; u < V; ++u) {
     for (int i = 0; i < adj[u].size(); ++i) {
-      int v = adj[u][i].first;
-      int cost = adj[u][i].second;
-      edges.push_back(std::make_pair(cost, std::make_pair(u, v)));
+      int v = adj[u][v].first;
+      int c = adj[u][v].second;
+      edges.push_back(std::make_pair(c, std::make_pair(u, v)));
     }
   }
-  // O(|E|lg|E|), O(|V]^2lg|V|^2)
+  //
   std::sort(edges.begin(), edges.end());
-  OptimizedDisjointSet sets(V);
+  DisjointSet ds(V);
   for (int i = 0; i < edges.size(); ++i) {
-    int cost = edges[i].first;
+    int c = edges[i].first;
     int u = edges[i].second.first;
     int v = edges[i].second.second;
-    if (sets.find(u) == sets.find(v))
+    if (ds.find(u) == ds.find(v))
       continue;
-    sets.merge(u, v);
-    selected->push_back(std::make_pair(u, v));
-    r += cost;
+    ds.merge(u, v);
+    mst.push_back(std::make_pair(u, v));
+    r += c;
   }
-
   return r;
 }
 
@@ -100,7 +93,7 @@ int main() {
   adj[6].push_back(std::make_pair(5, 2));
 
   std::vector<std::pair<int, int> > r;
-  printf("%d\n", Kruskal(&r));
+  printf("%d\n", kruskal(r));
 
   for (const std::pair<int, int>& p : r) {
     printf("%d -> %d\n", p.first, p.second);
