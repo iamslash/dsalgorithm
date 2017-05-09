@@ -265,21 +265,12 @@
     - O(|V|^2+|E|), O(|V|^2)
   - [LAN](http://algospot.com/judge/problem/read/LAN)
   - [TPATH](http://algospot.com/judge/problem/read/TPATH)
-  - flow network
-    - capacity contraint
-    - local equilibrium
-    - augmenting path
-    - flow, capacity, redidual capacity
-  - mincut problem
-    - find a cut of minimum capacity
-  - maxflow problem
-    - find a flow of maximum value
-  - min-cut max-flow theorem
-  - [Ford-Fulkerson algorithm](doc/graph_ford_fulkerson.md)
-    - 
-  - Ford-Fulkerson algorithm with adjacency list
-  - [Edmonds-Karp algorithm](doc/graph_edmonds_karp.md)
-    - ford fulkerson algorithm with bfs
+  - [Ford-Fulkerson algorithm with adjacency matrix](doc/graph_ford_fulkerson.md)
+    ```cpp
+    capacity[][], flow[][], ford_fulkerson
+    ```
+    - small one between O(|E|f) and O(|V||E|^2)
+  - [Ford-Fulkerson algorithm with adjacency list](doc/graph_ford_fulkerson_adj_list.md)
   - [MILEAGE](http://algospot.com/judge/problem/read/MILEAGE)
   - [SAINTTAIL](http://algospot.com/judge/problem/read/SAINTTAIL)
   - [MATCHFIX](http://algospot.com/judge/problem/read/MATCHFIX)

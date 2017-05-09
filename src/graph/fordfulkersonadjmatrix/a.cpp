@@ -12,22 +12,19 @@ int V = MAX_V;
 int capacity[MAX_V][MAX_V];
 int flow[MAX_V][MAX_V];
 
-int EdmondsKarp(int source, int sink) {
+int ford_fulkerson(int source, int sink) {
   int r = 0;
-
-  for (int i = 0; i < V; ++i) {
-    for (int j = 0; j < V; ++j) {
+  for (int i = 0; i < MAX_V; ++i) {
+    for (int j = 0; j < MAX_V; ++j) {
       flow[i][j] = 0;
     }
   }
-
   while (true) {
-    // BFS
-    std::vector<int> parent(V, -1);
+    std::vector<int> parent(MAX_V, -1);
     std::queue<int> q;
     parent[source] = source;
     q.push(source);
-    while (!q.empty()) {
+    while (!q.empty() && parent[sink] == -1) {
       int here = q.front();
       q.pop();
       for (int there = 0; there < V; ++there) {
@@ -37,24 +34,20 @@ int EdmondsKarp(int source, int sink) {
           parent[there] = here;
         }
       }
+      if (parent[sink] == -1)
+        break;
+      int amount = MAX_I;
+      for (int p = sink; p != source; p = parent[p]) {
+        amount = std::min(capacity[parent[p]][p] - flow[parent[p]][p],
+                          amount);
+      }
+      for (int p = sink; p != source; p = parent[p]) {
+        flow[parent[p]][p] += amount;
+        flow[p][parent[p]] -= amount;
+      }
+      r += amount;
     }
-    // terminate condition
-    if (parent[sink] == -1)
-      break;
-    // get min amount
-    int amount = MAX_I;
-    for (int p = sink; p != source; p = parent[p]) {
-      amount = std::min(amount,
-                        capacity[parent[p]][p] - flow[parent[p]][p]);
-    }
-    // set flow
-    for (int p = sink; p != source; p = parent[p]) {
-      flow[parent[p]][p] += amount;
-      flow[p][parent[p]] -= amount;
-    }
-    r += amount;
   }
-
   return r;
 }
 
@@ -63,9 +56,7 @@ int main() {
   capacity[0][2] = 2;
   capacity[1][3] = 3;
   capacity[1][2] = 1;
-  capacity[2][1] = 1;
-  capacity[2][3] = 1;  
+  capacity[2][3] = 1;
 
-  printf("%d\n", EdmondsKarp(0, 3));
-  printf("%d\n", EdmondsKarp(0, 2));
+  printf("%d\n", ford_fulkerson(0, 3));
 }
