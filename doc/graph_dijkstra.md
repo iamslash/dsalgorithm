@@ -28,4 +28,4 @@
 
 # reference
 
-- [dijkstra in geeksforgeeks](http://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)
+- [dijkstra in 2 minutes at youtube](https://www.youtube.com/watch?v=_lHSawdgXpI)

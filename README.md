@@ -275,9 +275,10 @@
   - maxflow problem
     - find a flow of maximum value
   - min-cut max-flow theorem
-  - Ford-Fulkerson algorithm
+  - [Ford-Fulkerson algorithm](doc/graph_ford_fulkerson.md)
+    - 
   - Ford-Fulkerson algorithm with adjacency list
-  - Edmonds-Karp algorithm
+  - [Edmonds-Karp algorithm](doc/graph_edmonds_karp.md)
     - ford fulkerson algorithm with bfs
   - [MILEAGE](http://algospot.com/judge/problem/read/MILEAGE)
   - [SAINTTAIL](http://algospot.com/judge/problem/read/SAINTTAIL)

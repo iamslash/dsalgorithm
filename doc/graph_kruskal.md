@@ -28,3 +28,7 @@ vector<pair<int, pair<int, int> > > edges
 
 - 간선을 정렬하는 시간이 시간복잡도를 지배한다.
 - O(|E|lg|E|)
+
+# reference
+
+- [kruskal algorithm in 2 minutes at youtube](https://www.youtube.com/watch?v=71UQH7Pr9kU)

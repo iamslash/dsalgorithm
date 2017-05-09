@@ -28,3 +28,7 @@ vector<bool> added, vector<int> min_weight, vector<int> parent
 - dense graph인 경우 |E| = |V|^2이다. 따라서 시간 복잡도는 O(|V|^2)가 될 수
   있다. kruskal algorithm은 O(|E|lg|E|)이기 때문에
   prim algorithm이 dense graph의 경우 더욱 효율적일 수 있다.
+
+# reference
+
+- [prim algorithm in 2 minutes at youtube](https://www.youtube.com/watch?v=cplfcGZmX7I)
