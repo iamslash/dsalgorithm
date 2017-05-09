@@ -258,9 +258,11 @@
   - [DRUNKEN](http://algospot.com/judge/problem/read/DRUNKEN)
   - [PROMISES](http://algospot.com/judge/problem/read/PROMISES)
   - [Kruskal's minimum spanning tree](doc/graph_kruskal.md)
-    - 
+    - adj, DisjointSet, kruskal, totalcost, mst, edges
+    - O(|E|lg|E|)
   - [Prim's minimum spanning tree](doc/graph_prim.md)
-    - 
+    - adj, prim, totalcost, mst, added, min_weight, parent
+    - O(|V|^2+|E|), O(|V|^2)
   - [LAN](http://algospot.com/judge/problem/read/LAN)
   - [TPATH](http://algospot.com/judge/problem/read/TPATH)
   - flow network
