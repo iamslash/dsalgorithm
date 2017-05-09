@@ -26,12 +26,17 @@
   - 잔여 용량
   - r(u, v) = c(u, v) - f(u, v)
   - 특정 간선의 capacity가 10이고 flow가 6이라면 residual capacity는 4이다.
-- mincut problem
-  - find a cut of minimum capacity
 - min-cut max-flow theorem
   - 증가 경로가 여러개인 경우 증가 경로를 잘 못 택하여 최대 유량을 찾기 전에 막혀서
     더 이상 증가 경로를 찾지 못하게 되는 일은 없다는 것을 증명하는 정리
   - 증가 경로가 여러개인 경우 그중 아무 것이나 택해도 괜찮다.
+- mincut problem
+  - flow network에서 capacity가 가장 작은 cut을 찾는 문제
+  - flow network에서 capacity와 flow가 같은 cut S', T'가 존재한다고 하자.
+    이때 S', T'는 항상 최소 컷이며 현재 소스에서 싱크로 보내는 유량은
+    네트워크의 최대 유량임을 보일 수 있다. S', T'보다 용량이 작은 컷이 존재한다면
+    해당 컷에 대해 유량이 용량보다 크므로 모순이고, 이보다 많은 유량을 보내는 방법이
+    있을 경우 S', T'에 대해 유량이 용량보다 크므로 모순이기 때문이다.
 
 # keyword
 
