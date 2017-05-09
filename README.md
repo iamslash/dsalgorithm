@@ -267,7 +267,8 @@
   - [TPATH](http://algospot.com/judge/problem/read/TPATH)
   - [Ford-Fulkerson algorithm with adjacency matrix](doc/graph_ford_fulkerson.md)
     ```cpp
-    capacity[][], flow[][], ford_fulkerson
+    capacity[][], flow[][],
+    ford_fulkerson, parent, q
     ```
     - small one between O(|E|f) and O(|V||E|^2)
   - [Ford-Fulkerson algorithm with adjacency list](doc/graph_ford_fulkerson_adj_list.md)
