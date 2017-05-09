@@ -1,4 +1,10 @@
 // Copyright (C) 2016 by iamslash
+
+// Prim algorithm
+//
+// 0. min_weight, parent
+// 1. select edges, vertices which are connected and have min weight.
+
 #include <cstdio>
 #include <vector>
 #include <map>
@@ -10,35 +16,36 @@ const int MAX_I = 987654321;
 int V = 7;
 std::vector<std::pair<int, int> > adj[MAX_V];
 
-int prim(std::vector<std::pair<int, int> >& mst) {
+int Prim(std::vector<std::pair<int, int> > * selected) {
   int r = 0;
-  mst.clear();
+  selected->clear();
   std::vector<bool> added(V, false);
-  std::vector<int> min_weight;
-  std::vector<int> parent;
-  min_weight[0] = 0;
-  parent[0] = 0;
-  for (int k = 0; k < V; ++k) {
+  std::vector<int> min_weight(V, MAX_I);
+  std::vector<int> parent(V, -1);
+  min_weight[0] = parent[0] = 0;
+  // O(|V||V|)
+  // O(|V|^2+|E|)
+  for (int iter = 0; iter < V; ++iter) {
     int u = -1;
-    // choose a minimum weighted connected vertex
-    // in the middle of added and assign it to u
     for (int v = 0; v < V; ++v) {
-      if (!added[v] && (u == -1 || min_weight[u] > min_weight[v]))
+      if (!added[v] &&
+          (u == -1 || min_weight[u] > min_weight[v]))
         u = v;
       if (parent[u] != u)
-        mst.push_back(std::make_pair(parent[u], u));
+        selected->push_back(std::make_pair(parent[u], u));
       r += min_weight[u];
       added[u] = true;
       for (int i = 0; i < adj[u].size(); ++i) {
         int v = adj[u][i].first;
-        int c = adj[u][i].second;
-        if (!added[v] && min_weight[v] > c) {
+        int weight = adj[u][i].second;
+        if (!added[v] && min_weight[v] > weight) {
           parent[v] = u;
-          min_weight[v] = c;
+          min_weight[v] = weight;
         }
       }
     }
   }
+
   return r;
 }
 
@@ -71,10 +78,10 @@ int main() {
   adj[6].push_back(std::make_pair(1, 3));
   adj[6].push_back(std::make_pair(5, 2));
 
-  std::vector<std::pair<int, int> > mst;
-  printf("%d\n", prim(mst));
+  std::vector<std::pair<int, int> > r;
+  printf("%d\n", Prim(&r));
 
-  for (const std::pair<int, int>& p : mst) {
+  for (const std::pair<int, int>& p : r) {
     printf("%d -> %d\n", p.first, p.second);
   }
 
