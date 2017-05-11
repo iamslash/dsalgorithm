@@ -27,13 +27,11 @@
   - r(u, v) = c(u, v) - f(u, v)
   - 특정 간선의 capacity가 10이고 flow가 6이라면 residual capacity는 4이다.
 - cut
-  - flow network의 정점에 대하여 source와 sink를 각각 포함한 두 집합
-  - 마치 source, sink를 각각 포함하도록 자른다는 의미와 같다.
-- min-cut max-flow theorem
-  - 증가 경로가 여러개인 경우 증가 경로를 잘 못 택하여 최대 유량을 찾기 전에 막혀서
-    더 이상 증가 경로를 찾지 못하게 되는 일은 없다는 것을 증명하는 정리
-  - 증가 경로가 여러개인 경우 그중 아무 것이나 택해도 괜찮다.
-  - 최소 cut은 곧 최대 flow이다.
+  - flow network의 정점들에 대하여 source와 sink가 각각 다른 집합에
+    속하도록 그래프의 정점들을 두 개의 집합으로 나눈 것. 마치 잘라서 나눈 것 같다.
+- cut의 자명한 속성
+  - cut의 flow는 source에서 sink로 가는 총 flow와 같다.
+  - cut의 flow는 capacity와 같거나 더 작다.
 - mincut problem
   - flow network에서 capacity가 가장 작은 cut을 찾는 문제
   - flow network에서 capacity와 flow가 같은 cut S', T'가 존재한다고 하자.
@@ -41,6 +39,11 @@
     네트워크의 최대 유량임을 보일 수 있다. S', T'보다 용량이 작은 컷이 존재한다면
     해당 컷에 대해 유량이 용량보다 크므로 모순이고, 이보다 많은 유량을 보내는 방법이
     있을 경우 S', T'에 대해 유량이 용량보다 크므로 모순이기 때문이다.
+- min-cut max-flow theorem
+  - 증가 경로가 여러개인 경우 증가 경로를 잘 못 택하여 최대 유량을 찾기 전에 막혀서
+    더 이상 증가 경로를 찾지 못하게 되는 일은 없다는 것을 증명하는 정리
+  - 증가 경로가 여러개인 경우 그중 아무 것이나 택해도 괜찮다.
+  - 최소 cut은 곧 최대 flow이다.
 
 # keyword
 
