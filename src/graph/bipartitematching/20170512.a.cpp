@@ -10,11 +10,11 @@ const int MAX_V = 3;
 
 int L, R;
 bool adj[MAX_V][MAX_V];
-std::vector<int> amatch;
-std::vector<int> bmatch;
+std::vector<int> a_match;
+std::vector<int> b_match;
 std::vector<bool> visited;
 
-bool dfs(int a) {
+bool Dfs(int a) {
   if (visited[a])
     return false;
   visited[a] = true;
@@ -33,7 +33,7 @@ bool dfs(int a) {
   return false;
 }
 
-int bipartite_match() {
+int BipartiteMatch() {
   a_match = std::vector<int>(L, -1);
   b_match = std::vector<int>(R, -1);
   int r = 0;
@@ -59,5 +59,5 @@ int main() {
   adj[1][1] = true;
   // adj[2][0] = true;
 
-  printf("%d\n", bipartite_match());
+  printf("%d\n", BipartiteMatch());
 }

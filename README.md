@@ -276,9 +276,9 @@
   - [SAINTTAIL](http://algospot.com/judge/problem/read/SAINTTAIL)
   - [MATCHFIX](http://algospot.com/judge/problem/read/MATCHFIX)
   - [PROJECTS](http://algospot.com/judge/problem/read/PROJECTS)
-  - maximum matching problem
-    - Edmond's matching algorithm
-  - bipartite matching problem
+  - [bipartite matching](doc/graph_bipartite_matching.md)
+    - adj[][], amatch, bmatch, visited, dfs, bipartite_match
+    - O(|V||E|)
   - [TRAVELPICTURES](http://algospot.com/judge/problem/read/TRAVELPICTURES)
   - [DOMINOS](http://algospot.com/judge/problem/read/DOMINOS)
   - [BISHOPS](http://algospot.com/judge/problem/read/BISHOPS)
