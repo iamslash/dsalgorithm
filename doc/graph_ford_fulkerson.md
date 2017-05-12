@@ -2,8 +2,14 @@
 
 - flow network 에서 두 정점 사이의 최대 유량을 구하는 알고리즘이다.
 - 포드와 풀커슨이 네트워크 유량 문제에 대해 쓴 논문은 구현을 포함하지 않는다.
-  그래서 알고리즘 보다는 방법(method)이라고 부른다. augmenting path를
-  bfs로 구하는 알고리즘을 edmonds karp algorithm이라고 한다.  
+  그래서 알고리즘 보다는 방법(method)이라고 부른다.
+- augmenting path를 bfs로 구하는 알고리즘을 edmonds karp algorithm이라고 한다.
+- dfs로 구하는 방법은 다음과 같은 비효율적인 경우가 발생한다.
+  dfs의 경우 1씩 유량을 증가시키기 때문에 2000번 증가경로를 탐색한다.
+  bfs는 2번 증가경로를 탐색한다. 
+
+  ![](https://en.wikipedia.org/wiki/Ford%E2%80%93Fulkerson_algorithm#/media/File:Ford-Fulkerson_example_0.svg)
+
 - capacity
   - 네트워크 용량이다. 간선의 flow(유량)은 capacity(용량)를 초과할 수 없다.
 - flow network
@@ -34,16 +40,18 @@
   - cut의 flow는 capacity와 같거나 더 작다.
 - mincut problem
   - flow network에서 capacity가 가장 작은 cut을 찾는 문제
+- min-cut max-flow theorem
   - flow network에서 capacity와 flow가 같은 cut S', T'가 존재한다고 하자.
     이때 S', T'는 항상 최소 컷이며 현재 소스에서 싱크로 보내는 유량은
     네트워크의 최대 유량임을 보일 수 있다. S', T'보다 용량이 작은 컷이 존재한다면
     해당 컷에 대해 유량이 용량보다 크므로 모순이고, 이보다 많은 유량을 보내는 방법이
     있을 경우 S', T'에 대해 유량이 용량보다 크므로 모순이기 때문이다.
-- min-cut max-flow theorem
+  - 따라서 min-cut은 max-flow이다.
+  - 증가 경로가 더이상 존재하지 않은 경우 min-cut은 발견된다. 곧 max-flow이다.
   - 증가 경로가 여러개인 경우 증가 경로를 잘 못 택하여 최대 유량을 찾기 전에 막혀서
-    더 이상 증가 경로를 찾지 못하게 되는 일은 없다는 것을 증명하는 정리
-  - 증가 경로가 여러개인 경우 그중 아무 것이나 택해도 괜찮다.
-  - 최소 cut은 곧 최대 flow이다.
+    더 이상 증가 경로를 찾지 못하게 되는 일은 없다는 것을 증명하는 정리.
+    증가 경로가 여러개인 경우 그중 아무 것이나 택해도 괜찮다. 이 것은
+    ford-fulkerson 알고리즘의 정당성을 증명해 준다.    
 
 # keyword
 
