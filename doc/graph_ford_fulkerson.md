@@ -40,6 +40,9 @@
   - cut의 flow는 capacity와 같거나 더 작다.
 - mincut problem
   - flow network에서 capacity가 가장 작은 cut을 찾는 문제
+  - [이곳](http://www.mathcs.emory.edu/~cheung/Courses/323/Syllabus/NetFlow/max-flow-min-cut.html)을 참고 해서
+    mincut을 찾아보자. T에서 S로 가는 edge의 capacity는 무시하고 S에서 T로 가는 edge의 capacity를
+    모두 더하자. 
 - min-cut max-flow theorem
   - flow network에서 capacity와 flow가 같은 cut S', T'가 존재한다고 하자.
     이때 S', T'는 항상 최소 컷이며 현재 소스에서 싱크로 보내는 유량은
@@ -51,7 +54,7 @@
   - 증가 경로가 여러개인 경우 증가 경로를 잘 못 택하여 최대 유량을 찾기 전에 막혀서
     더 이상 증가 경로를 찾지 못하게 되는 일은 없다는 것을 증명하는 정리.
     증가 경로가 여러개인 경우 그중 아무 것이나 택해도 괜찮다. 이 것은
-    ford-fulkerson 알고리즘의 정당성을 증명해 준다.    
+    ford-fulkerson 알고리즘의 정당성을 증명해 준다.
 
 # keyword
 
