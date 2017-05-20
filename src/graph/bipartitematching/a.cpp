@@ -21,11 +21,11 @@ bool dfs(int a) {
   for (int b = 0; b < R; ++b) {
     if (adj[a][b]) {
       printf("  %d : %d\n", a, b);
-      if (b_match[b] == -1 || Dfs(b_match[b])) {
+      if (bmatch[b] == -1 || dfs(bmatch[b])) {
         printf("    %d -> %d\n", a, b);
 
-        a_match[a] = b;
-        b_match[b] = a;
+        amatch[a] = b;
+        bmatch[b] = a;
         return true;
       }
     }
@@ -34,13 +34,13 @@ bool dfs(int a) {
 }
 
 int bipartite_match() {
-  a_match = std::vector<int>(L, -1);
-  b_match = std::vector<int>(R, -1);
+  amatch = std::vector<int>(L, -1);
+  bmatch = std::vector<int>(R, -1);
   int r = 0;
   for (int start = 0; start < L; ++start) {
     printf("start: %d\n", start);
     visited = std::vector<bool>(L, false);
-    if (Dfs(start))
+    if (dfs(start))
       ++r;
   }
   return r;
