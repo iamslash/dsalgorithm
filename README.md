@@ -290,11 +290,10 @@
   - [TRAPCARD](http://algospot.com/judge/problem/read/TRAPCARD)
     - independent set
     - maximum independent set
-  - Dinic algorithm
-  - MCMF (min-cost max-flow)
-    - successive shortest path algorithm
-  - assignment problem
-    - Kuhn–Munkres algorithm (hungarian algorithm)
+  - [dinic algorithm](doc/graph_dinic.md)
+    - O(|V|^2|E|)
+  - [successive shortest path](doc/graph_successive_shortest_path.md)
+  - [Kuhn–Munkres algorithm (hungarian algorithm)](doc/graph_hungarian.md)
   - vertex cover problem
     - Kőnig's theorem
   - Hopcroft-Karp algorithm
