@@ -288,8 +288,7 @@
   - [DOMINOS](http://algospot.com/judge/problem/read/DOMINOS)
   - [BISHOPS](http://algospot.com/judge/problem/read/BISHOPS)
   - [TRAPCARD](http://algospot.com/judge/problem/read/TRAPCARD)
-    - independent set
-    - maximum independent set
+  - [maxium independent set problem](doc/graph_max_independent_set.md)
   - [dinic algorithm](doc/graph_dinic.md)
     - O(|V|^2|E|)
   - [successive shortest path](doc/graph_successive_shortest_path.md)
