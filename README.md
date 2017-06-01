@@ -390,6 +390,10 @@
   - [CLOCKSYNC](https://algospot.com/judge/problem/read/CLOCKSYNC)
 
 - Divide and Conquor
+  - The fast sum of a sequence
+  - the fast square of a matrix
+  - merge sort
+  - quick sort
   - Karatsuba
   - [QUADTREE](https://algospot.com/judge/problem/read/QUADTREE)
   - [FENCE](https://algospot.com/judge/problem/read/FENCE)
