@@ -461,10 +461,6 @@
   - [CANADATRIP](https://algospot.com/judge/problem/read/CANADATRIP)
   - [WITHDRAWAL](https://algospot.com/judge/problem/read/WITHDRAWAL)
 
-- Randomized
-  - 
-- Genetics
-  - 
   
 # References
 
