@@ -400,8 +400,11 @@
   - [FANMEETING](https://algospot.com/judge/problem/read/FANMEETING)
 
 - Dynamic programming
+  - [overlapping subproblems](doc/dynamic_overlapping_subproblems.md)
+  - [binomial coefficient](doc/dynamic_binomial_coefficient.md)
   - [JUMPGAME](https://algospot.com/judge/problem/read/JUMPGAME)
   - [WILDCARD](https://algospot.com/judge/problem/read/WILDCARD)
+  - [optional substructure](doc/dynamic_optional_substructure.md)
   - [TRIANGLEPATH](https://algospot.com/judge/problem/read/TRIANGLEPATH)
   - [LIS](https://algospot.com/judge/problem/read/LIS)
   - [JLIS](https://algospot.com/judge/problem/read/JLIS)
