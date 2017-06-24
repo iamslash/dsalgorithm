@@ -224,7 +224,7 @@
   - [bfs shortest path](doc/graph_bfs_shortest_path.md)
     - adj, get_shortest_path, bfs, distance, parent, q
   - [SORTGAME](http://algospot.com/judge/problem/read/SORTGAME)
-  - [CHILDRENDAY](doc/algospot_CHILDRENDAY.md)
+  - <span style="color:red">[CHILDRENDAY](doc/algospot_CHILDRENDAY.md)</span>
   - [15 puzzle - bfs](doc/graph_15_puzzle_bfs.md)
     - State, get_adj, operator<, operator==, bitmask, move, get, set, swap, get_zero_idx, state_map, bfs
   - [15 puzzle - bfs bidrectional search](doc/graph_15_puzzle_bfs_bs.md)
