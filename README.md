@@ -416,7 +416,7 @@
   - [ASYMTILING](https://algospot.com/judge/problem/read/ASYMTILING)
   - [POLY](https://algospot.com/judge/problem/read/POLY)
   - [NUMB3RS](https://algospot.com/judge/problem/read/NUMB3RS)
-  - Markov Chain
+  - [Markov Chain](doc/dynamic_programming_markov_chain.md)
 
 - Dynamic programming technique
   - [PACKING](https://algospot.com/judge/problem/read/PACKING)
