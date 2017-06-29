@@ -51,7 +51,7 @@
   - sieve of eratosthenes
   - 15 puzzle
   - priority queue with O(1)
-  - maximal stable set
+  - maximal stable set ★
   - [GRADUATION](https://algospot.com/judge/problem/read/GRADUATION)
   - [Bit Twiddling Hacks](http://graphics.stanford.edu/~seander/bithacks.html)
 
@@ -97,13 +97,13 @@
 
 - String
   - search with naive algorithm
-  - search with kmp algorithm
+  - search with kmp algorithm ★
     - needle, haystack, begin, matched, pi[]
     - O(|N| + |H|)
   - [NAMING](http://algospot.com/judge/problem/read/NAMING)
   - [PALINDROMIZE](http://algospot.com/judge/problem/read/PALINDROMIZE)
   - [JAEHASAFE](http://algospot.com/judge/problem/read/JAEHASAFE)
-  - suffix array
+  - suffix array ★
     - [Manber, Udi; Myers, Gene (1990). Suffix arrays: a new method for on-line string searches](http://webglimpse.net/pubs/suffix.pdf)
   - get suffix array using naive algorithm
     - O(N^2lgN)
@@ -150,7 +150,7 @@
   - [MORDOR](http://algospot.com/judge/problem/read/MORDOR)
   - [FAMILYTREE](http://algospot.com/judge/problem/read/FAMILYTREE)
   - fenwick tree (binary indexed tree)
-  - [MEASURETIME](http://algospot.com/judge/problem/read/MEASURETIME)
+  - [MEASURETIME](http://algospot.com/judge/problem/read/MEASURETIME) ★
   - union-find (merge-find)
     - union rank optimization
     - pass compression optimization
@@ -171,7 +171,7 @@
   - radix tree (patricia tree)
     - compress trie like suffix tree.
   - [SOLONG](http://algospot.com/judge/problem/read/SOLONG)
-  - Aho–Corasick algorithm
+  - Aho–Corasick algorithm ★
     - children, fail, terminal, insert, fail, output, compute_fail, search
   - [NH](http://algospot.com/judge/problem/read/NH)
 
@@ -197,7 +197,7 @@
   - [dfs spanning tree](doc/graph_dfs_spanning_tree.md)
     - tree edge, forward edge, back edge, cross edge
     - adj, discovered, finished, counter, dfs_spanning_tree
-  - [proof of topological sort](doc/graph_proof_of_topological_srt.md)
+  - [proof of topological sort](doc/graph_proof_of_topological_srt.md) ★
   - [check the cycle](doc/graph_check_the_cycle.md)
   - [cut vertex (articulation point)](doc/graph_cut_vertex.md)
     - biconnected components
@@ -208,11 +208,11 @@
     - scc (strongly connected components)
     - condensation
     - adj, scc_id, discovered, finished, stck, scc_counter, vertex_counter, dfs_scc, tarjan_scc
-  - [topological sort of scc](doc/graph_topological_sort_of_scc)
+  - [topological sort of scc](doc/graph_topological_sort_of_scc) ★
   - [GALLERY](http://algospot.com/judge/problem/read/GALLERY)
     - dominating set
     - unrooted tree
-  - [MEETINGROOM](doc/algospot_MEETEINGROOM.md)
+  - [MEETINGROOM](doc/algospot_MEETEINGROOM.md) ★
     - sat (SATisfiability, boolean satisfiability problem)
     - conjunctive normal form
     - 2-sat
@@ -224,7 +224,7 @@
   - [bfs shortest path](doc/graph_bfs_shortest_path.md)
     - adj, get_shortest_path, bfs, distance, parent, q
   - [SORTGAME](http://algospot.com/judge/problem/read/SORTGAME)
-  - [CHILDRENDAY](doc/algospot_CHILDRENDAY.md)
+  - [CHILDRENDAY](doc/algospot_CHILDRENDAY.md) ★
   - [15 puzzle - bfs](doc/graph_15_puzzle_bfs.md)
     - State, get_adj, operator<, operator==, bitmask, move, get, set, swap, get_zero_idx, state_map, bfs
   - [15 puzzle - bfs bidrectional search](doc/graph_15_puzzle_bfs_bs.md)
@@ -244,7 +244,7 @@
     - O(|V|^2 + |E|)
   - [ROUTING](http://algospot.com/judge/problem/read/ROUTING)
   - [FIRETRUCKS](http://algospot.com/judge/problem/read/FIRETRUCKS)
-  - [NTHLON](http://algospot.com/judge/problem/read/NTHLON)
+  - [NTHLON](http://algospot.com/judge/problem/read/NTHLON) ★
   - [Bellman-Ford algorithm](doc/graph_bellman_ford.md)
     ```cpp
     vector<pair<int, int>> adj[], bellmanford, vector<int> upper, bool updated
@@ -280,14 +280,14 @@
   - [MILEAGE](http://algospot.com/judge/problem/read/MILEAGE)
   - [SAINTTAIL](http://algospot.com/judge/problem/read/SAINTTAIL)
   - [MATCHFIX](http://algospot.com/judge/problem/read/MATCHFIX)
-  - [PROJECTS](http://algospot.com/judge/problem/read/PROJECTS)
+  - [PROJECTS](http://algospot.com/judge/problem/read/PROJECTS) ★
   - [bipartite matching](doc/graph_bipartite_matching.md)
     - adj[][], amatch, bmatch, visited, dfs, bipartite_match
     - O(|V||E|)
   - [TRAVELPICTURES](http://algospot.com/judge/problem/read/TRAVELPICTURES)
   - [DOMINOS](http://algospot.com/judge/problem/read/DOMINOS)
   - [BISHOPS](http://algospot.com/judge/problem/read/BISHOPS)
-  - [TRAPCARD](http://algospot.com/judge/problem/read/TRAPCARD)
+  - [TRAPCARD](http://algospot.com/judge/problem/read/TRAPCARD) ★
   - [maxium independent set problem](doc/graph_max_independent_set.md)
   - [dinic algorithm](doc/graph_dinic.md)
     - O(|V|^2|E|)
@@ -396,8 +396,8 @@
   - quick sort
   - Karatsuba
   - [QUADTREE](https://algospot.com/judge/problem/read/QUADTREE)
-  - [FENCE](https://algospot.com/judge/problem/read/FENCE)
-  - [FANMEETING](https://algospot.com/judge/problem/read/FANMEETING)
+  - [FENCE](https://algospot.com/judge/problem/read/FENCE) ★ 
+  - [FANMEETING](https://algospot.com/judge/problem/read/FANMEETING) ★
 
 - Dynamic programming
   - [overlapping subproblems](doc/dynamic_overlapping_subproblems.md)
