@@ -415,7 +415,7 @@
   - [SNAIL](https://algospot.com/judge/problem/read/SNAIL)
   - [ASYMTILING](https://algospot.com/judge/problem/read/ASYMTILING)
   - [POLY](https://algospot.com/judge/problem/read/POLY)
-  - [NUMB3RS](https://algospot.com/judge/problem/read/NUMB3RS)![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)
+  - [NUMB3RS](https://algospot.com/judge/problem/read/NUMB3RS) ![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)
   - [Markov Chain](doc/dynamic_programming_markov_chain.md)
 
 - Dynamic programming technique
