@@ -12,5 +12,5 @@
   이동할 확률은 현재 상태 a에 의해 좌우된다. a 이전에
   어느 상태에 있었는지, 현재 시간은 얼마인지 등은 영향을 주지 않는다.
 - [NUMB3RS](https://algospot.com/judge/problem/read/NUMB3RS)
-  는 amrkov chain의 대표적인 예이다.
+  는 markov chain의 대표적인 예이다.
   

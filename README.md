@@ -404,7 +404,7 @@
   - [binomial coefficient](doc/dynamic_binomial_coefficient.md)
   - [JUMPGAME](https://algospot.com/judge/problem/read/JUMPGAME)
   - [WILDCARD](https://algospot.com/judge/problem/read/WILDCARD)
-  - [optional substructure](doc/dynamic_optional_substructure.md)
+  - [optimal substructure](doc/dynamic_optimal_substructure.md)
   - [TRIANGLEPATH](https://algospot.com/judge/problem/read/TRIANGLEPATH)
   - [LIS](https://algospot.com/judge/problem/read/LIS)
   - [JLIS](https://algospot.com/judge/problem/read/JLIS)
@@ -416,7 +416,7 @@
   - [ASYMTILING](https://algospot.com/judge/problem/read/ASYMTILING)
   - [POLY](https://algospot.com/judge/problem/read/POLY)
   - [NUMB3RS](https://algospot.com/judge/problem/read/NUMB3RS) ★
-  - [Markov Chain](doc/dynamic_programming_markov_chain.md)
+  - [Markov Chain](doc/dynamic_markov_chain.md)
 
 - Dynamic programming technique
   - [PACKING](https://algospot.com/judge/problem/read/PACKING)
