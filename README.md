@@ -396,8 +396,8 @@
   - quick sort
   - Karatsuba
   - [QUADTREE](https://algospot.com/judge/problem/read/QUADTREE)
-  - [FENCE](https://algospot.com/judge/problem/read/FENCE) ★ 
-  - [FANMEETING](https://algospot.com/judge/problem/read/FANMEETING) ★
+  - [FENCE](https://algospot.com/judge/problem/read/FENCE)★ 
+  - [FANMEETING](https://algospot.com/judge/problem/read/FANMEETING)★
 
 - Dynamic programming
   - [overlapping subproblems](doc/dynamic_overlapping_subproblems.md)
@@ -415,27 +415,29 @@
   - [SNAIL](https://algospot.com/judge/problem/read/SNAIL)
   - [ASYMTILING](https://algospot.com/judge/problem/read/ASYMTILING)
   - [POLY](https://algospot.com/judge/problem/read/POLY)
-  - [NUMB3RS](https://algospot.com/judge/problem/read/NUMB3RS) ★
+  - [NUMB3RS](https://algospot.com/judge/problem/read/NUMB3RS)★
   - [Markov Chain](doc/dynamic_markov_chain.md)
 
 - Dynamic programming technique
   - [PACKING](https://algospot.com/judge/problem/read/PACKING)
   - 0/1 knapsack problem
   - fractional knapsack problem
-  - [OCR](https://algospot.com/judge/problem/read/OCR)
+  - [OCR](https://algospot.com/judge/problem/read/OCR)★
   - Hidden Markov Model, HMM
-  - Viterbi algorithm
-  - [programming pearls](https://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880/ref=sr_1_1?s=books&ie=UTF8&qid=1473590537&sr=1-1&keywords=programming+pearls)
+    - Viterbi algorithm
   - [MORSE](https://algospot.com/judge/problem/read/MORSE)
-  - [KLIS](https://algospot.com/judge/problem/read/KLIS)
+  - [KLIS](https://algospot.com/judge/problem/read/KLIS)★
   - [DRAGON](https://algospot.com/judge/problem/read/DRAGON)
-  - [ZIMBABWE](https://algospot.com/judge/problem/read/ZIMBABWE)
+  - [memoization with non-integer parameters](doc/dynamic_memoization_with_non_integer.md)
+  - TSP
+  - [ZIMBABWE](https://algospot.com/judge/problem/read/ZIMBABWE)★
   - [RESTORE](https://algospot.com/judge/problem/read/RESTORE)
   - [TICTACTOE](https://algospot.com/judge/problem/read/TICTACTOE)
   - [NUMBERGAME](https://algospot.com/judge/problem/read/NUMBERGAME)
   - [BLOCKGAME](https://algospot.com/judge/problem/read/BLOCKGAME)
   - [SUSHI](https://algospot.com/judge/problem/read/SUSHI)
   - [GENIUS](https://algospot.com/judge/problem/read/GENIUS)
+  - [programming pearls](https://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880/ref=sr_1_1?s=books&ie=UTF8&qid=1473590537&sr=1-1&keywords=programming+pearls)
 
 - Greedy
   - [MATCHORDER](https://algospot.com/judge/problem/read/MATCHORDER)
