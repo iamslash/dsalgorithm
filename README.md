@@ -435,6 +435,8 @@
   - [TICTACTOE](https://algospot.com/judge/problem/read/TICTACTOE)
   - [NUMBERGAME](https://algospot.com/judge/problem/read/NUMBERGAME)
   - [BLOCKGAME](https://algospot.com/judge/problem/read/BLOCKGAME)
+  - Maximum path above triangle
+  - [iterative vs recursive](doc/dynamic_iterative_vs_recursive.md)
   - [SUSHI](https://algospot.com/judge/problem/read/SUSHI)
   - [GENIUS](https://algospot.com/judge/problem/read/GENIUS)
   - [programming pearls](https://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880/ref=sr_1_1?s=books&ie=UTF8&qid=1473590537&sr=1-1&keywords=programming+pearls)
