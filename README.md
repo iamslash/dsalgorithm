@@ -420,8 +420,7 @@
 
 - Dynamic programming technique
   - [PACKING](https://algospot.com/judge/problem/read/PACKING)
-  - 0/1 knapsack problem
-  - fractional knapsack problem
+  - [knapsack problem](doc/dynamic_knapsack_problem.md)
   - [OCR](https://algospot.com/judge/problem/read/OCR)★
   - Hidden Markov Model, HMM
     - Viterbi algorithm
