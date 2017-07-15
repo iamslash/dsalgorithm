@@ -435,7 +435,7 @@
   - [TICTACTOE](https://algospot.com/judge/problem/read/TICTACTOE)
   - [NUMBERGAME](https://algospot.com/judge/problem/read/NUMBERGAME)
   - [BLOCKGAME](https://algospot.com/judge/problem/read/BLOCKGAME)
-  - Maximum path above triangle
+  - [TRIPATHCNT](https://algospot.com/judge/problem/read/TRIPATHCNT)
   - [iterative vs recursive](doc/dynamic_iterative_vs_recursive.md)
   - [SUSHI](https://algospot.com/judge/problem/read/SUSHI)
   - [GENIUS](https://algospot.com/judge/problem/read/GENIUS)
