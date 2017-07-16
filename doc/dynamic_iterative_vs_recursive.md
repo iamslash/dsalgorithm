@@ -1,6 +1,60 @@
 # abstract
 
-- 반복적 동적 계획 프로그래밍과 재귀적 동적 계획 프로그래밍의 차이를 적어본다.
+- recursion을 이용하여 dynamic programming 하는 방법을 recursive
+  dynamic programming이라고 한다.  반면에 recursion을 이용하지 않고
+  loop statement를 활용하여 dynamic programming하는 방법을 iterative
+  dynamic programming 이라고 한다.
+  
+# [TRIPATHCNT](https://algospot.com/judge/problem/read/TRIPATHCNT) iterative way
+
+- iterative dynamic programming으로 해결해보자.
+
+```cpp
+int N, trangle[100][100];
+int CACHE[100][100];
+int solve() {
+    // calculate base condition
+    // 바닥에 도달했을 경우가 기저 사례이다.
+    for (int x = 0; x < N; ++x) {
+        CACHE[N-1][x] = transgle[N-1][x];
+    }
+    // calculate recursion
+    // 바닥 바로 윗줄 부터 시작행까지 올라오자.
+    for (int y = N-2; y >= 0; --y) {
+        for (int x = 0; x < y+1; ++x) {
+            CACHE[y][x] = std::max(CACHE[y+1][x], CACHE[y+1][x+1]) + triangle[y][x];
+        }
+    }
+    // 맨 위칸의 정보를 리턴하자.
+    return CACHE[0][0];
+}
+```
+
+# [TRIPATHCNT](https://algospot.com/judge/problem/read/TRIPATHCNT) iterative way with sliding window
+
+- iterative dynamic programming으로 하면서 space complexity를 최적화
+  해보자. CACHE는 단 두행만 필요하다. 두행을 한행씩 슬라이딩 하면서 사용하자.
+  
+```cpp
+int N, trangle[100][100];
+int CACHE[2][10000];
+int solve() {
+    // caculate base condition
+    for (int x = 0; x < N; ++x) {
+        CACHE[(N-1)%2][x] = triangle[N-1][x];
+    }
+    // caculate recursion
+    for (int y = N-2; y >= 0; --y) {
+        for (int x = 0; x < y+1; ++x) {
+            CACHE[y%2][x] = std::max(CACHE[(y+1)%2][x], CACHE[(y+1)%2][x+1]) + triangle[y][x];
+        }
+    }
+}
+```
+
+# 행렬 거듭제곱을 이용한 동적 계획법
+
+- ???
 
 # recursive dynamic programming
 
