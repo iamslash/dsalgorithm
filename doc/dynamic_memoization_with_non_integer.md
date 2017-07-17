@@ -38,7 +38,9 @@ inf solve(const vector<int>& key) {
 
 # permutation parameters
 
-- 순열 X를 idx로 변환하자.
+- 배열 X가 항상 [1,2,...,10]의 순열이라고 하자. 순열을 바로 숫자로
+  표현하면 CACHE의 공간의 낭비가 심각하니 몇번째 순열인지 계산하는
+  bijection function을 제작하자.
 
 ```cpp
 // factorials[i] = i!
